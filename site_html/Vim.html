@@ -39,7 +39,7 @@
                     <li class="">
                         <a href="index.html">Index</a>
                     </li>
-<!--
+<!-- ### Remove unnecessary nav bar links  - "workspace", "diary", "calendar" - i dont use or need them ###
                     <li class="">
                         <a href="workspace/index.html">Workspace</a>
                     </li>
@@ -61,10 +61,15 @@
 
 <div class="container-fluid">
     <div class="row-fluid">
+
+<!-- ### Get rid of the navbar class and move the main column to the left ###
+
         <div class="span3 bs-docs-sidebar">
             <ul id="sidebar_list" class="nav nav-list bs-docs-sidenav affix">
             </ul>
         </div>
+
+-->
 
         <div class="span7">
             <!--Body content-->
@@ -216,13 +221,16 @@ You can also press Ctrl-O to jump to older locations, or Ctrl-I to jump to newer
     ================================================== -->
 <footer class="footer">
   <div class="container">
+<!-- ### Remove footer links - clutter ###
     <p><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
     <p><a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> licensed under <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>.</p>
     <p><a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a> licensed under <a href="http://opensource.org/licenses/BSD-3-Clause">Modified BSD License</a>.</p>
     <ul class="footer-links">
     </ul>
+-->
   </div>
 </footer>
+<!--
 <script>
     $('h1').each(function() {
         $(this).wrap('<section id="' + this.id + '"/>');
@@ -265,5 +273,6 @@ You can also press Ctrl-O to jump to older locations, or Ctrl-I to jump to newer
     hljs.initHighlightingOnLoad();
 });
 </script>
+-->
 </body>
 </html>
