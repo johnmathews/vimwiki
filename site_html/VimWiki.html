@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/docs.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/monokai.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/vimwiki.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+
+<script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+
+<title>VimWiki</title>
+
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <!-- Be sure to leave the brand out there if you want it shown -->
+            <a class="brand" href="http://code.google.com/p/vimwiki/">Vimwiki</a>
+
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <!-- .nav, .navbar-search, .navbar-form, etc -->
+                <ul class="nav">
+                    <li class="">
+                        <a href="index.html">Index</a>
+                    </li>
+<!--
+                    <li class="">
+                        <a href="workspace/index.html">Workspace</a>
+                    </li>
+                    <li class="">
+                        <a href="diary/diary.html">Diary</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Calendar</a>
+                    </li>
+-->
+                    <li class="">
+                        <a href="todo.html">To Do</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3 bs-docs-sidebar">
+            <ul id="sidebar_list" class="nav nav-list bs-docs-sidenav affix">
+            </ul>
+        </div>
+
+        <div class="span7">
+            <!--Body content-->
+            
+<div id="VIMWIKI"><h1 id="VIMWIKI"> VIMWIKI</h1></div>
+
+<p>
+:VimwikiTOC    Create or update the Table of Contents for the current wiki file.
+:VimwikiCheckLinks  Search through all wiki files and check if the targets of all wiki links
+</p>
+<blockquote>
+and links to external files actually exist.  Check also if all wiki files
+are reachable from the index file.  The results are shown in the quickfix
+window.
+</blockquote>
+
+<p>
+&lt;leader&gt;vw			open index file 
+&lt;leader&gt;wt			open index file in new tab
+</p>
+
+<p>
+&lt;leader&gt;wi			open diary index
+&lt;leader&gt;w,i			update diary index
+&lt;leader&gt;w,w		open diary entry for today
+&lt;leader&gt;tj			insert template
+&lt;leader&gt;w,t			open diary wiki-file for today in a new tab
+&lt;leader&gt;w,y		open diary wiki-file for yesterday
+</p>
+
+
+<p>
+,whh		convert to html and open it in the browser
+,wd			delete the wiki page you are in
+,wr			rename the wiki page you are in
+</p>
+
+<p>
++			create and/or decorate links
+=			add header level
+</p>
+<ul>
+<li>
+		remove header level
+
+</ul>
+
+
+<p>
+gll 			                    Increase the level of a list item.
+glh                     Decrease the level of a list item.
+glr                     Renumber list items if the cursor is on a numbered list item
+gl*                     Make a list item out of a normal line or change the symbol of the current item to *.
+gl#                     Make a list item out of a normal line or change the symbol of the current item to #.
+gl-, gl1, etc
+gqq                     Format table. If you made some changes to a table without swapping insert/normal modes this command will reformat it.
+</p>
+
+<p>
+&lt;C-Up&gt;                 	Open the previous day's diary link if available.
+&lt;C-Down&gt;                 Open the next day's diary link if available.
+</p>
+
+<p>
+&lt;A-Left&gt;               	Move current table column to the left.
+&lt;A-Right&gt;               	Move current table column to the right.
+</p>
+
+<p>
+&lt;C-Space&gt;          	Toggle checkbox of a list item on/off.
+&lt;C-T&gt;                   	Increase the level of a list item.
+&lt;C-D&gt;                   	Decrease the level of a list item.
+&lt;C-L&gt;&lt;C-J&gt;              Change the symbol of the current list item to the next
+&lt;C-L&gt;&lt;C-K&gt;             Change the symbol of the current list item to the prev
+&lt;C-L&gt;&lt;C-M&gt;            Create/remove a symbol from a list item.
+</p>
+
+<p>
+'vih' 	to select a section segment with its contents or 
+'dih' 	to delete it or 
+'yih' 	to yank it or 
+'cah' 	to change it.
+</p>
+
+
+
+<p>
+&lt;Enter&gt; 	 		Follow/Create wiki link
+&lt;C-S-CR&gt;		Follow/create wiki link in new tab
+</p>
+
+<p>
+&lt;Backspace&gt;		Go back to parent(previous) wiki link
+&lt;Tab&gt; 			Find next wiki link
+&lt;Shift-Tab&gt;		Find previous wiki link
+</p>
+
+<p>
+:VimwikiAll2HTML	convert all pages to html. Make css file if it doesn’t exist. 
+</p>
+
+<p>
+MARKDOWN
+</p>
+
+<div id="Header1"><h1 id="Header1"> Header1</h1></div>
+<div id="Header1-Header2"><h2 id="Header2">1. Header2</h2></div>
+<div id="Header1-Header2-Header3"><h3 id="Header3">1.1. Header3</h3></div>
+<p>
+Etc
+</p>
+
+<p>
+  <span id="Header1-Header2-Header3-bold text"></span><strong id="bold text">bold text</strong>
+  <em>italic text</em>
+  <del>strikeout text</del>
+  <code>code (no syntax) text</code>
+  super<sup><small>script</small></sup>
+  sub<sub><small>script</small></sub>
+</p>
+
+<p>
+<a href="wiki link.html">wiki link</a>
+<a href="projects&#47;Important Project 1.html">projects/Important Project 1</a>
+<a href="wiki link.html">description</a>
+<a href="index.html">/index</a>
+</p>
+
+<ul>
+<li>
+bullet list item 1
+
+<li>
+bullet list item 2
+
+<ol>
+<li>
+numbered list item 1
+
+<li>
+numbered list item 2
+		etc. all kinds.
+
+</ol>
+</ul>
+
+<pre python>
+def greet(s):
+    print("Hello, " + s)
+</pre>
+
+<table class='center'>
+<tr>
+<th>
+Year
+</th>
+<th>
+Temperature (low)
+</th>
+<th>
+Temperature (high)
+</th>
+</tr>
+<tr>
+<td>
+1900
+</td>
+<td>
+-10
+</td>
+<td>
+25
+</td>
+</tr>
+<tr>
+<td>
+1910
+</td>
+<td>
+-15
+</td>
+<td>
+30
+</td>
+</tr>
+<tr>
+<td>
+1920
+</td>
+<td>
+-10
+</td>
+<td>
+32
+</td>
+</tr>
+</table>
+
+
+        </div>
+  </div>
+</div>
+<a href="#" class="backtotop"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
+<!-- Footer
+    ================================================== -->
+<footer class="footer">
+  <div class="container">
+    <p><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+    <p><a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> licensed under <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>.</p>
+    <p><a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a> licensed under <a href="http://opensource.org/licenses/BSD-3-Clause">Modified BSD License</a>.</p>
+    <ul class="footer-links">
+    </ul>
+  </div>
+</footer>
+<script>
+    $('h1').each(function() {
+        $(this).wrap('<section id="' + this.id + '"/>');
+    });
+    $('h1').wrap('<div class="page-header" />');
+    $('h1').wrap('<div class="well well-small" />');
+    $(document).ready(function() {
+        var items = [];
+        $('h1').each(function() {
+            items.push('<li><a href="#' + this.id + '"><i class="fa fa-chevron-right pull-right"></i> ' + $(this).text() + '</a></li>');
+        });  // close each()
+    $('#sidebar_list').append( items.join('') );
+    $('table').each(function() {
+        $(this).addClass('table table-striped table-condensed table-hover');
+    });
+    $('.done0').each(function() {
+        $(this).html('<div class="alert alert-info"><i class="fa fa-check-square-o"></i>'+$(this).html()+'</div></li>');
+    });
+    $('.done4').each(function() {
+        $(this).html('<div class="alert alert-success"><i class="fa fa-square-o"></i>'+$(this).html()+'</div></li>');
+    });
+    // Fade Out Back-To-Top-Link on new page
+    $('.backtotop').fadeOut();
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.backtotop').fadeIn();
+            } else {
+                $('.backtotop').fadeOut();
+            }
+        });
+        $('.backtotop').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+    });
+    $('pre').each(function() {
+        $(this).html('<code>'+$(this).html()+'</code>');
+    });
+    hljs.initHighlightingOnLoad();
+});
+</script>
+</body>
+</html>

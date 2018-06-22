@@ -1,0 +1,8 @@
+ = Notes =
+    1. [[Django]] 
+    2. [[VimWiki]] 
+    4. [[Git]]
+    5. [[Vim]]
+    6. [[VirtualEnv]]
+    7. [[Nested links]]
+  

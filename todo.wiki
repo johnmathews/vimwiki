@@ -1,0 +1,37 @@
+=ToDo=
+
+Crypto mining - people send you their equipment. Cheap electricity
+
+Remove credentials from private post
+
+Blog posts:
+1. Cryptoeconomics, or token economics - tokenomics?
+2. Location independence (https://medium.com/e-residency-blog/were-planning-to-launch-estcoin-and-that-s-only-the-start-310aba7f3790)
+3. http://andrewchen.co/professional-blogging/
+4. How to make a raspberry pi bitcoin node.
+5. Git tutorial - repo examples. 
+6. Democracy is weakest when citizens aren’t engaged. 
+7. Plot coins by cmc position - Plot coins by %change in market cap since 1 march - The coins that are rising fastest through the ranks are worth investing in - Do coins further down the list move around more? Is the lower half (50 - 100) more volatile than the top half (1-50)?
+8. offering programming training - refugees 
+9. https://pastebin.com/jCDFcESz - blog post about blog post about private keys
+10. 
+
+
+Projects:
+1. Make a trading bot 
+    * Find the blog post doing the correlation analysis. Was it on kaggle?
+    * Go through tweets and dm’s and comments to see useful repos and tutorial for how to setup a bot
+2. Crypto-tracker
+    * Tell the website what you own and how much, and when you bought it, and it will give you a dashboard of your portfolio performance
+    * Tell the website what it cost
+3. Hacking course 
+4. Universal basic income graph
+5. Read Kent’s book
+6. Hardware wallet design
+7. Look at photo of dice and get numbers 
+
+
+Trading bot:
+ cointrol - Bitcoin trading bot with a real-time dashboard for Bitstamp.
+https://github.com/jakubroztocil/cointrol
+use with ccxt package. 

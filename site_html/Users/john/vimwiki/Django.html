@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../../../style.css">
+<title>Django</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<div id="Django"><h1 id="Django"> Django</h1></div>
+<ol>
+<li>
+Create a virtualenv with virtualenvwrapper
+
+<ul>
+<li>
+mkvirtualenv env1
+
+</ul>
+<li>
+Run cookie cutter
+
+<ul>
+<li>
+pip install cookiecutter
+
+<li>
+cookiecutter <a href="https:&#47;&#47;github.com&#47;pydanny&#47;cookiecutter-django">https://github.com/pydanny/cookiecutter-django</a>
+
+</ul>
+<li>
+Install the requirements
+
+<ul>
+<li>
+pip install -r requirements/local.txt
+
+</ul>
+<li>
+Run shell with local settings
+
+<ul>
+<li>
+python manage.py shell --settings=config.settings.local
+
+</ul>
+<li>
+Create the database
+
+<ul>
+<li>
+createdb [project_slug]
+
+<li>
+python manage.py runserver
+
+</ul>
+</ol>
+
+</body>
+</html>
