@@ -81,17 +81,19 @@
 <a href="#" class="backtotop"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
 <!-- Footer
     ================================================== -->
+
+<!-- ### Remove footer links - clutter ###
 <footer class="footer">
   <div class="container">
-<!-- ### Remove footer links - clutter ###
     <p><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
     <p><a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> licensed under <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>.</p>
     <p><a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a> licensed under <a href="http://opensource.org/licenses/BSD-3-Clause">Modified BSD License</a>.</p>
     <ul class="footer-links">
     </ul>
--->
   </div>
 </footer>
+-->
+
 <!--
 <script>
     $('h1').each(function() {
