@@ -1,13 +1,14 @@
 = Django =
+== Setup ==
 1. Create a virtualenv with virtualenvwrapper
-    * mkvirtualenv env1
+    * `mkvirtualenv env1`
 2. Run cookie cutter
-    * pip install cookiecutter
-    * cookiecutter https://github.com/pydanny/cookiecutter-django
+    * `pip install cookiecutter`
+    * `cookiecutter https://github.com/pydanny/cookiecutter-django`
 3. Install the requirements
-    * pip install -r requirements/local.txt
+    * `pip install -r requirements/local.txt`
 4. Run shell with local settings
-    * python manage.py shell --settings=config.settings.local
+    * `python manage.py shell --settings=config.settings.local`
 5. Create the database
-    * createdb [project_slug]
-    * python manage.py runserver
+    * `createdb [project_slug]`
+    * `python manage.py runserver`

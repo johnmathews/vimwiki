@@ -1,10 +1,26 @@
- = Notes =
-    1. [[Django]] 
-    2. [[VimWiki]] 
-    4. [[Git]]
-    5. [[Vim]]
-    6. [[VirtualEnv]]
-    7. [[Nested links]]
-    8. [[Grep]]
-    9. [[Vim again]]
-  
+%template index
+
+== Short Term ==
+[[Tasks]]
+
+== Notes ==
+1. [[Django]] 
+2. [[VimWiki]] 
+3. [[Git]]
+4. [[Vim]]
+5. [[VirtualEnv]]
+6. [[Nested links]]
+7. [[Grep]]
+8. [[Vim again]]
+9. [[GSP interview]]
+10. [[Mental Models]]
+11. [[iTerm]]
+12. [[Rys Git tutorial]]
+13. [[Shell vs Terminal]]
+14. [[CSS selectors]]
+15. [[grep]]
+16. [[Negotiation]]
+
+== Medium Term ==
+[[Todo|The Plan]]
+

@@ -29,13 +29,18 @@
                 <span class="icon-bar"></span>
             </a>
 
-            <!-- Be sure to leave the brand out there if you want it shown -->
+<!--
+             Be sure to leave the brand out there if you want it shown 
             <a class="brand" href="http://code.google.com/p/vimwiki/">Vimwiki</a>
+-->
 
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
                 <!-- .nav, .navbar-search, .navbar-form, etc -->
                 <ul class="nav">
+                    <li class="">
+                         <a href="#" onClick="history.go(-1);return true;">Back</a>
+                    </li>
                     <li class="">
                         <a href="%root_path%index.html">Index</a>
                     </li>
@@ -51,7 +56,10 @@
                     </li>
 -->
                     <li class="">
-                        <a href="%root_path%todo.html">To Do</a>
+                        <a href="%root_path%tasks.html">Short</a>
+                    </li>
+                    <li class="">
+                        <a href="%root_path%todo.html">Medium</a>
                     </li>
                 </ul>
             </div>
@@ -70,8 +78,8 @@
         </div>
 
 -->
-
-        <div class="span7">
+<br>
+        <div class="span12">
             <!--Body content-->
             %content%
 

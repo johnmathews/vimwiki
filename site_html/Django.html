@@ -29,13 +29,18 @@
                 <span class="icon-bar"></span>
             </a>
 
-            <!-- Be sure to leave the brand out there if you want it shown -->
+<!--
+             Be sure to leave the brand out there if you want it shown 
             <a class="brand" href="http://code.google.com/p/vimwiki/">Vimwiki</a>
+-->
 
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
                 <!-- .nav, .navbar-search, .navbar-form, etc -->
                 <ul class="nav">
+                    <li class="">
+                         <a href="#" onClick="history.go(-1);return true;">Back</a>
+                    </li>
                     <li class="">
                         <a href="index.html">Index</a>
                     </li>
@@ -51,7 +56,10 @@
                     </li>
 -->
                     <li class="">
-                        <a href="todo.html">To Do</a>
+                        <a href="tasks.html">Short</a>
+                    </li>
+                    <li class="">
+                        <a href="todo.html">Medium</a>
                     </li>
                 </ul>
             </div>
@@ -70,18 +78,19 @@
         </div>
 
 -->
-
-        <div class="span7">
+<br>
+        <div class="span12">
             <!--Body content-->
             
 <div id="Django"><h1 id="Django"> Django</h1></div>
+<div id="Django-Setup"><h2 id="Setup">1. Setup</h2></div>
 <ol>
 <li>
 Create a virtualenv with virtualenvwrapper
 
 <ul>
 <li>
-mkvirtualenv env1
+<code>mkvirtualenv env1</code>
 
 </ul>
 <li>
@@ -89,10 +98,10 @@ Run cookie cutter
 
 <ul>
 <li>
-pip install cookiecutter
+<code>pip install cookiecutter</code>
 
 <li>
-cookiecutter <a href="https:&#47;&#47;github.com&#47;pydanny&#47;cookiecutter-django">https://github.com/pydanny/cookiecutter-django</a>
+<code>cookiecutter https://github.com/pydanny/cookiecutter-django</code>
 
 </ul>
 <li>
@@ -100,7 +109,7 @@ Install the requirements
 
 <ul>
 <li>
-pip install -r requirements/local.txt
+<code>pip install -r requirements/local.txt</code>
 
 </ul>
 <li>
@@ -108,7 +117,7 @@ Run shell with local settings
 
 <ul>
 <li>
-python manage.py shell --settings=config.settings.local
+<code>python manage.py shell --settings=config.settings.local</code>
 
 </ul>
 <li>
@@ -116,10 +125,10 @@ Create the database
 
 <ul>
 <li>
-createdb [project_slug]
+<code>createdb [project_slug]</code>
 
 <li>
-python manage.py runserver
+<code>python manage.py runserver</code>
 
 </ul>
 </ol>
