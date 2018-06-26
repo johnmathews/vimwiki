@@ -2,42 +2,45 @@
 
 Commands:
 
-Create a virtualenv:	
-mkvirtualenv env1
+*Create* a virtualenv:
+`mkvirtualenv env1`
 
-Close the virtualenv:
-deactivate
+*Close* the virtualenv:
+`deactivate`
 
-Activate the virtualenv:
-workon env1
+*Activate* the virtualenv:
+`workon env1`
 
-List environments
-lsvirtualenv
+
+*List* environments
+`lsvirtualenv`
+
 or
-export WORKON_HOME=~/Envs
-ls $WORKON_HOME
 
+`export WORKON_HOME=~/Envs` and then `ls $WORKON_HOME`
 
-Delete an environment
-rmvirtualenv ENVNAME
-or
-rm -rf ~/Envs/env1
+*Delete* an environment
+`rmvirtualenv ENVNAME` or `rm -rf ~/Envs/env1`
 
-Copy an environment
-cpvirtualenv ENVNAME [TARGETENVNAME]
-lsvirtualenv
+*Copy* an environment
+`cpvirtualenv ENVNAME [TARGETENVNAME]`
 
+*List* all virtual envs
+`lsvirtualenv`
 
-Show the details for a single virtualenv.
-showvirtualenv [env]
+*Show* the details for a single virtualenv.
+`showvirtualenv` [env]
 
-Remove an environment, in the WORKON_HOME.
-rmvirtualenv ENVNAME
+*Remove* an environment, in the WORKON_HOME.
+`rmvirtualenv ENVNAME`
 
-List all of the environments.
-lsvirtualenv [-b] [-l] [-h]
+*List* all of the environments.
+`lsvirtualenv [-b] [-l] [-h]`
+
 -b	Brief mode, disables verbose output.
+
 -l	Long mode, enables verbose output. Default.
+
 -h	Print the help for lsvirtualenv.
 
 

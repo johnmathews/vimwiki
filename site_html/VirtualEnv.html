@@ -89,58 +89,73 @@ Commands:
 </p>
 
 <p>
-Create a virtualenv:	
-mkvirtualenv env1
+<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv:
+<code>mkvirtualenv env1</code>
 </p>
 
 <p>
-Close the virtualenv:
-deactivate
+<span id="VirtualEnv-Close"></span><strong id="Close">Close</strong> the virtualenv:
+<code>deactivate</code>
 </p>
 
 <p>
-Activate the virtualenv:
-workon env1
+<span id="VirtualEnv-Activate"></span><strong id="Activate">Activate</strong> the virtualenv:
+<code>workon env1</code>
+</p>
+
+
+<p>
+<span id="VirtualEnv-List"></span><strong id="List">List</strong> environments
+<code>lsvirtualenv</code>
 </p>
 
 <p>
-List environments
-lsvirtualenv
 or
-export WORKON_HOME=~/Envs
-ls $WORKON_HOME
-</p>
-
-
-<p>
-Delete an environment
-rmvirtualenv ENVNAME
-or
-rm -rf ~/Envs/env1
 </p>
 
 <p>
-Copy an environment
-cpvirtualenv ENVNAME [TARGETENVNAME]
-lsvirtualenv
-</p>
-
-
-<p>
-Show the details for a single virtualenv.
-showvirtualenv [env]
+<code>export WORKON_HOME=~/Envs</code> and then <code>ls $WORKON_HOME</code>
 </p>
 
 <p>
-Remove an environment, in the WORKON_HOME.
-rmvirtualenv ENVNAME
+<span id="VirtualEnv-Delete"></span><strong id="Delete">Delete</strong> an environment
+<code>rmvirtualenv ENVNAME</code> or <code>rm -rf ~/Envs/env1</code>
 </p>
 
 <p>
-List all of the environments.
-lsvirtualenv [-b] [-l] [-h]
+<span id="VirtualEnv-Copy"></span><strong id="Copy">Copy</strong> an environment
+<code>cpvirtualenv ENVNAME [TARGETENVNAME]</code>
+</p>
+
+<p>
+<span id="VirtualEnv-List"></span><strong id="List">List</strong> all virtual envs
+<code>lsvirtualenv</code>
+</p>
+
+<p>
+<span id="VirtualEnv-Show"></span><strong id="Show">Show</strong> the details for a single virtualenv.
+<code>showvirtualenv</code> [env]
+</p>
+
+<p>
+<span id="VirtualEnv-Remove"></span><strong id="Remove">Remove</strong> an environment, in the WORKON_HOME.
+<code>rmvirtualenv ENVNAME</code>
+</p>
+
+<p>
+<span id="VirtualEnv-List"></span><strong id="List">List</strong> all of the environments.
+<code>lsvirtualenv [-b] [-l] [-h]</code>
+</p>
+
+<p>
 -b	Brief mode, disables verbose output.
+</p>
+
+<p>
 -l	Long mode, enables verbose output. Default.
+</p>
+
+<p>
 -h	Print the help for lsvirtualenv.
 </p>
 
