@@ -1,0 +1,133 @@
+=Rhy’s Git tutorial=
+
+“Git status”
+1. No commits yet
+2. Shows untracked files - untracked files are not under version control. 
+
+adding a file to the snapshot (git add X), adds it for the next commit. A snapshot represents the state of your project at a given point in time.
+
+You can revert to a snapshot (when you ran a “git add X” command”) at any point, and the whole project will go back to its state at that point in time.
+
+You can add and remove files to a snapshot. This is called staging. 
+
+Staging lets us group related changes into distinct snapshots. - which lets you track progress in a more meaningful way.
+
+Once the snapshot is stage, it needs to be committed to the projects history. “Git commit”
+
+Saving a version of the project is a two step process:
+1. Stage the files into a snapshot
+2. Commit the staged snapshot
+
+Staging files doesn’t effect the repo in any significant way - it just let you get the files in order ready for the next commit. 
+
+Only after executing a commit is the snapshot recorded in the projects history.
+
+A committed snapshot is super safe - they will never be changed. 
+
+If “git status” says that “there is nothing to commit” then that means that the current project state matches what is in the repo. 
+
+Git status only shows uncommitted changes.
+
+“Git log” shows the project history
+
+Git status - shows staged files
+Git log - shows only committed changes
+Git log —oneline
+
+Git checkout  “hash” - is how you go backwards. You need to specify the commit hash.
+Git checkout “branch” - switch to a previously created branch 
+
+Alias 
+Git tr - display a tree like diagram of the repo history. (Its like git log —oneline with some additional stuff.)
+
+git tag -a v1.0 -m “message” - create annotated tag, which you can then refer to when checking out.
+
+Git revert xxxx - deletes the changes made in the commit with the specified hash. You’ll need to enter a message for the log. This doesn’t remove a commit from the history though - git never ever loses information - the revert gets logged. Git revert XX = git undo XX
+
+Git reset - upstages files. Only operates on the working directory and the staging area. Does not effect the git log. 
+
+Git reset —hard changes all tracked files to match the most recent commit . Will not effect untracked files. 
+
+Git clean -f - removes all untracked files 
+
+Warning - “git reset” and “git clean” operate on the working directory, and make permanent changes. They don’t operate on the committed snapshots. “Git revert” is much safer because it does operate on the committed snapshots. 
+
+Most git commands operate on one of the three main git areas:
+1. The working directory
+2. The current staged snapshot
+3. The committed snapshots 
+
+Git status -> looks at the current working directory and the current staged snapshot
+Git log -> looks at the committed snapshots
+
+Git branch - either display what branches the project is on, or creates a new branch (but doesn’t check out files onto a new branch)
+
+each branch is a complete isolated dev env.
+
+Detached head  - the working directory does not represent the most recent commit. 
+
+Git rm - tell git to stop tracking a file
+
+Creating and switching to a new branch is a two step process.
+1. Git branch <new branches name>
+2. Git checkout <name of branch to switch to>
+
+Git merge  XX- take snapshots from branch XX and merge it into the current branch. I.e. if you want to merge into the master branch, you must checkout the master branch first, and then merge the other branch.
+
+Delete a branch  - Git branch-d <name> 
+
+<SECTION: “Branches: Part II”>
+Topic branch  - used to develop a certain topic/feature, and then the branch is deleted whilst master branch is fast-forwarded to include its work 
+Feature branch  - branches let you focus on developing one clearly defined feature at a time.
+
+Branch rules 
+1. Create a new branch for each major addition to your project
+2. Don’t create a branch if you can’t give it a specific name
+3. This will increase you programming efficiency
+
+3-way merge - occurs when you try to merge 2 branches whose history has diverged. It creates an extra merge commit (fast forwarded merge doesn’t). It’s called a 3 way merge because git looks at 3 previous commits in order to make the merge - the tips (heads?) of the current branch, the branch being merged, and the commit where the fork between the branches occurred. 
+
+Skip staging - you can skip the staging process (git add …) by using the -a flag in git commit command (git command -a -m “…”). The -a flag tells git to stage all tracked files in the working directory.
+
+Create a new branch and work on it - 
+1. git branch <name for new branch>
+2. Git checkout <name of branch>
+
+When git creates a new branch, it uses the current HEAD as the starting point for the new branch
+
+Hotfix branch - a branch for a quick patch or change
+
+Merge  - before merging into a branch, the branch first needs to be checked out.
+
+Merge conflict - 
+
+Rebase - move a branch around by changing the commit that the branch is based on. It changes the branches parent commit.
+Rebase works on the branch that is currently “checked out”.
+Rebase will move the base of the currently checked out branch to the head/tip of the branch that is specified.
+
+
+
+
+
+
+
+
+
+
+
+
+Snapshot
+represents the state of the project at a given point in time
+Add files to the snapshot, ready to be committed. 
+
+Adding/removing files to the snapshot is called staging/upstaging 
+
+Staging
+Lets you group related changes into distinct snapshots. This lets you track meaningful progression of a project, not just “all the changes”. 
+
+Once you’ve staged a snapshot, by using “git add xxxx”,  you need to commit it to the project history
+
+Project history
+
+
+Is files that have been staged but not committed

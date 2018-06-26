@@ -1,0 +1,9 @@
+= Mental Models =
+
+== type 1 ==
+=== Occam's Razor ===
+The simplest examplanation should be preferred over a more complicated
+alternative, all other things being equal.
+
+=== Hanlon's Razor ===
+Dont attribute to cleverness what could also be attributed to stupidity.

@@ -1,0 +1,11 @@
+= iTerm =
+
+Clear screen - cmd  - K
+
+Delete word - ctrl - W	
+Delete behind cursor - ctrl - U
+Delete infront of cursor - ctrl - K
+
+Un delete line - ctrl - Y
+Go to beginning of line - ctrl - A
+Go to end of line - ctrl - E

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/docs.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/monokai.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/vimwiki.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+
+<script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+
+<title>Vim again</title>
+
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+<!--
+             Be sure to leave the brand out there if you want it shown 
+            <a class="brand" href="http://code.google.com/p/vimwiki/">Vimwiki</a>
+-->
+
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <!-- .nav, .navbar-search, .navbar-form, etc -->
+                <ul class="nav">
+                    <li class="">
+                         <a href="#" onClick="history.go(-1);return true;">Back</a>
+                    </li>
+                    <li class="">
+                        <a href="index.html">Index</a>
+                    </li>
+<!-- ### Remove unnecessary nav bar links  - "workspace", "diary", "calendar" - i dont use or need them ###
+                    <li class="">
+                        <a href="workspace/index.html">Workspace</a>
+                    </li>
+                    <li class="">
+                        <a href="diary/diary.html">Diary</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Calendar</a>
+                    </li>
+-->
+                    <li class="">
+                        <a href="tasks.html">Short</a>
+                    </li>
+                    <li class="">
+                        <a href="todo.html">Medium</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+
+<!-- ### Get rid of the navbar class and move the main column to the left ###
+
+        <div class="span3 bs-docs-sidebar">
+            <ul id="sidebar_list" class="nav nav-list bs-docs-sidenav affix">
+            </ul>
+        </div>
+
+-->
+<br>
+        <div class="span12">
+            <!--Body content-->
+            
+<div id="VIM"><h1 id="VIM"> VIM</h1></div>
+<p>
+Wrap text to new line after 79 cols. 
+</p>
+
+<p>
+Tab	next buffer
+Vim * 	open all files in folder (even directories)
+</p>
+
+<p>
+Abbreviations are better than using mappings to create expanded text or corrections, because abbreviations pay attention to the chars around the abbrev,
+</p>
+
+<p>
+a 	enter insert mode after the cursor
+A	enter insert mode at the end of the line
+I	enter insert mode at the beginning of the line
+R	overtype (like toggle insert)
+c	change (retype) command, followed by a movement command
+C	like ‘c’ but for the whole line
+</p>
+
+<p>
+Spellchecker
+:help spell
+Set spell spelllang=en_gb 
+:set nospell 
+]s — move to the next mispelled word
+[s — move to the previous mispelled word
+zg — add a word to the dictionary
+zug — undo the addition of a word to the dictionary
+z= — view spelling suggestions for a mispelled word
+</p>
+
+
+<p>
+Nerdtree
+m	menu
+r	refresh
+</p>
+
+<p>
+NerdComment
+The following key mappings are provided by default (there is also a menu provided that contains menu items corresponding to all the below mappings):
+Most of the following mappings are for normal/visual mode only. The |NERDComInsertComment|mapping is for insert mode only.
+</p>
+<ul>
+<li>
+[count]&lt;leader&gt;cc |NERDComComment| Comment out the current line or text selected in visual mode. 
+
+<li>
+[count]&lt;leader&gt;cn |NERDComNestedComment| Same as cc but forces nesting. 
+
+<li>
+[count]&lt;leader&gt;c&lt;space&gt; |NERDComToggleComment| Toggles the comment state of the selected line(s). If the topmost selected line is commented, all selected lines are uncommented and vice versa. 
+
+<li>
+[count]&lt;leader&gt;cm |NERDComMinimalComment| Comments the given lines using only one set of multipart delimiters. 
+
+<li>
+[count]&lt;leader&gt;ci |NERDComInvertComment| Toggles the comment state of the selected line(s) individually. 
+
+<li>
+[count]&lt;leader&gt;cs |NERDComSexyComment| Comments out the selected lines with a pretty block formatted layout. 
+
+<li>
+[count]&lt;leader&gt;cy |NERDComYankComment| Same as cc except that the commented line(s) are yanked first. 
+
+<li>
+&lt;leader&gt;c$ |NERDComEOLComment| Comments the current line from the cursor to the end of line. 
+
+<li>
+&lt;leader&gt;cA |NERDComAppendComment| Adds comment delimiters to the end of line and goes into insert mode between them. 
+
+<li>
+|NERDComInsertComment| Adds comment delimiters at the current cursor position and inserts between. Disabled by default. 
+
+<li>
+&lt;leader&gt;ca |NERDComAltDelim| Switches to the alternative set of delimiters. 
+
+<li>
+[count]&lt;leader&gt;cl [count]&lt;leader&gt;cb |NERDComAlignedComment| Same as |NERDComComment| except that the delimiters are aligned down the left side (&lt;leader&gt;cl) or both sides (&lt;leader&gt;cb). 
+
+<li>
+[count]&lt;leader&gt;cu |NERDComUncommentLine| Uncomments the selected line(s). 
+
+</ul>
+
+
+        </div>
+  </div>
+</div>
+<a href="#" class="backtotop"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
+<!-- Footer
+    ================================================== -->
+
+<!-- ### Remove footer links - clutter ###
+<footer class="footer">
+  <div class="container">
+    <p><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+    <p><a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> licensed under <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>.</p>
+    <p><a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a> licensed under <a href="http://opensource.org/licenses/BSD-3-Clause">Modified BSD License</a>.</p>
+    <ul class="footer-links">
+    </ul>
+  </div>
+</footer>
+-->
+
+<!--
+<script>
+    $('h1').each(function() {
+        $(this).wrap('<section id="' + this.id + '"/>');
+    });
+    $('h1').wrap('<div class="page-header" />');
+    $('h1').wrap('<div class="well well-small" />');
+    $(document).ready(function() {
+        var items = [];
+        $('h1').each(function() {
+            items.push('<li><a href="#' + this.id + '"><i class="fa fa-chevron-right pull-right"></i> ' + $(this).text() + '</a></li>');
+        });  // close each()
+    $('#sidebar_list').append( items.join('') );
+    $('table').each(function() {
+        $(this).addClass('table table-striped table-condensed table-hover');
+    });
+    $('.done0').each(function() {
+        $(this).html('<div class="alert alert-info"><i class="fa fa-check-square-o"></i>'+$(this).html()+'</div></li>');
+    });
+    $('.done4').each(function() {
+        $(this).html('<div class="alert alert-success"><i class="fa fa-square-o"></i>'+$(this).html()+'</div></li>');
+    });
+    // Fade Out Back-To-Top-Link on new page
+    $('.backtotop').fadeOut();
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.backtotop').fadeIn();
+            } else {
+                $('.backtotop').fadeOut();
+            }
+        });
+        $('.backtotop').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+    });
+    $('pre').each(function() {
+        $(this).html('<code>'+$(this).html()+'</code>');
+    });
+    hljs.initHighlightingOnLoad();
+});
+</script>
+-->
+</body>
+</html>
