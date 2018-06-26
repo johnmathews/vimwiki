@@ -1,48 +1,21 @@
 =VirtualEnv=
 
-Commands:
 
-*Create* a virtualenv:
-`mkvirtualenv env1`
-
-*Close* the virtualenv:
-`deactivate`
-
-*Activate* the virtualenv:
-`workon env1`
-
-
-*List* environments
-`lsvirtualenv`
-
-or
-
-`export WORKON_HOME=~/Envs` and then `ls $WORKON_HOME`
-
-*Delete* an environment
-`rmvirtualenv ENVNAME` or `rm -rf ~/Envs/env1`
-
-*Copy* an environment
-`cpvirtualenv ENVNAME [TARGETENVNAME]`
-
-*List* all virtual envs
-`lsvirtualenv`
-
-*Show* the details for a single virtualenv.
-`showvirtualenv` [env]
-
-*Remove* an environment, in the WORKON_HOME.
-`rmvirtualenv ENVNAME`
-
-*List* all of the environments.
-`lsvirtualenv [-b] [-l] [-h]`
-
--b	Brief mode, disables verbose output.
-
--l	Long mode, enables verbose output. Default.
-
--h	Print the help for lsvirtualenv.
+|----------------------------------------------|-----------------------------------------------------|---|
+| *Description*                                | *Command*                                           |   |
+|----------------------------------------------|-----------------------------------------------------|---|
+| *Create* a virtualenv                        | `mkvirtualenv env1`                                 |   |
+| *Close* the virtualenv                       | `deactivate`                                        |   |
+| *Activate* the virtualenv                    | `workon env1`                                       |   |
+| *List* environments                          | `lsvirtualenv`                                      |   |
+| *Delete* an environment                      | `rmvirtualenv ENVNAME` or `rm -rf ~/Envs/env1`      |   |
+| *Copy* an environment                        | `cpvirtualenv ENVNAME [TARGETENVNAME]`              |   |
+| *List* all virtual envs                      | `lsvirtualenv`                                      |   |
+| *Show* the details for a single virtualenv.  | `showvirtualenv` [env]                              |   |
+| *Remove* an environment, in the WORKON_HOME. | `rmvirtualenv ENVNAME`                              |   |
+| *List* all of the environments.              | `lsvirtualenv [-b] [-l] [-h]`                       |   |
 
 
+=== Notes ===
 To set up, run this script (automatically) when shell opens 
-source /usr/local/bin/virtualenvwrapper.sh
+`source /usr/local/bin/virtualenvwrapper.sh`
