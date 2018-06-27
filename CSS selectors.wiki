@@ -1,9 +1,10 @@
 = CSS Selectors =
 
-/* universal selector (applies to everything) */
-* {
-  /* set stuff */
-}
+
+| Description                                      | Selector        |
+| /* universal selector (applies to everything) */ | * {             |
+| ^                                                | /* set stuff */ |
+| /\                                               | }               |
 
 
 /* targeting a single element type */

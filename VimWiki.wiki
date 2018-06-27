@@ -1,104 +1,46 @@
 =VIMWIKI=
 
-:VimwikiTOC    Create or update the Table of Contents for the current wiki file.
-:VimwikiCheckLinks  Search through all wiki files and check if the targets of all wiki links
-    and links to external files actually exist.  Check also if all wiki files
-    are reachable from the index file.  The results are shown in the quickfix
-    window.
-
-<leader>vw			open index file 
-<leader>wt			open index file in new tab
-
-<leader>wi			open diary index
-<leader>w,i			update diary index
-<leader>w,w		open diary entry for today
-<leader>tj			insert template
-<leader>w,t			open diary wiki-file for today in a new tab
-<leader>w,y		open diary wiki-file for yesterday
-
-
-,whh		convert to html and open it in the browser
-,wd			delete the wiki page you are in
-,wr			rename the wiki page you are in
-
-+			create and/or decorate links
-=			add header level
--			remove header level
-
-
-gll 			                    Increase the level of a list item.
-glh                     Decrease the level of a list item.
-glr                     Renumber list items if the cursor is on a numbered list item
-gl*                     Make a list item out of a normal line or change the symbol of the current item to *.
-gl#                     Make a list item out of a normal line or change the symbol of the current item to #.
-gl-, gl1, etc
-gqq                     Format table. If you made some changes to a table without swapping insert/normal modes this command will reformat it.
-
-<C-Up>                 	Open the previous day's diary link if available.
-<C-Down>                 Open the next day's diary link if available.
-
-<A-Left>               	Move current table column to the left.
-<A-Right>               	Move current table column to the right.
-
-<C-Space>          	Toggle checkbox of a list item on/off.
-<C-T>                   	Increase the level of a list item.
-<C-D>                   	Decrease the level of a list item.
-<C-L><C-J>              Change the symbol of the current list item to the next
-<C-L><C-K>             Change the symbol of the current list item to the prev
-<C-L><C-M>            Create/remove a symbol from a list item.
-
-'vih' 	to select a section segment with its contents or 
-'dih' 	to delete it or 
-'yih' 	to yank it or 
-'cah' 	to change it.
-
-
-
-<Enter> 	 		Follow/Create wiki link
-<C-S-CR>		Follow/create wiki link in new tab
-
-<Backspace>		Go back to parent(previous) wiki link
-<Tab> 			Find next wiki link
-<Shift-Tab>		Find previous wiki link
-
-:VimwikiAll2HTML	convert all pages to html. Make css file if it doesn’t exist. 
-
-MARKDOWN
-
-= Header1 =
-== Header2 ==
-=== Header3 ===
-Etc
-
-  *bold text*
-  _italic text_
-  ~~strikeout text~~
-  `code (no syntax) text`
-  super^script^
-  sub,,script,,
-
-[[wiki link]]
-[[projects/Important Project 1]]
-[[wiki link|description]]
-[[/index]]
-
-* bullet list item 1
-* bullet list item 2
-	a) numbered list item 1
-	b) numbered list item 2
-		etc. all kinds.
-
-{{{python
-def greet(s):
-    print("Hello, " + s)
-}}}
-
- | Year | Temperature (low) | Temperature (high) |
- |------|-------------------|--------------------|
- | 1900 | -10               | 25                 |
- | 1910 | -15               | 30                 |
- | 1920 | -10               | 32                 |
-
-
-
-
+| description      | command                                                                                                               |
+|------------------|-----------------------------------------------------------------------------------------------------------------------|
+| sort i           | sort list case insensitive                                                                                            |
+| VimwikiTOC       | Create or update the Table of Contents for the current wiki file.                                                     |
+| <leader>vw       | open index file                                                                                                       |
+| <leader>wt       | open index file in new tab                                                                                            |
+| <leader>wi       | open diary index                                                                                                      |
+| <leader>w,i      | update diary index                                                                                                    |
+| <leader>w,w      | open diary entry for today                                                                                            |
+| <leader>tj       | insert template                                                                                                       |
+| <leader>w,t      | open diary wiki-file for today in a new tab                                                                           |
+| <leader>w,y      | open diary wiki-file for yesterday                                                                                    |
+| ,whh             | convert to html and open it in the browser                                                                            |
+| ,wd              | delete the wiki page you are in                                                                                       |
+| ,wr              | rename the wiki page you are in                                                                                       |
+| +                | create and/or decorate links                                                                                          |
+| =                | add header level                                                                                                      |
+| -                | remove header level                                                                                                   |
+| gll              | Increase the level of a list item.                                                                                    |
+| glh              | Decrease the level of a list item.                                                                                    |
+| glr              | Renumber list items if the cursor is on a numbered list item                                                          |
+| gl*              | Make a list item out of a normal line or change the symbol of the current item to *.                                  |
+| gl#              | Make a list item out of a normal line or change the symbol of the current item to #.                                  |
+| gl-, gl1, etc    |                                                                                                                       |
+| gqq              | Format table. If you made some changes to a table without swapping insert/normal modes this command will reformat it. |
+| <C-Up>           | Open the previous day's diary link if available.                                                                      |
+| <C-Down>         | Open the next day's diary link if available.                                                                          |
+| <A-Left>         | Move current table column to the left.                                                                                |
+| <A-Right>        | Move current table column to the right.                                                                               |
+| <C-Space>        | Toggle checkbox of a list item on/off.                                                                                |
+| <C-T>            | Increase the level of a list item.                                                                                    |
+| <C-D>            | Decrease the level of a list item.                                                                                    |
+| <C-L><C-J>       | Change the symbol of the current list item to the next                                                                |
+| <C-L><C-M>       | Create/remove a symbol from a list item.                                                                              |
+| 'vih'            | to select a section segment with its contents or                                                                      |
+| 'dih'            | to delete it or                                                                                                       |
+| 'yih'            | to yank it or                                                                                                         |
+| 'cah'            | to change it.                                                                                                         |
+| <Enter>          | Follow/Create wiki link                                                                                               |
+| <C-S-CR>         | Follow/create wiki link in new tab                                                                                    |
+| <Backspace>      | Go back to parent(previous) wiki link                                                                                 |
+| <Tab>            | Find next wiki link                                                                                                   |
+| <Shift-Tab>      | Find previous wiki link                                                                                               | 
+| :VimwikiAll2HTML | convert all pages to html. Make css file if it doesn’t exist.                                                         |
