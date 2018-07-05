@@ -4,18 +4,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/docs.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/monokai.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/vimwiki.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/bootstrap-responsive.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/docs.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/monokai.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/vimwiki.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/font-awesome.css">
 
-<script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-<script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+<script type="text/javascript" src="../../../assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../../../assets/js/highlight.pack.js"></script>
 
-<title>Tasks</title>
+<title>Django setup</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -42,24 +42,24 @@
                          <a href="#" onClick="history.go(-1);return true;">Back</a>
                     </li>
                     <li class="">
-                        <a href="index.html">Index</a>
+                        <a href="../../../index.html">Index</a>
                     </li>
 <!-- ### Remove unnecessary nav bar links  - "workspace", "diary", "calendar" - i dont use or need them ###
                     <li class="">
-                        <a href="workspace/index.html">Workspace</a>
+                        <a href="../../../workspace/index.html">Workspace</a>
                     </li>
                     <li class="">
-                        <a href="diary/diary.html">Diary</a>
+                        <a href="../../../diary/diary.html">Diary</a>
                     </li>
                     <li class="">
                         <a href="#">Calendar</a>
                     </li>
 -->
                     <li class="">
-                        <a href="tasks.html">Short</a>
+                        <a href="../../../tasks.html">Short</a>
                     </li>
                     <li class="">
-                        <a href="todo.html">Medium</a>
+                        <a href="../../../todo.html">Medium</a>
                     </li>
                 </ul>
             </div>
@@ -82,20 +82,124 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="Tasks"><h1 id="Tasks">Tasks</h1></div>
+<div id="Django"><h1 id="Django">Django</h1></div>
+<div id="Django-Setup"><h2 id="Setup">Setup</h2></div>
+<ol>
+<li>
+Create a virtualenv with virtualenvwrapper
+
+<ul>
+<li>
+<code>mkvirtualenv env1</code>
+
+</ul>
+<li>
+Install packages
+
+<ul>
+<li>
+<code>pip install cookiecutter django</code>
+
+</ul>
+<li>
+Check versions of things
+
+<ul>
+<li>
+<code>python -V</code>
+
+<li>
+<code>python -c "import django; print(django.get_version())"</code>
+
+</ul>
+<li>
+Run cookie cutter
+
+<ul>
+<li>
+<code>cookiecutter https://github.com/pydanny/cookiecutter-django</code>
+
+</ul>
+<li>
+Install the requirements
+
+<ul>
+<li>
+<code>pip install -r requirements/local.txt</code>
+
+</ul>
+<li>
+Init repo and create first commit
+
+<li>
+Run shell with local settings
+
+<ul>
+<li>
+<code>python manage.py shell --settings=config.settings.local</code>
+
+</ul>
+<li>
+Setup MailHog for emails in terminal
 
 <ol>
-<li class="done0">
-write blog post about how women dont get enough credit for making people
+<li>
+<a href="https:&#47;&#47;github.com&#47;mailhog&#47;MailHog&#47;releases">Dowload it</a>
 
-<li class="done0">
-our philosophical poverty
+<li>
+Rename it to <code>MailHog</code>
 
-<li class="done4">
-review crypto trading project
+<li>
+Copy the file into the project root
 
-<li class="done4">
-review emily email
+<li>
+Make it executable <code>chmod +x MailHog</code>
+
+<li>
+Open another terminal window and start it <code>./MailHog</code>
+
+<li>
+Check out <a href="http:&#47;&#47;127.0.0.1:8025&#47;">http://127.0.0.1:8025/</a> to see how it goes.
+
+<li>
+If you have generated your project with use_mailhog set to n this will be a default setup. 
+
+<ul>
+<li>
+Alternatively, deliver emails over console via <code>EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'</code>
+
+<li>
+In production, we have <a href="https:&#47;&#47;www.mailgun.com&#47;">Mailgun</a> configured to have your back!
+
+</ul>
+<li>
+If the port is already open then <code>lsof -i :&lt;port&gt;</code> , then <code>kill -9 PID</code>. If that doesnt kill it then <code>sudo kill -9 PID</code>
+
+</ol>
+<li>
+Setup the database
+
+<ul>
+<li>
+<code>createdb [project_slug]</code>
+
+<li>
+<code>python manage.py migrate</code>
+
+<li>
+<code>python manage.py runserver</code>
+
+</ul>
+<li>
+Create super user
+
+<ul>
+<li>
+<code>python manage.py createsuperuser</code> 
+
+</ul>
+<li>
+Create second commit
 
 </ol>
 

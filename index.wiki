@@ -1,25 +1,33 @@
 %template index
 
+
+Blog ideas:
+- Money is the fuel
+- Philosophical poverty
+- Lets talk about the end. my current self, existing now, is to be seen in the context of my end, and my beginning.
+
 == Short Term ==
 [[Tasks]]
 
 == Notes ==
-1. [[CSS selectors]]
-2. [[Django]] 
-3. [[Git]]
-4. [[Grep]]
-5. [[grep]]
-6. [[GSP interview]]
-7. [[iTerm]]
-8. [[Mental Models]]
-9. [[Negotiation]]
-10. [[Nested links]]
-11. [[Rys Git tutorial]]
-12. [[Shell vs Terminal]]
-13. [[Vim again]]
-14. [[Vim]]
-15. [[VimWiki]] 
-16. [[VirtualEnv]]
+1. [[Writing]]
+3. [[CSS selectors]]
+4. [[CLI tools]]
+5. [[Django setup]] 
+6. [[Django: urls-views-templates]]
+7. [[Git]]
+8. [[grep]]
+9. [[GSP interview]]
+10. [[iTerm]]
+11. [[Mental Models]]
+12. [[Negotiation]]
+13. [[Nested links]]
+14. [[Rys Git tutorial]]
+15. [[Shell vs Terminal]]
+16. [[Vim again]]
+17. [[Vim]]
+18. [[VimWiki]] 
+19. [[VirtualEnv]]
 
 == Medium Term ==
 [[Todo|The Plan]]

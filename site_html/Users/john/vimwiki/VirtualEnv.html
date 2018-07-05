@@ -4,18 +4,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/docs.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/monokai.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/vimwiki.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/bootstrap-responsive.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/docs.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/monokai.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/vimwiki.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/font-awesome.css">
 
-<script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-<script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+<script type="text/javascript" src="../../../assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../../../assets/js/highlight.pack.js"></script>
 
-<title>Tasks</title>
+<title>VirtualEnv</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -42,24 +42,24 @@
                          <a href="#" onClick="history.go(-1);return true;">Back</a>
                     </li>
                     <li class="">
-                        <a href="index.html">Index</a>
+                        <a href="../../../index.html">Index</a>
                     </li>
 <!-- ### Remove unnecessary nav bar links  - "workspace", "diary", "calendar" - i dont use or need them ###
                     <li class="">
-                        <a href="workspace/index.html">Workspace</a>
+                        <a href="../../../workspace/index.html">Workspace</a>
                     </li>
                     <li class="">
-                        <a href="diary/diary.html">Diary</a>
+                        <a href="../../../diary/diary.html">Diary</a>
                     </li>
                     <li class="">
                         <a href="#">Calendar</a>
                     </li>
 -->
                     <li class="">
-                        <a href="tasks.html">Short</a>
+                        <a href="../../../tasks.html">Short</a>
                     </li>
                     <li class="">
-                        <a href="todo.html">Medium</a>
+                        <a href="../../../todo.html">Medium</a>
                     </li>
                 </ul>
             </div>
@@ -82,22 +82,109 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="Tasks"><h1 id="Tasks">Tasks</h1></div>
+<div id="VirtualEnv"><h1 id="VirtualEnv">VirtualEnv</h1></div>
 
-<ol>
-<li class="done0">
-write blog post about how women dont get enough credit for making people
+<p>
+<br>
+</p>
 
-<li class="done0">
-our philosophical poverty
+<table>
+<tr>
+<th>
+<span id="VirtualEnv-Description"></span><strong id="Description">Description</strong>
+</th>
+<th>
+<span id="VirtualEnv-Command"></span><strong id="Command">Command</strong>
+</th>
+</tr>
+<tr>
+<td>
+<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv
+</td>
+<td>
+<code>mkvirtualenv env1</code>
+</td>
+</tr>
+<tr>
+<td>
+<span id="VirtualEnv-Close"></span><strong id="Close">Close</strong> the virtualenv
+</td>
+<td>
+<code>deactivate</code>
+</td>
+</tr>
+<tr>
+<td>
+<span id="VirtualEnv-Activate"></span><strong id="Activate">Activate</strong> the virtualenv
+</td>
+<td>
+<code>workon env1</code>
+</td>
+</tr>
+<tr>
+<td>
+<span id="VirtualEnv-List"></span><strong id="List">List</strong> environments
+</td>
+<td>
+<code>lsvirtualenv</code>
+</td>
+</tr>
+<tr>
+<td>
+<span id="VirtualEnv-Delete"></span><strong id="Delete">Delete</strong> an environment
+</td>
+<td>
+<code>rmvirtualenv ENVNAME</code> or <code>rm -rf ~/Envs/env1</code>
+</td>
+</tr>
+<tr>
+<td>
+<span id="VirtualEnv-Copy"></span><strong id="Copy">Copy</strong> an environment
+</td>
+<td>
+<code>cpvirtualenv ENVNAME [TARGETENVNAME]</code>
+</td>
+</tr>
+<tr>
+<td>
+<span id="VirtualEnv-List"></span><strong id="List">List</strong> all virtual envs
+</td>
+<td>
+<code>lsvirtualenv</code>
+</td>
+</tr>
+<tr>
+<td>
+<span id="VirtualEnv-Show"></span><strong id="Show">Show</strong> the details for a single virtualenv.
+</td>
+<td>
+<code>showvirtualenv</code> [env]
+</td>
+</tr>
+<tr>
+<td>
+<span id="VirtualEnv-Remove"></span><strong id="Remove">Remove</strong> an environment, in the WORKON_HOME.
+</td>
+<td>
+<code>rmvirtualenv ENVNAME</code>
+</td>
+</tr>
+<tr>
+<td>
+<span id="VirtualEnv-List"></span><strong id="List">List</strong> all of the environments.
+</td>
+<td>
+<code>lsvirtualenv [-b] [-l] [-h]</code>
+</td>
+</tr>
+</table>
 
-<li class="done4">
-review crypto trading project
 
-<li class="done4">
-review emily email
-
-</ol>
+<div id="VirtualEnv-Notes"><h3 id="Notes">Notes</h3></div>
+<p>
+To set up, run this script (automatically) when shell opens 
+<code>source /usr/local/bin/virtualenvwrapper.sh</code>
+</p>
 
 
         </div>

@@ -4,18 +4,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/docs.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/monokai.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/vimwiki.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+<link type="text/css" rel="stylesheet" href="../../../assets/css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/bootstrap-responsive.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/docs.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/monokai.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/vimwiki.css" />
+<link type="text/css" rel="stylesheet" href="../../../assets/css/font-awesome.css">
 
-<script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-<script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+<script type="text/javascript" src="../../../assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../../../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../../../assets/js/highlight.pack.js"></script>
 
-<title>Tasks</title>
+<title>grep</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -42,24 +42,24 @@
                          <a href="#" onClick="history.go(-1);return true;">Back</a>
                     </li>
                     <li class="">
-                        <a href="index.html">Index</a>
+                        <a href="../../../index.html">Index</a>
                     </li>
 <!-- ### Remove unnecessary nav bar links  - "workspace", "diary", "calendar" - i dont use or need them ###
                     <li class="">
-                        <a href="workspace/index.html">Workspace</a>
+                        <a href="../../../workspace/index.html">Workspace</a>
                     </li>
                     <li class="">
-                        <a href="diary/diary.html">Diary</a>
+                        <a href="../../../diary/diary.html">Diary</a>
                     </li>
                     <li class="">
                         <a href="#">Calendar</a>
                     </li>
 -->
                     <li class="">
-                        <a href="tasks.html">Short</a>
+                        <a href="../../../tasks.html">Short</a>
                     </li>
                     <li class="">
-                        <a href="todo.html">Medium</a>
+                        <a href="../../../todo.html">Medium</a>
                     </li>
                 </ul>
             </div>
@@ -82,22 +82,163 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="Tasks"><h1 id="Tasks">Tasks</h1></div>
+<div id="Grep"><h1 id="Grep">Grep</h1></div>
 
-<ol>
-<li class="done0">
-write blog post about how women dont get enough credit for making people
+<p>
+E.g.: 
+</p>
+<ul>
+<li>
+<code>grep -rnw '/path/to/somewhere/' -e 'pattern'</code>
 
-<li class="done0">
-our philosophical poverty
+<li>
+<code>grep -rwi . -e 'draft'</code>
 
-<li class="done4">
-review crypto trading project
+</ul>
 
-<li class="done4">
-review emily email
 
-</ol>
+<table>
+<tr>
+<th>
+Description
+</th>
+<th>
+Command
+</th>
+</tr>
+<tr>
+<td>
+search filename only
+</td>
+<td>
+<code>grep -rl "filename </code>
+</td>
+</tr>
+<tr>
+<td>
+List all draft articles
+</td>
+<td>
+<code>grep -rwlIi . -e 'status: draft'</code>
+</td>
+</tr>
+<tr>
+<td>
+search this dir
+</td>
+<td>
+<code>.</code>
+</td>
+</tr>
+<tr>
+<td>
+recursive
+</td>
+<td>
+<code>r</code>
+</td>
+</tr>
+<tr>
+<td>
+the expression is searched for as if its a word, not a regex
+</td>
+<td>
+<code>w</code>
+</td>
+</tr>
+<tr>
+<td>
+only the names of files that match. Stops searching a file once a match is found (once)
+</td>
+<td>
+<code>l</code>
+</td>
+</tr>
+<tr>
+<td>
+ignore case
+</td>
+<td>
+<code>i</code>
+</td>
+</tr>
+<tr>
+<td>
+ignore binary files
+</td>
+<td>
+<code>I</code>
+</td>
+</tr>
+<tr>
+<td>
+after this is the patter
+</td>
+<td>
+<code>e</code>
+</td>
+</tr>
+<tr>
+<td>
+include line numbers in results
+</td>
+<td>
+<code>n</code>
+</td>
+</tr>
+<tr>
+<td>
+A list of files which contain certain text: grep -rwliI . -e 'Title: thoughts' `
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+ignore binary files. Much faster.
+</td>
+<td>
+<code>-I</code>
+</td>
+</tr>
+<tr>
+<td>
+Search for a file and open it in vim
+</td>
+<td>
+<code>vi $(grep -rwlI . -e 'Title: thoughts')</code>
+</td>
+</tr>
+</table>
+
+<div id="Grep-Notes"><h2 id="Notes">Notes</h2></div>
+<table>
+<tr>
+<th>
+Description
+</th>
+<th>
+Command
+</th>
+</tr>
+<tr>
+<td>
+Assign output to a variable:
+</td>
+<td>
+<code>a = $(pwd)</code>
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
 
 
         </div>

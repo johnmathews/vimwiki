@@ -84,49 +84,27 @@
             
 <div id="Vim"><h1 id="Vim">Vim</h1></div>
 
+<div id="Vim-Plugins"><h2 id="Plugins">Plugins</h2></div>
+<ol>
+<li>
+UnconditionalPaste - Force character-/line-/block-wise paste, regardless of how it was yanked. 
+
+<li>
+Writing prose
+
+<li>
+NerdTree
+
+</ol>
+
+<div id="Vim-Navigation"><h2 id="Navigation">Navigation</h2></div>
 <p>
-To make an html file properly indented,
-gg=G
-</p>
-
-<p>
-Delete first 2 chars from each line: %normal 2x
-</p>
-
-<p>
-Organise tabs:
-Firsttab -&gt; tabmove 0 
-Lasttab -&gt; tabmove
-</p>
-
-<p>
-Nerd tree make root -&gt; C
-Recursively close all children -&gt; X
-</p>
-
-<p>
-Syntastic
-:lopen - open error window
-:SyntasticToggleMode - doesn’t auto check. Use :SyntasticCheck to run a check when in passive mode.
-</p>
-
-
-<p>
-Find and replace
-:%s/foo/bar/g		Find all foo and replace with bar
-:%s/foo/bar/gc	with confirmation 
-</p>
-
-
-<p>
-Navigation
 ) 			sentence
 }			paragraph
 </p>
 
-
+<div id="Vim-Buffers"><h2 id="Buffers">Buffers</h2></div>
 <p>
-Buffers
 :b#			previously viewed buffer
 :ls			list all buffers
 :bd			delete a buffer from the buffer list
@@ -135,56 +113,7 @@ Buffers
 :new 		new buffer (empty file)
 </p>
 
-
-<p>
-Tabs
-gt 				next tab.
-gT 				previous tab
-#gt 			go to #th tab.
-:tabclose		close tab
-:q				close tab
-</p>
-
-<p>
-Splits
-vnew   - new vertical pane with blank new file in it
-vsp - new vertical pane with copy of the open file in it
-:vertical resize 80
-:vertical resize +5
-crrl+w r swap 
-</p>
-
-<p>
-ctrl+w q		close split
-:q				close split
-ctrl+o			close all other splits
-</p>
-
-<p>
-ctrl+w &gt;/&lt;		increase/decrease width by # number of lines
-ctrl+w +/- 	increase/decrease height by # number of lines
-</p>
-
-<p>
-ctrl+w _		max height for current split (can use count to set specific height)
-ctrl+w |		max width for current split (can use count to set specific width)
-ctrl+w =		normalise split sizes
-</p>
-
-<p>
-Syntactic
-Use <code>:SyntasticCheck</code> to manually check right now. Use <code>:Errors</code> to open the |location-list| window, and <code>:lclose</code> to close it. You can clear the error
-list with <code>:SyntasticReset</code>, and you can use <code>:SyntasticToggleMode</code> to switch between active (checking on writing the buffer) and passive (manual) checking.
-</p>
-
-<p>
-You don't have to switch focus to the |location-list| window to jump to the different errors. Vim provides several built-in commands for this, for example <code>:lnext</code> and `:lprevious
-</p>
-
-<p>
-help 
-</p>
-
+<div id="Vim-Help"><h2 id="Help">Help</h2></div>
 <ul>
 <li>
 Type :h patt then press Ctrl-D to list all topics that contain "patt". 
@@ -197,9 +126,7 @@ If you have set the 'wildmenu' option (e.g. by using :set wildmenu), then :h pat
 
 </ul>
 
-<p>
-Links:
-</p>
+<div id="Vim-Links"><h2 id="Links">Links</h2></div>
 <ul>
 <li>
 Enter :h to open the main help page. 

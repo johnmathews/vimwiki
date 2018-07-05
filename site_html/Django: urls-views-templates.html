@@ -15,7 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
 
-<title>Tasks</title>
+<title>Django: urls-views-templates</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -82,22 +82,61 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="Tasks"><h1 id="Tasks">Tasks</h1></div>
+<div id="Django: Setting up pages"><h1 id="Django: Setting up pages">Django: Setting up pages</h1></div>
 
+<p>
+The routine is:
+<span id="Django: Setting up pages-URLs"></span><strong id="URLs">URLs</strong> -&gt; <span id="Django: Setting up pages-views"></span><strong id="views">views</strong> -&gt; <span id="Django: Setting up pages-templates"></span><strong id="templates">templates</strong>
+</p>
+
+<p>
+For cookie-cutter, the folder with the project name is not an app it is the base.
+</p>
+
+<p>
+<span id="Django: Setting up pages-Create an app:"></span><strong id="Create an app:">Create an app:</strong> <code>python manage.py startapp name</code>
+</p>
+
+<div id="Django: Setting up pages-The routine"><h2 id="The routine">The routine</h2></div>
 <ol>
-<li class="done0">
-write blog post about how women dont get enough credit for making people
+<li>
+The browser requests a page
 
-<li class="done0">
-our philosophical poverty
+<li>
+The server gets the request and django looks in <code>settings.py</code> for <code>ROOT_URL_CONF=x.urls</code>
 
-<li class="done4">
-review crypto trading project
+<li>
+which points to the root urlpatterns file <code>x.urls.py</code>
 
-<li class="done4">
-review emily email
+<li>
+django goes to <code>x.urls.py</code> and gets the <code>&lt;urlpatterns&gt;</code> list
+
+<li>
+it goes through the list in order and stops at the first entry where the requested url matches the pattern
+
+<li>
+each item in <code>urlpatterns</code> is a tuple of <code>[&lt;pattern&gt;,&lt;view&gt;,&lt;name&gt;]</code>
+
+<li>
+django gets the view associated with the pattern.
+
+<li>
+it then goes to <code>views.py</code> and executes the correct view. 
 
 </ol>
+   
+<div id="Django: Setting up pages-Models"><h2 id="Models">Models</h2></div>
+<ul>
+<li>
+A model contains column names for each database table and also defines how the columns are related to each other.
+
+<li>
+<code>models.py</code> contains classes
+
+<li>
+A column is the canonical source of truth.
+
+</ul>
 
 
         </div>

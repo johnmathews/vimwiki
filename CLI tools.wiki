@@ -1,0 +1,8 @@
+[[direnv]]
+
+*Find and replace*
+| Command                                                        | Description                |
+|----------------------------------------------------------------|----------------------------|
+| find . -type f -name '*.txt' -exec sed -i '' s/this/that/ {} + | Recursive find and replace |
+|                                                                |                            |
+

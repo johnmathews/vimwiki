@@ -1,0 +1,23 @@
+= Django: Setting up pages =
+
+The routine is:
+*URLs* -> *views* -> *templates*
+
+For cookie-cutter, the folder with the project name is not an app it is the base.
+
+*Create an app:* `python manage.py startapp name`
+
+== The routine ==
+1. The browser requests a page
+2. The server gets the request and django looks in `settings.py` for `ROOT_URL_CONF=x.urls`
+3. which points to the root urlpatterns file `x.urls.py`
+4. django goes to `x.urls.py` and gets the `<urlpatterns>` list
+5. it goes through the list in order and stops at the first entry where the requested url matches the pattern
+6. each item in `urlpatterns` is a tuple of `[<pattern>,<view>,<name>]`
+7. django gets the view associated with the pattern.
+8. it then goes to `views.py` and executes the correct view. 
+   
+== Models ==
+- A model contains column names for each database table and also defines how the columns are related to each other.
+- `models.py` contains classes
+- A column is the canonical source of truth.

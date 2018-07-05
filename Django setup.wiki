@@ -1,0 +1,34 @@
+= Django =
+== Setup ==
+1. Create a virtualenv with virtualenvwrapper
+    * `mkvirtualenv env1`
+2. Install packages
+    * `pip install cookiecutter django`
+3. Check versions of things
+    * `python -V`
+    * `python -c "import django; print(django.get_version())"`
+4. Run cookie cutter
+    * `cookiecutter https://github.com/pydanny/cookiecutter-django`
+5. Install the requirements
+    * `pip install -r requirements/local.txt`
+6. Init repo and create first commit
+7. Run shell with local settings
+    * `python manage.py shell --settings=config.settings.local`
+8. Setup MailHog for emails in terminal
+    1. [[https://github.com/mailhog/MailHog/releases|Dowload it]]
+    2. Rename it to `MailHog`
+    3. Copy the file into the project root
+    4. Make it executable `chmod +x MailHog`
+    5. Open another terminal window and start it `./MailHog`
+    6. Check out http://127.0.0.1:8025/ to see how it goes.
+    7. If you have generated your project with use_mailhog set to n this will be a default setup. 
+        * Alternatively, deliver emails over console via `EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'`
+        * In production, we have [[https://www.mailgun.com/|Mailgun]] configured to have your back!
+    8. If the port is already open then `lsof -i :<port>` , then `kill -9 PID`. If that doesnt kill it then `sudo kill -9 PID`
+9. Setup the database
+    * `createdb [project_slug]`
+    * `python manage.py migrate`
+    * `python manage.py runserver`
+10. Create super user
+    * `python manage.py createsuperuser` 
+11. Create second commit

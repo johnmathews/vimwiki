@@ -1,10 +1,6 @@
 = Tasks =
 
-- [X] change : to ;
-- [ ] learn [b and ]b as _unimpaired_ shortcuts
-- [ ] use fuzzyfind to open files
-- [X] make a note of the blog post that had all this info in it
-- [X] html templates for the wiki
-    - [X] back and home buttons
-    - [X] boxes for notes
-    - [X] something different for the daily and the medium
+    # [ ] write blog post about how women dont get enough credit for making people
+    # [ ] our philosophical poverty
+    # [X] review crypto trading project
+    # [X] review emily email

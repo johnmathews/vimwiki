@@ -1,33 +1,15 @@
 =Vim=
 
-To make an html file properly indented,
-gg=G
+== Plugins ==
+1. UnconditionalPaste - Force character-/line-/block-wise paste, regardless of how it was yanked. 
+2. Writing prose
+3. NerdTree
 
-Delete first 2 chars from each line: %normal 2x
-
-Organise tabs:
-Firsttab -> tabmove 0 
-Lasttab -> tabmove
-
-Nerd tree make root -> C
-Recursively close all children -> X
-
-Syntastic
-:lopen - open error window
-:SyntasticToggleMode - doesn’t auto check. Use :SyntasticCheck to run a check when in passive mode.
-
-
-Find and replace
-:%s/foo/bar/g		Find all foo and replace with bar
-:%s/foo/bar/gc	with confirmation 
-
-
-Navigation
+== Navigation ==
 ) 			sentence
 }			paragraph
 
-
-Buffers
+== Buffers ==
 :b#			previously viewed buffer
 :ls			list all buffers
 :bd			delete a buffer from the buffer list
@@ -35,45 +17,12 @@ Buffers
 :bp			previous buffer
 :new 		new buffer (empty file)
 
-
-Tabs
-gt 				next tab.
-gT 				previous tab
-#gt 			go to #th tab.
-:tabclose		close tab
-:q				close tab
-
-Splits
-vnew   - new vertical pane with blank new file in it
-vsp - new vertical pane with copy of the open file in it
-:vertical resize 80
-:vertical resize +5
-crrl+w r swap 
-
-ctrl+w q		close split
-:q				close split
-ctrl+o			close all other splits
-
-ctrl+w >/<		increase/decrease width by # number of lines
-ctrl+w +/- 	increase/decrease height by # number of lines
-
-ctrl+w _		max height for current split (can use count to set specific height)
-ctrl+w |		max width for current split (can use count to set specific width)
-ctrl+w =		normalise split sizes
-
-Syntactic
-Use `:SyntasticCheck` to manually check right now. Use `:Errors` to open the |location-list| window, and `:lclose` to close it. You can clear the error
-list with `:SyntasticReset`, and you can use `:SyntasticToggleMode` to switch between active (checking on writing the buffer) and passive (manual) checking.
-
-You don't have to switch focus to the |location-list| window to jump to the different errors. Vim provides several built-in commands for this, for example `:lnext` and `:lprevious
-
-help 
-
+== Help == 
 * Type :h patt then press Ctrl-D to list all topics that contain "patt". 
 * Type :h patt then press Tab to scroll through the topics that start with "patt". 
 * If you have set the 'wildmenu' option (e.g. by using :set wildmenu), then :h pattfollowed by <Tab> opens a menu on the statusline, with all help topics containing "patt". You can select any item in the menu with the arrow keys or more presses of the <Tab> key to fill in the rest of your command line. 
 
-Links:
+== Links ==
 * Enter :h to open the main help page. 
 * Type /quick to search for "quick" (should find the quickref link). 
 * Press Ctrl-] to follow the link (jump to the quickref topic). 
