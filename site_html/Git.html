@@ -84,6 +84,7 @@
             
 <div id="Git &amp; Github, Signing Commits"><h1 id="Git &amp; Github, Signing Commits">Git &amp; Github, Signing Commits</h1></div>
 
+<div id="Git &amp; Github, Signing Commits-webcam bug"><h3 id="webcam bug">webcam bug</h3></div>
 <p>
 Make webcam work - 
 sudo killall VDCAssistant
@@ -94,179 +95,13 @@ sudo killall AppleCameraAssistant
 sudo ~/Downloads/replug_facetime
 </p>
 
-
 <p>
-Made a bash script: 
-./gh message 
-./mp title
+A <span id="Git &amp; Github, Signing Commits-webcam bug-remote"></span><strong id="remote">remote</strong> is a copy of your local repository which is held somewhere else (on GitHub's servers, in this case). <span id="Git &amp; Github, Signing Commits-webcam bug-you are creating a remote called origin"></span><strong id="you are creating a remote called origin">you are creating a remote called origin</strong>. This is the name that is conventionally given to your main remote. You should push changes up to your origin remote on a regular basis so you have an up-to-date backup of your code and its history.
 </p>
 
+<div id="Git &amp; Github, Signing Commits-Stop bugging me for the rsa key thing:"><h3 id="Stop bugging me for the rsa key thing:">Stop bugging me for the rsa key thing:</h3></div>
 <p>
-echo '*.pyc' &gt;&gt; .gitignore #don't need pyc files
-</p>
-
-<p>
-Stop bugging me for the rsa key thing: 
 In terminal: $ eval <code>ssh-agent -s</code>
-</p>
-
-<p>
-Push commit
-</p>
-<ol>
-<li>
-get some info
-
-</ol>
-<p>
-git status
-git log
-</p>
-
-<ol>
-<li>
-initialise a repo
-
-</ol>
-<p>
-git init
-</p>
-
-<ol>
-<li>
-add file in the local repo and stage them for a commit.
-
-<li>
-to unstage a file, use ‘git reset HEAD file-name’
-
-</ol>
-<p>
-git add —all / git add .
-</p>
-
-<ol>
-<li>
-commit the tracked changes and prepares them to be pushed up to a remote repo.
-
-</ol>
-<p>
-git commit -m “a message”
-</p>
-<ol>
-<li>
-to remove this commit and modify the file, use ‘git reset  —soft HEAD’ and commit and add the file again
-
-</ol>
-
-<p>
-Create repo on github
-hub create &lt;repo_name&gt;   (for help run “hub help”) # add -p for private, -d for description
-hub create -h # get help command for create
-</p>
-
-<ol>
-<li>
-verify the new remote url
-
-</ol>
-<p>
-git remote -v
-</p>
-
-<ol>
-<li>
-set the new remote
-
-</ol>
-<p>
-git remote add origin <a href="https:&#47;&#47;github.com&#47;USERNAME&#47;OTHERREPOSITORY.git">https://github.com/USERNAME/OTHERREPOSITORY.git</a>
-git remote set-url origin <a href="https:&#47;&#47;github.com&#47;USERNAME&#47;OTHERREPOSITORY.git">https://github.com/USERNAME/OTHERREPOSITORY.git</a>
-</p>
-
-
-<ol>
-<li>
-push the changes in the local repo up to the remote repo specified as the origin
-
-</ol>
-<p>
-git push -u origin master 
-</p>
-
-<ol>
-<li>
-to download a repo for the first time
-
-</ol>
-<p>
-git clone <a href="https:&#47;&#47;github.com&#47;johnmathews&#47;quant_tutorial_1.git">https://github.com/johnmathews/quant_tutorial_1.git</a>
-</p>
-
-<ol>
-<li>
-get the most up to date version of a repo you’ve already downloaded
-
-</ol>
-<p>
-git pull origin master
-</p>
-		
-<p>
-Pull new repo onto local
-</p>
-<ol>
-<li>
-download repo into subfolder with name “whatever”
-
-</ol>
-<p>
-git clone git@github.com:whatever 
-</p>
-
-<ol>
-<li>
-download repo into subfolder with name “folder-name”
-
-</ol>
-<p>
-git clone git@github.com:whatever folder-name
-</p>
-
-
-<p>
-What do these commands really do?
-git remote add origin git@github.com:username/new_repo
-</p>
-<ol>
-<li>
-A remote is a copy of your local repository which is held somewhere else (on GitHub's servers, in this case). you are creating a remote called origin. This is the name that is conventionally given to your main remote. You should push changes up to your origin remote on a regular basis so you have an up-to-date backup of your code and its history.
-
-</ol>
-
-<p>
-git push -u origin master
-</p>
-<ol>
-<li>
-This command is doing a couple of things. First, it will create the master branch in the remote repository because it does not currently exist. Then it sends the most recent snapshot of the newly created master branch so the copy on GitHub matches our local copy.
-
-</ol>
-
-<p>
-Git pull origin master
-</p>
-<ol>
-<li>
-Pull the master branch of the remote called ‘origin’
-
-</ol>
-
-<p>
-Phrases
-Push     -up load to GitHub
-Pull       - down load to local
-Fork      - a copy of a repo where changes        don't effect the original
-Pull request - ask someone (the owner of the repo) to download your version of the repo
 </p>
 
 <p>
@@ -275,6 +110,139 @@ To make it work, do the below. Or put this in the same bash file as your aliases
 GPG_TTY=$(tty)
 export GPG_TTY
 </p>
+
+<div id="Git &amp; Github, Signing Commits-Git &amp; GitHub"><h3 id="Git &amp; GitHub">Git &amp; GitHub</h3></div>
+
+<table>
+<tr>
+<th>
+Command
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+hub create &lt;repo_name&gt;
+</td>
+<td>
+Create repo on github
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+(for help run “hub help”) # add -p for private, -d for description
+</td>
+</tr>
+<tr>
+<td>
+hub create -h
+</td>
+<td>
+get help command for create
+</td>
+</tr>
+<tr>
+<td>
+git remote -v
+</td>
+<td>
+verify the new remote url
+</td>
+</tr>
+<tr>
+<td>
+git remote add origin <a href="https://github.com/user/repo.git">https://github.com/user/repo.git</a>
+</td>
+<td>
+set the new remote
+</td>
+</tr>
+<tr>
+<td>
+git remote set-url origin <a href="https://github.com/user/repo.git">https://github.com/user/repo.git</a>
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+git push -u origin master
+</td>
+<td>
+push the changes in the local repo up to the remote repo specified as the origin
+</td>
+</tr>
+<tr>
+<td>
+git clone <a href="https://github.com/johnmathews/quant_tutorial_1.git">https://github.com/johnmathews/quant_tutorial_1.git</a>
+</td>
+<td>
+to download a repo for the first time
+</td>
+</tr>
+<tr>
+<td>
+git pull origin master
+</td>
+<td>
+get the most up to date version of a repo you’ve already downloaded
+</td>
+</tr>
+<tr>
+<td>
+git clone git@github.com:whatever
+</td>
+<td>
+download repo into subfolder with name “whatever”
+</td>
+</tr>
+<tr>
+<td>
+git clone git@github.com:whatever folder-name
+</td>
+<td>
+download repo into subfolder with name “folder-name”
+</td>
+</tr>
+<tr>
+<td>
+git push -u origin master
+</td>
+<td>
+1. create the master branch in the remote repository
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+2. sends the most recent snapshot of the master branch to GitHub
+</td>
+</tr>
+<tr>
+<td>
+Git pull origin master
+</td>
+<td>
+Pull the master branch of the remote called ‘origin’
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
 
 
         </div>

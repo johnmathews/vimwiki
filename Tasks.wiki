@@ -1,6 +1,2 @@
 = Tasks =
-
-    # [ ] write blog post about how women dont get enough credit for making people
-    # [ ] our philosophical poverty
-    # [X] review crypto trading project
-    # [X] review emily email
+nope
