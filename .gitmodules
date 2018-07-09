@@ -1,3 +1,0 @@
-[submodule "site/html/assets"]
-	path = site/html/assets
-	url = https://github.com/coderiot/vimwiki-assets.git
