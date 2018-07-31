@@ -11,6 +11,7 @@ Blog ideas:
 
 == Notes ==
 1. [[Writing]]
+2. [[Bokeh]]
 3. [[CSS selectors]]
 4. [[CLI tools]]
 5. [[Django setup]] 
