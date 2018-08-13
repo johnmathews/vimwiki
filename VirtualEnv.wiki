@@ -2,19 +2,22 @@
 
 <br>
 
-|----------------------------------------------|-----------------------------------------------------|
-| *Description*                                | *Command*                                           |
-|----------------------------------------------|-----------------------------------------------------|
-| *Create* a virtualenv                        | `mkvirtualenv env1`                                 |
-| *Close* the virtualenv                       | `deactivate`                                        |
-| *Activate* the virtualenv                    | `workon env1`                                       |
-| *List* environments                          | `lsvirtualenv`                                      |
-| *Delete* an environment                      | `rmvirtualenv ENVNAME` or `rm -rf ~/Envs/env1`      |
-| *Copy* an environment                        | `cpvirtualenv ENVNAME [TARGETENVNAME]`              |
-| *List* all virtual envs                      | `lsvirtualenv`                                      |
-| *Show* the details for a single virtualenv.  | `showvirtualenv` [env]                              |
-| *Remove* an environment, in the WORKON_HOME. | `rmvirtualenv ENVNAME`                              |
-| *List* all of the environments.              | `lsvirtualenv [-b] [-l] [-h]`                       |
+|----------------------------------------------|----------------------------------------------------------|
+| *Description*                                | *Command*                                                |
+|----------------------------------------------|----------------------------------------------------------|
+| *Create* a virtualenv                        | `mkvirtualenv env1`                                      |
+| *Create* a virtualenv with python3           | `mkvirtualenv demo --python=python3`                     |
+| *Close* the virtualenv                       | `deactivate`                                             |
+| *Activate* the virtualenv                    | `workon env1`                                            |
+| *List* environments                          | `lsvirtualenv`                                           |
+| *Delete* an environment                      | `rmvirtualenv ENVNAME` or `rm -rf ~/Envs/env1`           |
+| *Copy* an environment                        | `cpvirtualenv ENVNAME [TARGETENVNAME]`                   |
+| *List* all virtual envs                      | `lsvirtualenv`                                           |
+| *Show* the details for a single virtualenv.  | `showvirtualenv` [env]                                   |
+| *Remove* an environment, in the WORKON_HOME. | `rmvirtualenv ENVNAME`                                   |
+| *Rename* a virtualenv                        | `cpvirtualenv oldenv newenv` then  `rmvirtualenv oldenv` |
+| *List* all of the environments.              | `lsvirtualenv [-b] [-l] [-h]`                            |
+
 
 
 === Notes ===

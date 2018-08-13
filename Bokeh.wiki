@@ -1,0 +1,10 @@
+= [[Bokeh]] =
+
+
+| Command                       | Description         |
+|-------------------------------|---------------------|
+| bokeh serve --show bokeh_app/ | Launch app          |
+| bokeh serve --show main.py    | Launch app (simple) |
+|                               |                     |
+
+

@@ -15,7 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
 
-<title>VirtualEnv</title>
+<title>FZF</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -82,126 +82,221 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="VirtualEnv"><h1 id="VirtualEnv">VirtualEnv</h1></div>
+<div id="FZF"><h2 id="FZF">FZF</h2></div>
 
-<p>
-<br>
-</p>
+
 
 <table>
 <tr>
 <th>
-<span id="VirtualEnv-Description"></span><strong id="Description">Description</strong>
+Command
 </th>
 <th>
-<span id="VirtualEnv-Command"></span><strong id="Command">Command</strong>
+Description
 </th>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv
+nnoremap &lt;Leader&gt;e :Buffers&lt;CR&gt;
 </td>
 <td>
-<code>mkvirtualenv env1</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv with python3
-</td>
-<td>
-<code>mkvirtualenv demo --python=python3</code>
+search buffers
 </td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-Close"></span><strong id="Close">Close</strong> the virtualenv
+nnoremap &lt;Leader&gt;t :Files&lt;CR&gt;
 </td>
 <td>
-<code>deactivate</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Activate"></span><strong id="Activate">Activate</strong> the virtualenv
-</td>
-<td>
-<code>workon env1</code>
+search files
 </td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> environments
+nnoremap &lt;Leader&gt;r :Tags&lt;CR&gt;
 </td>
 <td>
-<code>lsvirtualenv</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Delete"></span><strong id="Delete">Delete</strong> an environment
-</td>
-<td>
-<code>rmvirtualenv ENVNAME</code> or <code>rm -rf ~/Envs/env1</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Copy"></span><strong id="Copy">Copy</strong> an environment
-</td>
-<td>
-<code>cpvirtualenv ENVNAME [TARGETENVNAME]</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> all virtual envs
-</td>
-<td>
-<code>lsvirtualenv</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Show"></span><strong id="Show">Show</strong> the details for a single virtualenv.
-</td>
-<td>
-<code>showvirtualenv</code> [env]
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Remove"></span><strong id="Remove">Remove</strong> an environment, in the WORKON_HOME.
-</td>
-<td>
-<code>rmvirtualenv ENVNAME</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Rename"></span><strong id="Rename">Rename</strong> a virtualenv
-</td>
-<td>
-<code>cpvirtualenv oldenv newenv</code> then  <code>rmvirtualenv oldenv</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> all of the environments.
-</td>
-<td>
-<code>lsvirtualenv [-b] [-l] [-h]</code>
+search tag
 </td>
 </tr>
 </table>
 
 
-
-<div id="VirtualEnv-Notes"><h3 id="Notes">Notes</h3></div>
 <p>
-To set up, run this script (automatically) when shell opens 
-<code>source /usr/local/bin/virtualenvwrapper.sh</code>
+fzf works in the shell as well and comes with bindings for Zsh, Bash, and the Fish shell. 
 </p>
+
+<p>
+In Zsh, I can hit Ctrl-t to instantly fuzzy-find any file in the current directory. 
+And since I’ve configured fzf to use ag, it’ll ignore anything excluded by .gitignore
+</p>
+
+<p>
+Here’s the snippet from my .zshrc. The FZF environment variables are also used when fzf is called from within Vim:
+</p>
+
+<pre>
+# fzf via Homebrew
+if [ -e /usr/local/opt/fzf/shell/completion.zsh ]; then
+  source /usr/local/opt/fzf/shell/key-bindings.zsh
+  source /usr/local/opt/fzf/shell/completion.zsh
+fi
+
+# fzf via local installation
+if [ -e ~/.fzf ]; then
+  _append_to_path ~/.fzf/bin
+  source ~/.fzf/shell/key-bindings.zsh
+  source ~/.fzf/shell/completion.zsh
+fi
+
+# fzf + ag configuration
+if _has fzf &amp;&amp; _has ag; then
+  export FZF_DEFAULT_COMMAND='ag --nocolor -g ""'
+  export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+  export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
+  export FZF_DEFAULT_OPTS='
+  --color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108
+  --color info:108,prompt:109,spinner:108,pointer:168,marker:168
+  '
+fi
+</pre>
+
+
+<div id="ACK.vim"><h2 id="ACK.vim">ACK.vim</h2></div>
+
+<table>
+<tr>
+<td>
+Usage
+</td>
+<td>
+Description
+</td>
+</tr>
+<tr>
+<td>
+:Ack [options] {pattern} [{directories}]
+</td>
+<td>
+Search recursively in {directories} (which defaults to the current directory) for the {pattern}.
+</td>
+</tr>
+</table>
+
+<p>
+Files containing the search term will be listed in the quickfix window, along with the line number of the occurrence, once for each occurrence. &lt;Enter&gt; on a line in this window will open the file and place the cursor on the matching line.
+</p>
+
+<p>
+Just like where you use :grep, :grepadd, :lgrep, and :lgrepadd, you can use :Ack, :AckAdd, :LAck, and :LAckAdd respectively. (See :help Ack after installing, or doc/ack.txt in the repo, for more information.)
+</p>
+
+<p>
+For more ack help see ack documentation.
+</p>
+
+<p>
+Keyboard Shortcuts
+The quickfix results window is augmented with these convenience mappings:
+</p>
+<table>
+<tr>
+<th>
+Shortcut
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+?
+</td>
+<td>
+a quick summary of these keys, repeat to close
+</td>
+</tr>
+<tr>
+<td>
+o
+</td>
+<td>
+to open (same as Enter)
+</td>
+</tr>
+<tr>
+<td>
+O
+</td>
+<td>
+to open and close the quickfix window
+</td>
+</tr>
+<tr>
+<td>
+go
+</td>
+<td>
+to preview file, open but maintain focus on ack.vim results
+</td>
+</tr>
+<tr>
+<td>
+t
+</td>
+<td>
+to open in new tab
+</td>
+</tr>
+<tr>
+<td>
+T
+</td>
+<td>
+to open in new tab without moving to it
+</td>
+</tr>
+<tr>
+<td>
+h
+</td>
+<td>
+to open in horizontal split
+</td>
+</tr>
+<tr>
+<td>
+H
+</td>
+<td>
+to open in horizontal split, keeping focus on the results
+</td>
+</tr>
+<tr>
+<td>
+v
+</td>
+<td>
+to open in vertical split
+</td>
+</tr>
+<tr>
+<td>
+gv
+</td>
+<td>
+to open in vertical split, keeping focus on the results
+</td>
+</tr>
+<tr>
+<td>
+q
+</td>
+<td>
+to close the quickfix window
+</td>
+</tr>
+</table>
 
 
         </div>
