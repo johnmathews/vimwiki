@@ -1,0 +1,48 @@
+= Docker =
+
+{{{
+## List Docker CLI commands
+docker
+docker container --help
+
+## Display Docker version and info
+docker --version
+docker version
+docker info
+
+## Execute Docker image
+docker run hello-world
+
+## List Docker images
+docker image ls
+
+## List Docker containers (running, all, all in quiet mode)
+docker container ls
+docker container ls --all
+docker container ls -aq
+}}}
+
+
+
+| Command                     | Descriptiona                         |
+|-----------------------------|--------------------------------------|
+| `ctrl+p then ctrl+q`        | turn interactive mode to daemon mode |
+| `docker image ls`           | list all docker images               |
+| `docker container ls --all` | list all docker containers           |
+| `docker stop hash`          | stop                                 |
+
+<br>
+
+*Introduction*
+It’s time to begin building an app the Docker way. We start at the bottom of the hierarchy of such an app, which is a container, which we cover on this page. Above this level is a service, which defines how containers behave in production, covered in Part 3. Finally, at the top level is the stack, defining the interactions of all the services, covered in Part 5.
+
+Stack
+Services
+Container (you are here)
+
+*Your new development environment*
+In the past, if you were to start writing a Python app, your first order of business was to install a Python runtime onto your machine. But, that creates a situation where the environment on your machine needs to be perfect for your app to run as expected, and also needs to match your production environment.
+
+With Docker, you can just grab a portable Python runtime as an image, no installation necessary. Then, your build can include the base Python image right alongside your app code, ensuring that your app, its dependencies, and the runtime, all travel together.
+
+These portable images are defined by something called a `Dockerfile`.
