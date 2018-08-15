@@ -19,6 +19,13 @@ export GPG_TTY
 
 === Git & GitHub ===
 
+To merge a branch:
+
+1.`git checkout <branch to merge into>`
+
+2.`git merge <branch to merge>`
+
+
 | Command                                                       | Description                                                                      |
 |---------------------------------------------------------------|----------------------------------------------------------------------------------|
 | hub create <repo_name>                                        | Create repo on github                                                            |

@@ -37,8 +37,8 @@ Detached head  - the working directory does not represent the most recent commit
 *Creating and switching to a new branch*
 1. git checkout -b name
 or
-1. git branch <new branches name>
-2. git checkout <name of branch to switch to>
+1. git branch <branch>
+2. git checkout <branch>
 
 *Delete a branch*
 1. Git branch -d <name> 
