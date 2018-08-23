@@ -1,37 +1,61 @@
 %template index
 
-
-Blog ideas:
+== Blogging ==
 - Money is the fuel
 - Philosophical poverty
 - Lets talk about the end. my current self, existing now, is to be seen in the context of my end, and my beginning.
 
-== Short Term ==
-[[Tasks]]
+== Planning ==
+[[Short term]] |  [[Todo|Medium term]]
 
 == Notes ==
-1. [[Writing]]
-2. [[Bokeh]]
-3. [[CSS selectors]]
-4. [[CLI tools]]
-5. [[Django setup]] 
-6. [[Django: urls-views-templates]]
-7. [[docker]]
-8. [[FZF]]
-9. [[Git]]
-10. [[grep]]
-11. [[GSP interview]]
-12. [[iTerm]]
-13. [[Mental Models]]
-14. [[Negotiation]]
-15. [[Nested links]]
-16. [[Rys Git tutorial]]
-17. [[tmux]]
-18. [[Shell vs Terminal]]
-19. [[Vim again]]
-20. [[Vim]]
-21. [[VimWiki]] 
-22. [[VirtualEnv]]
+<div class="items">
 
-== Medium Term ==
-[[Todo|The Plan]]
+<div class="item">
+<div class="item__heading">
+=== Dev Tools ===
+</div>
+* [[FZF]]
+* [[Git tutorial]]
+* [[Git]]
+* [[Shell vs Terminal]]
+* [[VirtualEnv]]
+* [[Docker]]
+* [[Tmux]]
+</div>
+
+<div class="item">
+<div class="item__heading">
+=== Media ===
+</div>
+* [[GSP interview]]
+* [[How to write a book]]
+* [[Mental Models]]
+* [[Negotiation]]
+</div>
+
+<div class="item">
+<div class="item__heading">
+=== Python ===
+</div>
+* [[Bokeh]]
+* [[Django setup]] 
+* [[Django: urls-views-templates]]
+</div>
+
+<div class="item">
+<div class="item__heading">
+=== Unix-likes ===
+</div>
+* [[Grep]]
+</div>
+
+<div class="item">
+<div class="item__heading">
+=== Vi ===
+</div>
+* [[Vim]]
+* [[VimWiki]] 
+</div>
+
+</div>

@@ -1,5 +1,7 @@
 =VIMWIKI=
 
+[[https://stackoverflow.com/questions/44115503/css-only-solution-to-set-same-height-row-sections-on-a-responsive-grid|grid layout]]
+
 | description      | command                                                                                                               |   |
 |------------------|-----------------------------------------------------------------------------------------------------------------------|---|
 | sort i           | sort list case insensitive                                                                                            |   |
