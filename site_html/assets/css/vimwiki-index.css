@@ -8,20 +8,51 @@ code {
 }
 
 /* ol { */
-/*   flex-direction: column; */
-/*   flex-wrap: wrap; */
-/*   display: flex; */
-/*   height: 10vh; */
-/* } */
-/*  */
-/* ol li { */
-/*   flex: 1 0 25%; */
+/*     -webkit-column-count: 3; */
+/*     -moz-column-count: 3; */
+/*     column-count: 3; */
 /* } */
 
 ol {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  box-sizing: border-box;
+  vertical-align: top;
+  padding: 0 12px;
+  margin: 24px -4px 24px 0;
+}
+
+@media (max-width: 600px) {
+  .item {
+    width: 50%;
+  }
+}
+
+.item__heading {
+  background-color: #d4d0f5;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+
+.item__content {
+  flex: 1 1 auto;                   /* IE need 1 1 auto */
+  padding: 10px;
+  border-left: 1px solid #bbbbbb;
+  border-right: 1px solid #bbbbbb;
 }
 
 li {
