@@ -1,0 +1,52 @@
+
+
+== Install ==
+`brew services start postgresql`
+
+didnt do:
+`pg_ctl -D /usr/local/var/postgres start`
+
+== Credentials ==
+login: `psql --host=35.204.55.134 -U readonly_john template1`
+
+Password: 1hn87217g28e18hs1
+	
+        
+| Command                   | Description                                   |
+|---------------------------|-----------------------------------------------|
+| `\timing`                 | turn on timing                                |
+| `\l`                      | list database                                 |
+| `\c bdname`               | connect                                       |
+| `\d`                      | describe tables                               |
+| `\e`                      | Edit command in your own editor               |
+| `\ef [function name]`     | edit a function in the editor                 |
+| `\du`                     | list roles/users                              |
+| `\connect database_name ` | switch databases                              |
+| `\c dbname username`      | or                                            |
+| `\d`                      | describe a table                              |
+| `\dt`                     | list all tables in the current database       |
+| `\dt+ tablename`          | describe table                                |
+| `\o [FILE]`               | send all query results to file or pipe output |
+| `\a`                      | toggles aligned/unaligned text                |
+| `\H`                      | formats the output as HTML                    |
+| `\o`                      | turn it off                                   |
+| `\g`                      | do the last command again                     |
+| `postgres -V`             | see which version is installed                |
+| `psql postgres`           | start psql command line                       |
+| `\q`                      | quit                                          |
+| `\s`                      | command history                               |
+| `\?`                      | help                                          |
+
+== Examples ==
+`psql -t dbname username -c "select * from foo" > data_file.txt`
+`psql -t bp-wallets readonly_john -c "select count(*) from balances;" > data_file.txt`
+
+`\o [FILE]` send all query results to file or |pipe
+
+The sequence of commands will look like this:
+[wist@scifres ~]$ psql db
+Welcome to psql 8.3.6, the PostgreSQL interactive terminal
+
+db=>\o out.txt
+db=>\dt
+db=>\q

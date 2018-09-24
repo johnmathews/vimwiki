@@ -5,6 +5,7 @@
 |----------------------------------------------|----------------------------------------------------------|
 | *Description*                                | *Command*                                                |
 |----------------------------------------------|----------------------------------------------------------|
+| Run commands when activating the env         | `/Users/john/.virtualenvs/[name]/bin/activate`             |
 | *Create* a virtualenv                        | `mkvirtualenv env1`                                      |
 | *Create* a virtualenv with python3           | `mkvirtualenv demo --python=python3`                     |
 | *Close* the virtualenv                       | `deactivate`                                             |

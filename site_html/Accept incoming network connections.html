@@ -15,7 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
 
-<title>VirtualEnv</title>
+<title>Accept incoming network connections</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -82,133 +82,68 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="VirtualEnv"><h1 id="VirtualEnv">VirtualEnv</h1></div>
-
+<div id="Create a certificate"><h2 id="Create a certificate">Create a certificate</h2></div>
 <p>
-<br>
+With the OS X firewall enabled, you can remove the "Do you want the application "python" to accept incoming network connections?" message.
 </p>
 
-<table>
-<tr>
-<th>
-<span id="VirtualEnv-Description"></span><strong id="Description">Description</strong>
-</th>
-<th>
-<span id="VirtualEnv-Command"></span><strong id="Command">Command</strong>
-</th>
-</tr>
-<tr>
-<td>
-Run commands when activating the env
-</td>
-<td>
-<code>/Users/john/.virtualenvs/[name]/bin/activate</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv
-</td>
-<td>
-<code>mkvirtualenv env1</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv with python3
-</td>
-<td>
-<code>mkvirtualenv demo --python=python3</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Close"></span><strong id="Close">Close</strong> the virtualenv
-</td>
-<td>
-<code>deactivate</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Activate"></span><strong id="Activate">Activate</strong> the virtualenv
-</td>
-<td>
-<code>workon env1</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> environments
-</td>
-<td>
-<code>lsvirtualenv</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Delete"></span><strong id="Delete">Delete</strong> an environment
-</td>
-<td>
-<code>rmvirtualenv ENVNAME</code> or <code>rm -rf ~/Envs/env1</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Copy"></span><strong id="Copy">Copy</strong> an environment
-</td>
-<td>
-<code>cpvirtualenv ENVNAME [TARGETENVNAME]</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> all virtual envs
-</td>
-<td>
-<code>lsvirtualenv</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Show"></span><strong id="Show">Show</strong> the details for a single virtualenv.
-</td>
-<td>
-<code>showvirtualenv</code> [env]
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Remove"></span><strong id="Remove">Remove</strong> an environment, in the WORKON_HOME.
-</td>
-<td>
-<code>rmvirtualenv ENVNAME</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Rename"></span><strong id="Rename">Rename</strong> a virtualenv
-</td>
-<td>
-<code>cpvirtualenv oldenv newenv</code> then  <code>rmvirtualenv oldenv</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> all of the environments.
-</td>
-<td>
-<code>lsvirtualenv [-b] [-l] [-h]</code>
-</td>
-</tr>
-</table>
-
-
-
-<div id="VirtualEnv-Notes"><h3 id="Notes">Notes</h3></div>
 <p>
-To set up, run this script (automatically) when shell opens 
-<code>source /usr/local/bin/virtualenvwrapper.sh</code>
+<span id="Create a certificate-Create a self-signed certificate."></span><strong id="Create a self-signed certificate.">Create a self-signed certificate.</strong>
+</p>
+
+<ol>
+<li>
+Open Keychain Access. Applications &gt; Utilities &gt; Keychain Access.
+
+<li>
+Keychain Access menu &gt; Certificate Assistant &gt; Create a Certificate...
+
+<li>
+Enter a Name like "My Certificate".
+
+<li>
+Select Identity Type: Self Signed Root
+
+<li>
+Select Certificate Type: Code Signing
+
+<li>
+Check the Let me override defaults box
+
+<li>
+Click Continue
+
+<li>
+Enter a unique Serial Number
+
+<li>
+Enter 7300 for Validity Period.
+
+<li>
+Click Continue
+
+<li>
+Click Continue for the rest of the dialogs
+
+<li>
+Now sign your application, in terminal:
+
+<ul>
+<li>
+<code>codesign -s "My Certificate" -f $(which python)</code>
+
+</ul>
+<li>
+In the dialog that appears, click "Allow".
+
+</ol>
+
+<p>
+Note that when using a virtual environment, you need to activate the virtual environment before running this command.
+</p>
+
+<p>
+From <a href="https://gist.github.com/simonw/68d19a46e8edc2cd8c68)">here</a> and <a href="https://www.darklaunch.com/2014/02/02/fix-do-you-want-the-application-python-to-accept-incoming-network-connections)">here</a>
 </p>
 
 

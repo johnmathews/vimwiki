@@ -1,0 +1,113 @@
+== Terminal ==
+
+
+=== Work with windows and tabs ===
+
+| Command                     | Description                        |
+|-----------------------------|------------------------------------|
+| Command-N                   | New window                         |
+| Control-Command-N           | New window with same command       |
+| Command-T                   | New tab                            |
+| Control-Command-T           | New tab with same command          |
+| Shift-Command-T             | Show or hide tab bar               |
+| Shift-Command-Backslash (\) | Show all tabs or exit tab overview |
+| Shift-Command-N             | New command                        |
+| Shift-Command-K             | New remote connection              |
+| Command-I                   | Show or hide Inspector             |
+| Shift-Command-I             | Edit title                         |
+| Option-Command-I            | Edit background color              |
+| Command-Plus (+)            | Make fonts bigger                  |
+| Command-Minus (–)           | Make fonts smaller                 |
+| Command-Grave Accent (`)    | Next window                        |
+| Command-Shift-Tilde (~)     | Previous window                    |
+| Control-Tab                 | Next Tab                           |
+| Control-Shift-Tab           | Previous Tab                       |
+| Command-D                   | Split window into two panes        |
+| Shift-Command-D             | Close split pane                   |
+| Command-W                   | Close tab                          |
+| Shift-Command-W             | Close window                       |
+| Option-Command-W            | Close other tabs                   |
+| Option-Shift-Command-W      | Close all                          |
+| Command-Home                | Scroll to top                      |
+| Command-End                 | Scroll to bottom                   |
+| Command-Page Up             | Page up                            |
+| Command-Page Down           | Page down                          |
+| Option-Command-Page Up      | Line up                            |
+| Option-Command-Page Down    | Line down                          |
+
+=== Select, find, and edit text ===
+
+| Command                                                        | Description                    |
+|----------------------------------------------------------------|--------------------------------|
+| Control-A                                                      | Move to beginning of line      |
+| Control-E                                                      | Move to end of line            |
+| Control-U                                                      | Erase to beginning of line     |
+| Control-K                                                      | Erase to end of line           |
+| Hold down the Shift and Command keys and double-click the path | Select a complete file path    |
+| Triple-click the line                                          | Select a complete line of text |
+| Double-click the word                                          | Select a word                  |
+| Hold down the Shift and Command keys and double-click the URL  | Select a URL                   |
+| Hold down the Option key and drag to select text               | Select a rectangular block     |
+| Command-X                                                      | Cut                            |
+| Command-C                                                      | Copy                           |
+| Control-Shift-Command-C                                        | Copy without background color  |
+| Option-Shift-Command-C                                         | Copy plain text                |
+| Command-V                                                      | Paste                          |
+| Shift-Command-V                                                | Paste the selection            |
+| Control-Command-V                                              | Paste escaped text             |
+| Control-Shift-Command-V                                        | Paste escaped selection        |
+| Command-F                                                      | Find                           |
+| Command-G                                                      | Find next                      |
+| Command-Shift-G                                                | Find previous                  |
+| Command-E                                                      | Find using the selected text   |
+| Command-J                                                      | Jump to the selected text      |
+| Command-A                                                      | Select all                     |
+| Control-Command-Space                                          | Open the character viewer      |
+
+
+=== Work with marks and bookmarks ===
+
+| Command                   | Description                 |
+|---------------------------|-----------------------------|
+| Command-U                 | Mark                        |
+| Option-Command-U          | Mark as bookmark            |
+| Shift-Command-U           | Unmark                      |
+| Command-Return            | Mark line and send return   |
+| Shift-Command-Return      | Send return without marking |
+| Shift-Command-M           | Insert bookmark             |
+| Option-Shift-Command-M    | Insert bookmark with name   |
+| Command-Up Arrow          | Jump to previous mark       |
+| Command-Down Arrow        | Jump to next mark           |
+| Option-Command-Up Arrow   | Jump to previous bookmark   |
+| Option-Command-Down Arrow | Jump to next bookmark       |
+| Command-L                 | Clear to previous mark      |
+| Option-Command-L          | Clear to previous bookmark  |
+| Command-K                 | Clear to start              |
+| Shift-Command-A           | Select between marks        |
+
+
+=== Other shortcuts ===
+
+| Command                                                                           | Description                                                   |
+|-----------------------------------------------------------------------------------|---------------------------------------------------------------|
+| Control-Command-F                                                                 | Enter or exit full screen                                     |
+| Shift-Command-C                                                                   | Show or hide colors                                           |
+| Command-Comma (,)                                                                 | Open Terminal preferences                                     |
+| Typing Command-Period (.) is equivalent to entering Control-C on the command line | Break                                                         |
+| Command-P                                                                         | Print                                                         |
+| Option-Command-R                                                                  | Soft reset terminal emulator state                            |
+| Control-Option-Command-R                                                          | Hard reset terminal emulator state                            |
+| Hold down the Command key and double-click the URL                                | Open a URL                                                    |
+| Drag the file from the Finder into the Terminal window                            | Add the complete path to a file                               |
+| Command-S                                                                         | Export text as                                                |
+| Shift-Command-S                                                                   | Export selected text as                                       |
+| Control-R                                                                         | Reverse search command history                                |
+| Command-R                                                                         | Toggle “Allow Mouse Reporting” option                         |
+| Command-Option-O                                                                  | Toggle “Use Option as Meta Key” option                        |
+| Option-Command-Page Down                                                          | Show alternate screen                                         |
+| Option-Command-Page Up                                                            | Hide alternate screen                                         |
+| Control-Shift-Command-Question Mark (?)                                           | Open man page for selection                                   |
+| Control-Option-Command-Slash (/)                                                  | Search man page index for selection                           |
+| On a command line, type one or more characters, then press Tab                    | Complete directory or file name                               |
+| On a command line, type one or more characters, then press Tab twice              | Display a list of possible directory or file name completions |
+

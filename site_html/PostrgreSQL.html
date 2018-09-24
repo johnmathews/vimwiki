@@ -15,7 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
 
-<title>VirtualEnv</title>
+<title>PostrgreSQL</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -82,133 +82,235 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="VirtualEnv"><h1 id="VirtualEnv">VirtualEnv</h1></div>
 
+
+<div id="Install"><h2 id="Install">Install</h2></div>
 <p>
-<br>
+<code>brew services start postgresql</code>
 </p>
 
+<p>
+didnt do:
+<code>pg_ctl -D /usr/local/var/postgres start</code>
+</p>
+
+<div id="Credentials"><h2 id="Credentials">Credentials</h2></div>
+<p>
+login: <code>psql --host=35.204.55.134 -U readonly_john template1</code>
+</p>
+
+<p>
+Password: 1hn87217g28e18hs1
+</p>
+	
+        
 <table>
 <tr>
 <th>
-<span id="VirtualEnv-Description"></span><strong id="Description">Description</strong>
+Command
 </th>
 <th>
-<span id="VirtualEnv-Command"></span><strong id="Command">Command</strong>
+Description
 </th>
 </tr>
 <tr>
 <td>
-Run commands when activating the env
+<code>\timing</code>
 </td>
 <td>
-<code>/Users/john/.virtualenvs/[name]/bin/activate</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv
-</td>
-<td>
-<code>mkvirtualenv env1</code>
+turn on timing
 </td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv with python3
+<code>\l</code>
 </td>
 <td>
-<code>mkvirtualenv demo --python=python3</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Close"></span><strong id="Close">Close</strong> the virtualenv
-</td>
-<td>
-<code>deactivate</code>
+list database
 </td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-Activate"></span><strong id="Activate">Activate</strong> the virtualenv
+<code>\c bdname</code>
 </td>
 <td>
-<code>workon env1</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> environments
-</td>
-<td>
-<code>lsvirtualenv</code>
+connect
 </td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-Delete"></span><strong id="Delete">Delete</strong> an environment
+<code>\d</code>
 </td>
 <td>
-<code>rmvirtualenv ENVNAME</code> or <code>rm -rf ~/Envs/env1</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Copy"></span><strong id="Copy">Copy</strong> an environment
-</td>
-<td>
-<code>cpvirtualenv ENVNAME [TARGETENVNAME]</code>
+describe tables
 </td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> all virtual envs
+<code>\e</code>
 </td>
 <td>
-<code>lsvirtualenv</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Show"></span><strong id="Show">Show</strong> the details for a single virtualenv.
-</td>
-<td>
-<code>showvirtualenv</code> [env]
+Edit command in your own editor
 </td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-Remove"></span><strong id="Remove">Remove</strong> an environment, in the WORKON_HOME.
+<code>\ef [function name]</code>
 </td>
 <td>
-<code>rmvirtualenv ENVNAME</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Rename"></span><strong id="Rename">Rename</strong> a virtualenv
-</td>
-<td>
-<code>cpvirtualenv oldenv newenv</code> then  <code>rmvirtualenv oldenv</code>
+edit a function in the editor
 </td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> all of the environments.
+<code>\du</code>
 </td>
 <td>
-<code>lsvirtualenv [-b] [-l] [-h]</code>
+list roles/users
+</td>
+</tr>
+<tr>
+<td>
+<code>\connect database_name </code>
+</td>
+<td>
+switch databases
+</td>
+</tr>
+<tr>
+<td>
+<code>\c dbname username</code>
+</td>
+<td>
+or
+</td>
+</tr>
+<tr>
+<td>
+<code>\d</code>
+</td>
+<td>
+describe a table
+</td>
+</tr>
+<tr>
+<td>
+<code>\dt</code>
+</td>
+<td>
+list all tables in the current database
+</td>
+</tr>
+<tr>
+<td>
+<code>\dt+ tablename</code>
+</td>
+<td>
+describe table
+</td>
+</tr>
+<tr>
+<td>
+<code>\o [FILE]</code>
+</td>
+<td>
+send all query results to file or pipe output
+</td>
+</tr>
+<tr>
+<td>
+<code>\a</code>
+</td>
+<td>
+toggles aligned/unaligned text
+</td>
+</tr>
+<tr>
+<td>
+<code>\H</code>
+</td>
+<td>
+formats the output as HTML
+</td>
+</tr>
+<tr>
+<td>
+<code>\o</code>
+</td>
+<td>
+turn it off
+</td>
+</tr>
+<tr>
+<td>
+<code>\g</code>
+</td>
+<td>
+do the last command again
+</td>
+</tr>
+<tr>
+<td>
+<code>postgres -V</code>
+</td>
+<td>
+see which version is installed
+</td>
+</tr>
+<tr>
+<td>
+<code>psql postgres</code>
+</td>
+<td>
+start psql command line
+</td>
+</tr>
+<tr>
+<td>
+<code>\q</code>
+</td>
+<td>
+quit
+</td>
+</tr>
+<tr>
+<td>
+<code>\s</code>
+</td>
+<td>
+command history
+</td>
+</tr>
+<tr>
+<td>
+<code>\?</code>
+</td>
+<td>
+help
 </td>
 </tr>
 </table>
 
-
-
-<div id="VirtualEnv-Notes"><h3 id="Notes">Notes</h3></div>
+<div id="Examples"><h2 id="Examples">Examples</h2></div>
 <p>
-To set up, run this script (automatically) when shell opens 
-<code>source /usr/local/bin/virtualenvwrapper.sh</code>
+<code>psql -t dbname username -c "select * from foo" &gt; data_file.txt</code>
+<code>psql -t bp-wallets readonly_john -c "select count(*) from balances;" &gt; data_file.txt</code>
+</p>
+
+<p>
+<code>\o [FILE]</code> send all query results to file or |pipe
+</p>
+
+<p>
+The sequence of commands will look like this:
+[wist@scifres ~]$ psql db
+Welcome to psql 8.3.6, the PostgreSQL interactive terminal
+</p>
+
+<p>
+db=&gt;\o out.txt
+db=&gt;\dt
+db=&gt;\q
 </p>
 
 

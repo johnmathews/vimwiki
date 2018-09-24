@@ -15,7 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
 
-<title>VirtualEnv</title>
+<title>Surround</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -82,134 +82,42 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="VirtualEnv"><h1 id="VirtualEnv">VirtualEnv</h1></div>
-
-<p>
-<br>
-</p>
+<div id="Surround plugin"><h2 id="Surround plugin">Surround plugin</h2></div>
 
 <table>
 <tr>
 <th>
-<span id="VirtualEnv-Description"></span><strong id="Description">Description</strong>
+Command
 </th>
 <th>
-<span id="VirtualEnv-Command"></span><strong id="Command">Command</strong>
+Description
 </th>
 </tr>
 <tr>
 <td>
-Run commands when activating the env
+<code>S&lt;char&gt;</code>
 </td>
 <td>
-<code>/Users/john/.virtualenvs/[name]/bin/activate</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv
-</td>
-<td>
-<code>mkvirtualenv env1</code>
+Surround <span id="Surround plugin-visual"></span><strong id="visual">visual</strong> selection with &lt;char&gt;
 </td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv with python3
+<code>cs&lt;x&gt;&lt;y&gt;</code>
 </td>
 <td>
-<code>mkvirtualenv demo --python=python3</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Close"></span><strong id="Close">Close</strong> the virtualenv
-</td>
-<td>
-<code>deactivate</code>
+Change surrounds from <code>x</code> to <code>y</code>
 </td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-Activate"></span><strong id="Activate">Activate</strong> the virtualenv
+<code>ys&lt;to&gt;&lt;x&gt;</code>
 </td>
 <td>
-<code>workon env1</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> environments
-</td>
-<td>
-<code>lsvirtualenv</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Delete"></span><strong id="Delete">Delete</strong> an environment
-</td>
-<td>
-<code>rmvirtualenv ENVNAME</code> or <code>rm -rf ~/Envs/env1</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Copy"></span><strong id="Copy">Copy</strong> an environment
-</td>
-<td>
-<code>cpvirtualenv ENVNAME [TARGETENVNAME]</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> all virtual envs
-</td>
-<td>
-<code>lsvirtualenv</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Show"></span><strong id="Show">Show</strong> the details for a single virtualenv.
-</td>
-<td>
-<code>showvirtualenv</code> [env]
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Remove"></span><strong id="Remove">Remove</strong> an environment, in the WORKON_HOME.
-</td>
-<td>
-<code>rmvirtualenv ENVNAME</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-Rename"></span><strong id="Rename">Rename</strong> a virtualenv
-</td>
-<td>
-<code>cpvirtualenv oldenv newenv</code> then  <code>rmvirtualenv oldenv</code>
-</td>
-</tr>
-<tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> all of the environments.
-</td>
-<td>
-<code>lsvirtualenv [-b] [-l] [-h]</code>
+Change surround around text object [<code>to</code>] to <code>x</code>
 </td>
 </tr>
 </table>
-
-
-
-<div id="VirtualEnv-Notes"><h3 id="Notes">Notes</h3></div>
-<p>
-To set up, run this script (automatically) when shell opens 
-<code>source /usr/local/bin/virtualenvwrapper.sh</code>
-</p>
 
 
         </div>

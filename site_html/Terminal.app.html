@@ -15,7 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
 
-<title>VimWiki</title>
+<title>Terminal.app</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -82,418 +82,763 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="VIMWIKI"><h1 id="VIMWIKI">VIMWIKI</h1></div>
+<div id="Terminal"><h2 id="Terminal">Terminal</h2></div>
 
-<p>
-<a href="https://stackoverflow.com/questions/44115503/css-only-solution-to-set-same-height-row-sections-on-a-responsive-grid">grid layout</a>
-</p>
+
+<div id="Terminal-Work with windows and tabs"><h3 id="Work with windows and tabs">Work with windows and tabs</h3></div>
+
 <table>
 <tr>
 <th>
-description
+Command
 </th>
 <th>
-command
+Description
 </th>
 </tr>
 <tr>
 <td>
-<code>[[address|label]]</code>
+Command-N
 </td>
 <td>
-links
-</td>
-</tr>
-<tr>
-<td>
-<code>sort i</code>
-</td>
-<td>
-sort list case insensitive
+New window
 </td>
 </tr>
 <tr>
 <td>
-<code>ctrl-t / d</code>
+Control-Command-N
 </td>
 <td>
-indent / outdent in insert mode
-</td>
-</tr>
-<tr>
-<td>
-<code>VimwikiTOC</code>
-</td>
-<td>
-Create or update the Table of Contents for the current wiki file.
+New window with same command
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;leader&gt;vw</code>
+Command-T
 </td>
 <td>
-open index file
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;leader&gt;wt</code>
-</td>
-<td>
-open index file in new tab
+New tab
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;leader&gt;wi</code>
+Control-Command-T
 </td>
 <td>
-open diary index
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;leader&gt;w,i</code>
-</td>
-<td>
-update diary index
+New tab with same command
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;leader&gt;w,w</code>
+Shift-Command-T
 </td>
 <td>
-open diary entry for today
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;leader&gt;tj</code>
-</td>
-<td>
-insert template
+Show or hide tab bar
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;leader&gt;w,t</code>
+Shift-Command-Backslash (\)
 </td>
 <td>
-open diary wiki-file for today in a new tab
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;leader&gt;w,y</code>
-</td>
-<td>
-open diary wiki-file for yesterday
+Show all tabs or exit tab overview
 </td>
 </tr>
 <tr>
 <td>
-<code>,whh</code>
+Shift-Command-N
 </td>
 <td>
-convert to html and open it in the browser
-</td>
-</tr>
-<tr>
-<td>
-<code>,wd</code>
-</td>
-<td>
-delete the wiki page you are in
+New command
 </td>
 </tr>
 <tr>
 <td>
-<code>,wr</code>
+Shift-Command-K
 </td>
 <td>
-rename the wiki page you are in
-</td>
-</tr>
-<tr>
-<td>
-<code>+</code>
-</td>
-<td>
-create and/or decorate links
+New remote connection
 </td>
 </tr>
 <tr>
 <td>
-<code>=</code>
+Command-I
 </td>
 <td>
-add header level
-</td>
-</tr>
-<tr>
-<td>
-<code>-</code>
-</td>
-<td>
-remove header level
+Show or hide Inspector
 </td>
 </tr>
 <tr>
 <td>
-<code>gll</code>
+Shift-Command-I
 </td>
 <td>
-Increase the level of a list item.
-</td>
-</tr>
-<tr>
-<td>
-<code>glh</code>
-</td>
-<td>
-Decrease the level of a list item.
+Edit title
 </td>
 </tr>
 <tr>
 <td>
-<code>glr</code>
+Option-Command-I
 </td>
 <td>
-Renumber list items if the cursor is on a numbered list item
-</td>
-</tr>
-<tr>
-<td>
-<code>gl*</code>
-</td>
-<td>
-Make a list item out of a normal line or change the symbol of the current item to *.
+Edit background color
 </td>
 </tr>
 <tr>
 <td>
-<code>gl#</code>
+Command-Plus (+)
 </td>
 <td>
-Make a list item out of a normal line or change the symbol of the current item to #.
-</td>
-</tr>
-<tr>
-<td>
-<code>gl-, gl1, etc</code>
-</td>
-<td>
-&nbsp;
+Make fonts bigger
 </td>
 </tr>
 <tr>
 <td>
-<code>gqq</code>
+Command-Minus (–)
 </td>
 <td>
-Format table. If you made some changes to a table without swapping insert/normal modes this command will reformat it.
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;C-Up&gt;</code>
-</td>
-<td>
-Open the previous day's diary link if available.
+Make fonts smaller
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;C-Down&gt;</code>
+Command-Grave Accent (`)
 </td>
 <td>
-Open the next day's diary link if available.
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;A-Left&gt;</code>
-</td>
-<td>
-Move current table column to the left.
+Next window
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;A-Right&gt;</code>
+Command-Shift-Tilde (~)
 </td>
 <td>
-Move current table column to the right.
-</td>
-</tr>
-<tr>
-<td>
-<code>ah</code>
-</td>
-<td>
-section between 2 headings including empty trailing lines
+Previous window
 </td>
 </tr>
 <tr>
 <td>
-<code>ih</code>
+Control-Tab
 </td>
 <td>
-section between 2 headings excluding empty trailing lines
-</td>
-</tr>
-<tr>
-<td>
-<code>a\</code>
-</td>
-<td>
-table cell
+Next Tab
 </td>
 </tr>
 <tr>
 <td>
-<code>i\ </code>
+Control-Shift-Tab
 </td>
 <td>
-inner table cell
-</td>
-</tr>
-<tr>
-<td>
-<code>ac</code>
-</td>
-<td>
-table column
+Previous Tab
 </td>
 </tr>
 <tr>
 <td>
-<code>ic</code>
+Command-D
 </td>
 <td>
-inner table column
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;C-Space&gt;</code>
-</td>
-<td>
-Toggle checkbox of a list item on/off.
+Split window into two panes
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;C-T&gt;  </code>
+Shift-Command-D
 </td>
 <td>
-Increase the level of a list item.
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;C-D&gt;</code>
-</td>
-<td>
-Decrease the level of a list item.
+Close split pane
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;C-L&gt;&lt;C-J&gt;</code>
+Command-W
 </td>
 <td>
-Change the symbol of the current list item to the next
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;C-L&gt;&lt;C-M&gt;</code>
-</td>
-<td>
-Create/remove a symbol from a list item.
+Close tab
 </td>
 </tr>
 <tr>
 <td>
-<code>'vih'</code>
+Shift-Command-W
 </td>
 <td>
-to select a section segment with its contents or
-</td>
-</tr>
-<tr>
-<td>
-<code>'dih'</code>
-</td>
-<td>
-to delete it or
+Close window
 </td>
 </tr>
 <tr>
 <td>
-<code>'yih' </code>
+Option-Command-W
 </td>
 <td>
-to yank it or
-</td>
-</tr>
-<tr>
-<td>
-<code>'cah'</code>
-</td>
-<td>
-to change it.
+Close other tabs
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;Enter&gt; </code>
+Option-Shift-Command-W
 </td>
 <td>
-Follow/Create wiki link
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;C-S-CR&gt; </code>
-</td>
-<td>
-Follow/create wiki link in new tab
+Close all
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;Backspace&gt; </code>
+Command-Home
 </td>
 <td>
-Go back to parent(previous) wiki link
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;Tab&gt;</code>
-</td>
-<td>
-Find next wiki link
+Scroll to top
 </td>
 </tr>
 <tr>
 <td>
-<code>&lt;Shift-Tab&gt;</code>
+Command-End
 </td>
 <td>
-Find previous wiki link
+Scroll to bottom
 </td>
 </tr>
 <tr>
 <td>
-<code>:VimwikiAll2HTML</code>
+Command-Page Up
 </td>
 <td>
-convert all pages to html. Make css file if it doesn’t exist.
+Page up
+</td>
+</tr>
+<tr>
+<td>
+Command-Page Down
+</td>
+<td>
+Page down
+</td>
+</tr>
+<tr>
+<td>
+Option-Command-Page Up
+</td>
+<td>
+Line up
+</td>
+</tr>
+<tr>
+<td>
+Option-Command-Page Down
+</td>
+<td>
+Line down
+</td>
+</tr>
+</table>
+
+<div id="Terminal-Select, find, and edit text"><h3 id="Select, find, and edit text">Select, find, and edit text</h3></div>
+
+<table>
+<tr>
+<th>
+Command
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Control-A
+</td>
+<td>
+Move to beginning of line
+</td>
+</tr>
+<tr>
+<td>
+Control-E
+</td>
+<td>
+Move to end of line
+</td>
+</tr>
+<tr>
+<td>
+Control-U
+</td>
+<td>
+Erase to beginning of line
+</td>
+</tr>
+<tr>
+<td>
+Control-K
+</td>
+<td>
+Erase to end of line
+</td>
+</tr>
+<tr>
+<td>
+Hold down the Shift and Command keys and double-click the path
+</td>
+<td>
+Select a complete file path
+</td>
+</tr>
+<tr>
+<td>
+Triple-click the line
+</td>
+<td>
+Select a complete line of text
+</td>
+</tr>
+<tr>
+<td>
+Double-click the word
+</td>
+<td>
+Select a word
+</td>
+</tr>
+<tr>
+<td>
+Hold down the Shift and Command keys and double-click the URL
+</td>
+<td>
+Select a URL
+</td>
+</tr>
+<tr>
+<td>
+Hold down the Option key and drag to select text
+</td>
+<td>
+Select a rectangular block
+</td>
+</tr>
+<tr>
+<td>
+Command-X
+</td>
+<td>
+Cut
+</td>
+</tr>
+<tr>
+<td>
+Command-C
+</td>
+<td>
+Copy
+</td>
+</tr>
+<tr>
+<td>
+Control-Shift-Command-C
+</td>
+<td>
+Copy without background color
+</td>
+</tr>
+<tr>
+<td>
+Option-Shift-Command-C
+</td>
+<td>
+Copy plain text
+</td>
+</tr>
+<tr>
+<td>
+Command-V
+</td>
+<td>
+Paste
+</td>
+</tr>
+<tr>
+<td>
+Shift-Command-V
+</td>
+<td>
+Paste the selection
+</td>
+</tr>
+<tr>
+<td>
+Control-Command-V
+</td>
+<td>
+Paste escaped text
+</td>
+</tr>
+<tr>
+<td>
+Control-Shift-Command-V
+</td>
+<td>
+Paste escaped selection
+</td>
+</tr>
+<tr>
+<td>
+Command-F
+</td>
+<td>
+Find
+</td>
+</tr>
+<tr>
+<td>
+Command-G
+</td>
+<td>
+Find next
+</td>
+</tr>
+<tr>
+<td>
+Command-Shift-G
+</td>
+<td>
+Find previous
+</td>
+</tr>
+<tr>
+<td>
+Command-E
+</td>
+<td>
+Find using the selected text
+</td>
+</tr>
+<tr>
+<td>
+Command-J
+</td>
+<td>
+Jump to the selected text
+</td>
+</tr>
+<tr>
+<td>
+Command-A
+</td>
+<td>
+Select all
+</td>
+</tr>
+<tr>
+<td>
+Control-Command-Space
+</td>
+<td>
+Open the character viewer
+</td>
+</tr>
+</table>
+
+
+<div id="Terminal-Work with marks and bookmarks"><h3 id="Work with marks and bookmarks">Work with marks and bookmarks</h3></div>
+
+<table>
+<tr>
+<th>
+Command
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Command-U
+</td>
+<td>
+Mark
+</td>
+</tr>
+<tr>
+<td>
+Option-Command-U
+</td>
+<td>
+Mark as bookmark
+</td>
+</tr>
+<tr>
+<td>
+Shift-Command-U
+</td>
+<td>
+Unmark
+</td>
+</tr>
+<tr>
+<td>
+Command-Return
+</td>
+<td>
+Mark line and send return
+</td>
+</tr>
+<tr>
+<td>
+Shift-Command-Return
+</td>
+<td>
+Send return without marking
+</td>
+</tr>
+<tr>
+<td>
+Shift-Command-M
+</td>
+<td>
+Insert bookmark
+</td>
+</tr>
+<tr>
+<td>
+Option-Shift-Command-M
+</td>
+<td>
+Insert bookmark with name
+</td>
+</tr>
+<tr>
+<td>
+Command-Up Arrow
+</td>
+<td>
+Jump to previous mark
+</td>
+</tr>
+<tr>
+<td>
+Command-Down Arrow
+</td>
+<td>
+Jump to next mark
+</td>
+</tr>
+<tr>
+<td>
+Option-Command-Up Arrow
+</td>
+<td>
+Jump to previous bookmark
+</td>
+</tr>
+<tr>
+<td>
+Option-Command-Down Arrow
+</td>
+<td>
+Jump to next bookmark
+</td>
+</tr>
+<tr>
+<td>
+Command-L
+</td>
+<td>
+Clear to previous mark
+</td>
+</tr>
+<tr>
+<td>
+Option-Command-L
+</td>
+<td>
+Clear to previous bookmark
+</td>
+</tr>
+<tr>
+<td>
+Command-K
+</td>
+<td>
+Clear to start
+</td>
+</tr>
+<tr>
+<td>
+Shift-Command-A
+</td>
+<td>
+Select between marks
+</td>
+</tr>
+</table>
+
+
+<div id="Terminal-Other shortcuts"><h3 id="Other shortcuts">Other shortcuts</h3></div>
+
+<table>
+<tr>
+<th>
+Command
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Control-Command-F
+</td>
+<td>
+Enter or exit full screen
+</td>
+</tr>
+<tr>
+<td>
+Shift-Command-C
+</td>
+<td>
+Show or hide colors
+</td>
+</tr>
+<tr>
+<td>
+Command-Comma (,)
+</td>
+<td>
+Open Terminal preferences
+</td>
+</tr>
+<tr>
+<td>
+Typing Command-Period (.) is equivalent to entering Control-C on the command line
+</td>
+<td>
+Break
+</td>
+</tr>
+<tr>
+<td>
+Command-P
+</td>
+<td>
+Print
+</td>
+</tr>
+<tr>
+<td>
+Option-Command-R
+</td>
+<td>
+Soft reset terminal emulator state
+</td>
+</tr>
+<tr>
+<td>
+Control-Option-Command-R
+</td>
+<td>
+Hard reset terminal emulator state
+</td>
+</tr>
+<tr>
+<td>
+Hold down the Command key and double-click the URL
+</td>
+<td>
+Open a URL
+</td>
+</tr>
+<tr>
+<td>
+Drag the file from the Finder into the Terminal window
+</td>
+<td>
+Add the complete path to a file
+</td>
+</tr>
+<tr>
+<td>
+Command-S
+</td>
+<td>
+Export text as
+</td>
+</tr>
+<tr>
+<td>
+Shift-Command-S
+</td>
+<td>
+Export selected text as
+</td>
+</tr>
+<tr>
+<td>
+Control-R
+</td>
+<td>
+Reverse search command history
+</td>
+</tr>
+<tr>
+<td>
+Command-R
+</td>
+<td>
+Toggle “Allow Mouse Reporting” option
+</td>
+</tr>
+<tr>
+<td>
+Command-Option-O
+</td>
+<td>
+Toggle “Use Option as Meta Key” option
+</td>
+</tr>
+<tr>
+<td>
+Option-Command-Page Down
+</td>
+<td>
+Show alternate screen
+</td>
+</tr>
+<tr>
+<td>
+Option-Command-Page Up
+</td>
+<td>
+Hide alternate screen
+</td>
+</tr>
+<tr>
+<td>
+Control-Shift-Command-Question Mark (?)
+</td>
+<td>
+Open man page for selection
+</td>
+</tr>
+<tr>
+<td>
+Control-Option-Command-Slash (/)
+</td>
+<td>
+Search man page index for selection
+</td>
+</tr>
+<tr>
+<td>
+On a command line, type one or more characters, then press Tab
+</td>
+<td>
+Complete directory or file name
+</td>
+</tr>
+<tr>
+<td>
+On a command line, type one or more characters, then press Tab twice
+</td>
+<td>
+Display a list of possible directory or file name completions
 </td>
 </tr>
 </table>

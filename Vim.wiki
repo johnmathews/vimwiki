@@ -5,6 +5,11 @@
 2. Writing prose
 3. NerdTree
 
+== Macros ==
+`q<letter> <some commands> q` - create a macro
+
+`<number>@<letter>`           - run macro 
+
 == Navigation ==
 ) 			sentence
 }			paragraph

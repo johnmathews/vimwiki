@@ -1,0 +1,8 @@
+== Surround plugin ==
+
+| Command     | Description                                      |
+|-------------|--------------------------------------------------|
+| `S<char>`   | Surround *visual* selection with <char>          |
+| `cs<x><y>`  | Change surrounds from `x` to `y`                 |
+| `ys<to><x>` | Change surround around text object [`to`] to `x` |
+
