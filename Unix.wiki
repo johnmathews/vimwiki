@@ -1,0 +1,7 @@
+# Unix CLI
+
+
+| Command               | Description           |
+|-----------------------|-----------------------|
+| `sudo shutdown -h now | shutdown now          |
+| `sudo shutdown -r +10 | restart in 10 minutes |
