@@ -1,0 +1,12 @@
+= List =
+
+flags can be combined behind 1 dash. i.e. `ls -tr1`
+
+| Command | Description                              |
+|---------|------------------------------------------|
+| `ls`    | list.                                    |
+| `-t`    | list and sort by data modified           |
+| `-r`    | list in reverse order                    |
+| `-a`    | show all (including hidden) files        |
+| `-1`    | 1 entry per row                          |
+| `-l`    | list extra info - size, permissions, etc |

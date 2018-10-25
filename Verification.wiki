@@ -1,0 +1,10 @@
+= GPG / PGP =
+
+# Import the key `curl https://bisq.network/pubkey/29CDFD3B.asc | gpg --import`
+    * GPG prints a confusing warning: "This key is not certified with a trusted signature!" - See https://serverfault.com/questions/569911/how-to-verify-an-imported-gpg-key for background information.
+# Verify the signature `gpg --digest-algo SHA256 --verify <FILE>{.asc*,}`  
+# On osX you can verify the jar file inside a binary `shasum -a256 [PATH TO BISQ APP]/Bisq.app/Contents/Java/Bisq-0.8.0.jar`
+    * The output needs to match the value from the Bisq-0.8.0.jar.txt file 
+
+== Cheat sheet and background info ==
+http://blog.ghostinthemachines.com/2015/03/01/how-to-use-gpg-command-line/

@@ -1,0 +1,14 @@
+== Signature ==
+
+https://github.com/kshenoy/vim-signature
+
+
+
+| Command | Description                                                                                 |
+|---------|---------------------------------------------------------------------------------------------|
+| `mx`    | Toggle mark `x`                                                                             |
+| `m,`    | Place the next available mark                                                               |
+| `m.`    | If no mark on line, place the next available mark. Otherwise, remove (first) existing mark. |
+| `']`    | Jump by alphabetical order to start of next line having a mark                              |
+| `]=`    | Jump to next line having a marker of any type                                               |
+| `]``    | Jump to next mark                                                                           |

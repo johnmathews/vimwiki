@@ -1,0 +1,4 @@
+= OpenSSL =
+
+`openssl sha256 <filename>` - will output the sha256 of the file 
+

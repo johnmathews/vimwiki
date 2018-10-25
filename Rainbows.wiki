@@ -1,0 +1,14 @@
+== Rainbow (Parenthesis) ==
+
+https://vimawesome.com/plugin/rainbow-you-belong-with-me
+
+
+
+*activate with:*
+<br>
+`:RainbowToggle`
+<br>
+<br>
+*vimrc:* <br>
+" on by default <br>
+`let g:rainbow_active = 1` <br>

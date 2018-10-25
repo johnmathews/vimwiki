@@ -48,10 +48,21 @@
 
 <div class="item">
 <div class="item__heading">
+=== Raspberry Pi ===
+</div>
+* [[commands]]
+* [[Verification]]
+
+</div>
+
+<div class="item">
+<div class="item__heading">
 === Unix-likes ===
 </div>
 * [[Grep]]
 * [[jSON]]
+* [[ls]]
+* [[openssl]]
 </div>
 
 <div class="item">
@@ -62,6 +73,8 @@
 * [[VimWiki]] 
 * [[Surround]]
 * [[Sessions]]
+* [[Rainbows]]
+* [[Marks]]
 
 </div>
 
