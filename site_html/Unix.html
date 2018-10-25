@@ -15,7 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
 
-<title>Verification</title>
+<title>Unix</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -82,34 +82,32 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="GPG / PGP"><h1 id="GPG / PGP">GPG / PGP</h1></div>
-
-<ol>
-<li>
-Import the key <code>curl https://bisq.network/pubkey/29CDFD3B.asc | gpg --import</code>
-
-<ul>
-<li>
-GPG prints a confusing warning: "This key is not certified with a trusted signature!" - See <a href="https://serverfault.com/questions/569911/how-to-verify-an-imported-gpg-key">https://serverfault.com/questions/569911/how-to-verify-an-imported-gpg-key</a> for background information.
-
-</ul>
-<li>
-Verify the signature <code>gpg --digest-algo SHA256 --verify &lt;FILE&gt;{.asc*,}</code>  
-
-<li>
-On osX you can verify the jar file inside a binary <code>shasum -a256 [PATH TO BISQ APP]/Bisq.app/Contents/Java/Bisq-0.8.0.jar</code>
-
-<ul>
-<li>
-The output needs to match the value from the Bisq-0.8.0.jar.txt file 
-
-</ul>
-</ol>
-
-<div id="GPG / PGP-Cheat sheet and background info"><h2 id="Cheat sheet and background info">Cheat sheet and background info</h2></div>
-<p>
-<a href="http://blog.ghostinthemachines.com/2015/03/01/how-to-use-gpg-command-line/">http://blog.ghostinthemachines.com/2015/03/01/how-to-use-gpg-command-line/</a>
-</p>
+<table>
+<tr>
+<th>
+Command
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+`sudo shutdown -h now
+</td>
+<td>
+shutdown now
+</td>
+</tr>
+<tr>
+<td>
+`sudo shutdown -r +10
+</td>
+<td>
+restart in 10 minutes
+</td>
+</tr>
+</table>
 
 
         </div>
