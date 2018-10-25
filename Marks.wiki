@@ -12,3 +12,5 @@ https://github.com/kshenoy/vim-signature
 | `']`    | Jump by alphabetical order to start of next line having a mark                              |
 | `]=`    | Jump to next line having a marker of any type                                               |
 | `]``    | Jump to next mark                                                                           |
+| `'x`    | goto mark `x`, also use `                                                                   |
+
