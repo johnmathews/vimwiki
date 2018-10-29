@@ -1,0 +1,8 @@
+= crontab =
+
+an edit,
+
+crontab -e
+crontab -l
+
+https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx.html
