@@ -1,5 +1,7 @@
 =Vim=
 
+`:%s/\s\+$//e` - remove trailing whitespace from everyline. if not trailing white space, it doesnt do anything. the `e` suppresses any errors
+
 == Plugins ==
 1. UnconditionalPaste - Force character-/line-/block-wise paste, regardless of how it was yanked. 
 2. Writing prose
