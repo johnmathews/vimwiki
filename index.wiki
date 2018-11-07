@@ -61,6 +61,7 @@
 === Unix-likes ===
 </div>
 * [[Grep]]
+* [[sed]]
 * [[jSON]]
 * [[ls]]
 * [[openssl]]

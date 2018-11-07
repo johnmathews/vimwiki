@@ -15,7 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
 
-<title>Git</title>
+<title>sed</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -82,186 +82,19 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="Git &amp; Github, Signing Commits"><h1 id="Git &amp; Github, Signing Commits">Git &amp; Github, Signing Commits</h1></div>
+<div id="Find and replace"><h1 id="Find and replace">Find and replace</h1></div>
 
-<div id="Git &amp; Github, Signing Commits-webcam bug"><h3 id="webcam bug">webcam bug</h3></div>
 <p>
-Make webcam work - 
-sudo killall VDCAssistant
-sudo killall AppleCameraAssistant
+<code>cd /path/to/your/folder</code>
 </p>
 
 <p>
-sudo ~/Downloads/replug_facetime
+<code>sed -i.bu 's/foo/bar/g' **/*.py</code>
 </p>
 
 <p>
-A <span id="Git &amp; Github, Signing Commits-webcam bug-remote"></span><strong id="remote">remote</strong> is a copy of your local repository which is held somewhere else (on GitHub's servers, in this case). <span id="Git &amp; Github, Signing Commits-webcam bug-you are creating a remote called origin"></span><strong id="you are creating a remote called origin">you are creating a remote called origin</strong>. This is the name that is conventionally given to your main remote. You should push changes up to your origin remote on a regular basis so you have an up-to-date backup of your code and its history.
+Occurrences of "foo" will be replaced with "bar".
 </p>
-
-<div id="Git &amp; Github, Signing Commits-Stop bugging me for the rsa key thing:"><h3 id="Stop bugging me for the rsa key thing:">Stop bugging me for the rsa key thing:</h3></div>
-<p>
-In terminal: $ eval <code>ssh-agent -s</code>
-</p>
-
-<p>
-Signing Commits
-To make it work, do the below. Or put this in the same bash file as your aliases. (bash_profile)
-GPG_TTY=$(tty)
-export GPG_TTY
-</p>
-
-<div id="Git &amp; Github, Signing Commits-Git &amp; GitHub"><h3 id="Git &amp; GitHub">Git &amp; GitHub</h3></div>
-
-<p>
-To merge a branch:
-</p>
-
-<p>
-1.<code>git checkout &lt;branch to merge into&gt;</code>
-</p>
-
-<p>
-2.<code>git merge &lt;branch to merge&gt;</code>
-</p>
-<table>
-<tr>
-<th>
-Command
-</th>
-<th>
-Description
-</th>
-</tr>
-<tr>
-<td>
-<code>hub create &lt;repo_name&gt;</code>
-</td>
-<td>
-Create repo on github
-</td>
-</tr>
-<tr>
-<td>
-&nbsp;
-</td>
-<td>
-(for help run “hub help”) # add -p for private, -d for description
-</td>
-</tr>
-<tr>
-<td>
-<code>hub create -h</code>
-</td>
-<td>
-get help command for create
-</td>
-</tr>
-<tr>
-<td>
-<code>git remote -v</code>
-</td>
-<td>
-verify the new remote url
-</td>
-</tr>
-<tr>
-<td>
-<code>git remote add origin https://github.com/user/repo.git</code>
-</td>
-<td>
-set the new remote
-</td>
-</tr>
-<tr>
-<td>
-<code>git remote set-url origin https://github.com/user/repo.git</code>
-</td>
-<td>
-&nbsp;
-</td>
-</tr>
-<tr>
-<td>
-<code>git push -u origin master</code>
-</td>
-<td>
-push the changes in the local repo up to the remote repo specified as the origin
-</td>
-</tr>
-<tr>
-<td>
-<code>git clone https://github.com/johnmathews/quant_tutorial_1.git</code>
-</td>
-<td>
-to download a repo for the first time
-</td>
-</tr>
-<tr>
-<td>
-<code>git pull origin master</code>
-</td>
-<td>
-get the most up to date version of a repo you’ve already downloaded
-</td>
-</tr>
-<tr>
-<td>
-<code>git clone git@github.com:whatever</code>
-</td>
-<td>
-download repo into subfolder with name “whatever”
-</td>
-</tr>
-<tr>
-<td>
-<code>git clone git@github.com:whatever folder-name</code>
-</td>
-<td>
-download repo into subfolder with name “folder-name”
-</td>
-</tr>
-<tr>
-<td>
-<code>git push -u origin master</code>
-</td>
-<td>
-1. create the master branch in the remote repository
-</td>
-</tr>
-<tr>
-<td>
-&nbsp;
-</td>
-<td>
-2. sends the most recent snapshot of the master branch to GitHub
-</td>
-</tr>
-<tr>
-<td>
-<code>Git pull origin master</code>
-</td>
-<td>
-Pull the master branch of the remote called ‘origin’
-</td>
-</tr>
-<tr>
-<td>
-<code>git branch --merged</code>
-</td>
-<td>
-View only the branches that have been merges to master and therefore could be deleted
-</td>
-</tr>
-<tr>
-<td>
-<code>git branch -d branch1 branch2</code>
-</td>
-<td>
-Delete branches (can list several)
-</td>
-</tr>
-</table>
 
 
         </div>

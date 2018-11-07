@@ -26,19 +26,21 @@ To merge a branch:
 2.`git merge <branch to merge>`
 
 
-| Command                                                       | Description                                                                      |
-|---------------------------------------------------------------|----------------------------------------------------------------------------------|
-| hub create <repo_name>                                        | Create repo on github                                                            |
-|                                                               | (for help run “hub help”) # add -p for private, -d for description               |
-| hub create -h                                                 | get help command for create                                                      |
-| git remote -v                                                 | verify the new remote url                                                        |
-| git remote add origin https://github.com/user/repo.git        | set the new remote                                                               |
-| git remote set-url origin https://github.com/user/repo.git    |                                                                                  |
-| git push -u origin master                                     | push the changes in the local repo up to the remote repo specified as the origin |
-| git clone https://github.com/johnmathews/quant_tutorial_1.git | to download a repo for the first time                                            |
-| git pull origin master                                        | get the most up to date version of a repo you’ve already downloaded              |
-| git clone git@github.com:whatever                             | download repo into subfolder with name “whatever”                                |
-| git clone git@github.com:whatever folder-name                 | download repo into subfolder with name “folder-name”                             |
-| git push -u origin master                                     | 1. create the master branch in the remote repository                             |
-|                                                               | 2. sends the most recent snapshot of the master branch to GitHub                 |
-| Git pull origin master                                        | Pull the master branch of the remote called ‘origin’                             |
+| Command                                                         | Description                                                                           |
+|-----------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| `hub create <repo_name>`                                        | Create repo on github                                                                 |
+|                                                                 | (for help run “hub help”) # add -p for private, -d for description                    |
+| `hub create -h`                                                 | get help command for create                                                           |
+| `git remote -v`                                                 | verify the new remote url                                                             |
+| `git remote add origin https://github.com/user/repo.git`        | set the new remote                                                                    |
+| `git remote set-url origin https://github.com/user/repo.git`    |                                                                                       |
+| `git push -u origin master`                                     | push the changes in the local repo up to the remote repo specified as the origin      |
+| `git clone https://github.com/johnmathews/quant_tutorial_1.git` | to download a repo for the first time                                                 |
+| `git pull origin master`                                        | get the most up to date version of a repo you’ve already downloaded                   |
+| `git clone git@github.com:whatever`                             | download repo into subfolder with name “whatever”                                     |
+| `git clone git@github.com:whatever folder-name`                 | download repo into subfolder with name “folder-name”                                  |
+| `git push -u origin master`                                     | 1. create the master branch in the remote repository                                  |
+|                                                                 | 2. sends the most recent snapshot of the master branch to GitHub                      |
+| `Git pull origin master`                                        | Pull the master branch of the remote called ‘origin’                                  |
+| `git branch --merged`                                           | View only the branches that have been merges to master and therefore could be deleted |
+| `git branch -d branch1 branch2`                                 | Delete branches (can list several)                                                    |
