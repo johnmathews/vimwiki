@@ -16,6 +16,7 @@
 === Dev Tools ===
 </div>
 * [[Terminal.app]]
+* [[strftime]]
 * [[FZF]]
 * [[Git tutorial]]
 * [[Git]]
