@@ -1,0 +1,7 @@
+= Disble journaling on MacOS using Terminal.app =
+
+From macOS terminal:
+
+diskutil list
+diskutil disableJournal /dev/disk3s2
+

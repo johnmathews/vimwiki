@@ -1,0 +1,3 @@
+= To monitor network strength =
+
+` watch -n1 iwconfig `
