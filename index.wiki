@@ -52,7 +52,6 @@
 <div class="item__heading">
 === Raspberry Pi ===
 </div>
-* [[commands]]
 * [[Verification]]
 * [[Networking]]
 * [[Disable journals for MacOS HFSPlus]]
