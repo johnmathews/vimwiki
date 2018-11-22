@@ -80,6 +80,7 @@
 * [[Sessions]]
 * [[Rainbows]]
 * [[Marks]]
+* [[fugitive]]
 
 </div>
 

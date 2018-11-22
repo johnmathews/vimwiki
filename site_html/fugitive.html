@@ -15,7 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
 
-<title>tmux</title>
+<title>fugitive</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -82,26 +82,7 @@
         <div class="span12">
             <!--Body content-->
             
-<p>
-If a tmux command I mention is bound to a keyboard shortcut by default, I’ll note that in parenthesis.
-</p>
-
-<p>
-They’re accessed by entering a key combination called the prefix and then typing a letter.
-</p>
-
-<p>
-For example, if you see prefix + d below, that means you would first hit (and release) Control + b and then type d.
-</p>
-
-<p>
-## change default <a href="shell.html">shell</a>
-chsh -s $(which zsh)
-</p>
-
-
-
-<div id="Commands"><h2 id="Commands">Commands</h2></div>
+<div id="Fugitive"><h1 id="Fugitive">Fugitive</h1></div>
 
 <table>
 <tr>
@@ -114,192 +95,63 @@ Description
 </tr>
 <tr>
 <td>
-<span id="Commands-Session Management"></span><strong id="Session Management">Session Management</strong>
+<code>:Gstatus</code>
 </td>
 <td>
-&nbsp;
-</td>
-</tr>
-<tr>
-<td>
-tmux new -s session_name
-</td>
-<td>
-creates a new tmux session named session_name
+output of <code>git status</code>
 </td>
 </tr>
 <tr>
 <td>
-tmux attach -t session_name
+<code>:Gcommit %</code>
 </td>
 <td>
-attaches to an existing tmux session named session_name
-</td>
-</tr>
-<tr>
-<td>
-tmux switch -t session_name
-</td>
-<td>
-switches to an existing session named session_name
+commit the current file, editing the commit message
 </td>
 </tr>
 <tr>
 <td>
-tmux list-sessions
+<code>:Git</code>
 </td>
 <td>
-lists existing tmux sessions
-</td>
-</tr>
-<tr>
-<td>
-tmux detach (prefix + d)
-</td>
-<td>
-detach the currently attached session
+run an arbitrary git command
 </td>
 </tr>
 <tr>
 <td>
-<span id="Commands-Windows"></span><strong id="Windows">Windows</strong>
+<code>Git!</code>
 </td>
 <td>
-&nbsp;
-</td>
-</tr>
-<tr>
-<td>
-tmux new-window (prefix + c)
-</td>
-<td>
-create a new window
-</td>
-</tr>
-<tr>
-<td>
-tmux select-window -t :0-9 (prefix + 0-9)
-</td>
-<td>
-move to the window based on index
-</td>
-</tr>
-<tr>
-<td>
-tmux rename-window (prefix + ,)
-</td>
-<td>
-rename the current window
-</td>
-</tr>
-<tr>
-<td>
-Panes
-</td>
-<td>
-&nbsp;
-</td>
-</tr>
-<tr>
-<td>
-tmux split-window (prefix + ")
-</td>
-<td>
-splits the window into two vertical panes
-</td>
-</tr>
-<tr>
-<td>
-tmux split-window -h (prefix + %)
-</td>
-<td>
-splits the window into two horizontal panes
-</td>
-</tr>
-<tr>
-<td>
-tmux swap-pane -[UDLR] (prefix + { or })
-</td>
-<td>
-swaps pane with another in the specified direction
-</td>
-</tr>
-<tr>
-<td>
-tmux select-pane -[UDLR]
-</td>
-<td>
-selects the next pane in the specified direction
-</td>
-</tr>
-<tr>
-<td>
-tmux select-pane -t :.+
-</td>
-<td>
-selects the next pane in numerical order
-</td>
-</tr>
-<tr>
-<td>
-<span id="Commands-Helpful commands"></span><strong id="Helpful commands">Helpful commands</strong>
-</td>
-<td>
-&nbsp;
-</td>
-</tr>
-<tr>
-<td>
-tmux list-keys
-</td>
-<td>
-lists out every bound key and the tmux command it runs
-</td>
-</tr>
-<tr>
-<td>
-tmux list-commands
-</td>
-<td>
-lists out every tmux command and its arguments
-</td>
-</tr>
-<tr>
-<td>
-tmux info
-</td>
-<td>
-lists out every session, window, pane, its pid, etc.
-</td>
-</tr>
-<tr>
-<td>
-tmux source-file ~/.tmux.conf
-</td>
-<td>
-reloads the current tmux configuration (based on a default tmux config)
+open the output of a command in a temp file
 </td>
 </tr>
 </table>
 
 
 <p>
-</br>
-<span id="Commands-part of a tmux config"></span><strong id="part of a tmux config">part of a tmux config</strong>
+<br>
 </p>
-<pre # remap prefix to Control + a>
-set -g prefix C-a
-unbind C-b
-bind C-a send-prefix
 
-# force a reload of the config file
-unbind r
-bind r source-file ~/.tmux.conf
+<p>
+<span id="Fugitive-Screencasts"></span><strong id="Screencasts">Screencasts</strong>
+</p>
+<ul>
+<li>
+A complement to command line git <a href="http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/">http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/</a>
 
-# quick pane cycling
-unbind ^A
-bind ^A select-pane -t :.+}}}                                        
-</pre>
+<li>
+Working with the git index <a href="http://vimcasts.org/episodes/fugitive-vim-working-with-the-git-index/">http://vimcasts.org/episodes/fugitive-vim-working-with-the-git-index/</a>
+
+<li>
+Resolving merge conflicts with vimdiff <a href="http://vimcasts.org/episodes/fugitive-vim-resolving-merge-conflicts-with-vimdiff/">http://vimcasts.org/episodes/fugitive-vim-resolving-merge-conflicts-with-vimdiff/</a>
+
+<li>
+Browsing the git object database <a href="http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/">http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/</a>
+
+<li>
+Exploring the history of a git repository <a href="http://vimcasts.org/episodes/fugitive-vim-exploring-the-history-of-a-git-repository/">http://vimcasts.org/episodes/fugitive-vim-exploring-the-history-of-a-git-repository/</a>
+
+</ul>
 
 
         </div>

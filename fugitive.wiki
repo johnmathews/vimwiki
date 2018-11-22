@@ -1,0 +1,18 @@
+= Fugitive =
+
+| Command      | Description                                         |
+|--------------|-----------------------------------------------------|
+| `:Gstatus`   | output of `git status`                              |
+| `:Gcommit %` | commit the current file, editing the commit message |
+| `:Git`       | run an arbitrary git command                        |
+| `Git!`       | open the output of a command in a temp file         |
+
+
+<br>
+
+*Screencasts*
+    * A complement to command line git http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
+    * Working with the git index http://vimcasts.org/episodes/fugitive-vim-working-with-the-git-index/
+    * Resolving merge conflicts with vimdiff http://vimcasts.org/episodes/fugitive-vim-resolving-merge-conflicts-with-vimdiff/
+    * Browsing the git object database http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
+    * Exploring the history of a git repository http://vimcasts.org/episodes/fugitive-vim-exploring-the-history-of-a-git-repository/
