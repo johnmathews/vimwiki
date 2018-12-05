@@ -1,8 +1,4 @@
-If a tmux command I mention is bound to a keyboard shortcut by default, I’ll note that in parenthesis.
 
-They’re accessed by entering a key combination called the prefix and then typing a letter.
-
-For example, if you see prefix + d below, that means you would first hit (and release) Control + b and then type d.
 
 ## change default [[shell]]
 chsh -s $(which zsh)
@@ -14,11 +10,17 @@ chsh -s $(which zsh)
 | Command                                   | Description                                                             |
 |-------------------------------------------|-------------------------------------------------------------------------|
 | *Session Management*                      |                                                                         |
-| tmux new -s session_name                  | creates a new tmux session named session_name                           |
-| tmux attach -t session_name               | attaches to an existing tmux session named session_name                 |
-| tmux switch -t session_name               | switches to an existing session named session_name                      |
-| tmux list-sessions                        | lists existing tmux sessions                                            |
-| tmux detach (prefix + d)                  | detach the currently attached session                                   |
+| `tmux new`                                | start a new session                                                     |
+| `tmux ls`                                 | list active sessions                                                    |
+| `tmux attach-session -t 3`                | attach session 3 (see `tmux ls` for list)                               |
+| `tmux a #`                                | attach last created session                                             |
+| `exit`                                    | exit                                                                    |
+| `ctrl - b`                                | default prefix                                                          |
+| `ctrl-b d`                                | detach                                                                  |
+| `tmux new -s session_name`                | creates a new tmux session named session_name                           |
+| `tmux attach -t session_name`             | attaches to an existing tmux session named session_name                 |
+| `tmux switch -t session_name`             | switches to an existing session named session_name                      |
+| `tmux detach (prefix + d)`                | detach the currently attached session                                   |
 | *Windows*                                 |                                                                         |
 | tmux new-window (prefix + c)              | create a new window                                                     |
 | tmux select-window -t :0-9 (prefix + 0-9) | move to the window based on index                                       |
