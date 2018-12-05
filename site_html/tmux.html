@@ -15,7 +15,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
 
-<title>tmux</title>
+<title>Tmux</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -82,17 +82,7 @@
         <div class="span12">
             <!--Body content-->
             
-<p>
-If a tmux command I mention is bound to a keyboard shortcut by default, I’ll note that in parenthesis.
-</p>
 
-<p>
-They’re accessed by entering a key combination called the prefix and then typing a letter.
-</p>
-
-<p>
-For example, if you see prefix + d below, that means you would first hit (and release) Control + b and then type d.
-</p>
 
 <p>
 ## change default <a href="shell.html">shell</a>
@@ -122,7 +112,63 @@ Description
 </tr>
 <tr>
 <td>
-tmux new -s session_name
+<code>tmux new</code>
+</td>
+<td>
+start a new session
+</td>
+</tr>
+<tr>
+<td>
+<code>tmux ls</code>
+</td>
+<td>
+list active sessions
+</td>
+</tr>
+<tr>
+<td>
+<code>tmux attach-session -t 3</code>
+</td>
+<td>
+attach session 3 (see <code>tmux ls</code> for list)
+</td>
+</tr>
+<tr>
+<td>
+<code>tmux a #</code>
+</td>
+<td>
+attach last created session
+</td>
+</tr>
+<tr>
+<td>
+<code>exit</code>
+</td>
+<td>
+exit
+</td>
+</tr>
+<tr>
+<td>
+<code>ctrl - b</code>
+</td>
+<td>
+default prefix
+</td>
+</tr>
+<tr>
+<td>
+<code>ctrl-b d</code>
+</td>
+<td>
+detach
+</td>
+</tr>
+<tr>
+<td>
+<code>tmux new -s session_name</code>
 </td>
 <td>
 creates a new tmux session named session_name
@@ -130,7 +176,7 @@ creates a new tmux session named session_name
 </tr>
 <tr>
 <td>
-tmux attach -t session_name
+<code>tmux attach -t session_name</code>
 </td>
 <td>
 attaches to an existing tmux session named session_name
@@ -138,7 +184,7 @@ attaches to an existing tmux session named session_name
 </tr>
 <tr>
 <td>
-tmux switch -t session_name
+<code>tmux switch -t session_name</code>
 </td>
 <td>
 switches to an existing session named session_name
@@ -146,15 +192,7 @@ switches to an existing session named session_name
 </tr>
 <tr>
 <td>
-tmux list-sessions
-</td>
-<td>
-lists existing tmux sessions
-</td>
-</tr>
-<tr>
-<td>
-tmux detach (prefix + d)
+<code>tmux detach (prefix + d)</code>
 </td>
 <td>
 detach the currently attached session
