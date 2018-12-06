@@ -3,37 +3,36 @@
 
 === Work with windows and tabs ===
 
-| Command                     | Description                        |
-|-----------------------------|------------------------------------|
-| Command-N                   | New window                         |
-| Control-Command-N           | New window with same command       |
-| Command-T                   | New tab                            |
-| Control-Command-T           | New tab with same command          |
-| Shift-Command-T             | Show or hide tab bar               |
-| Shift-Command-Backslash (\) | Show all tabs or exit tab overview |
-| Shift-Command-N             | New command                        |
-| Shift-Command-K             | New remote connection              |
-| Command-I                   | Show or hide Inspector             |
-| Shift-Command-I             | Edit title                         |
-| Option-Command-I            | Edit background color              |
-| Command-Plus (+)            | Make fonts bigger                  |
-| Command-Minus (–)           | Make fonts smaller                 |
-| Command-Grave Accent (`)    | Next window                        |
-| Command-Shift-Tilde (~)     | Previous window                    |
-| Control-Tab                 | Next Tab                           |
-| Control-Shift-Tab           | Previous Tab                       |
-| Command-D                   | Split window into two panes        |
-| Shift-Command-D             | Close split pane                   |
-| Command-W                   | Close tab                          |
-| Shift-Command-W             | Close window                       |
-| Option-Command-W            | Close other tabs                   |
-| Option-Shift-Command-W      | Close all                          |
-| Command-Home                | Scroll to top                      |
-| Command-End                 | Scroll to bottom                   |
-| Command-Page Up             | Page up                            |
-| Command-Page Down           | Page down                          |
-| Option-Command-Page Up      | Line up                            |
-| Option-Command-Page Down    | Line down                          |
+| Command                     | Description                                  |
+|-----------------------------|----------------------------------------------|
+| `ps`                        | view processes on screen                     |
+| `fg <id>`                   | move (last) background process to foreground |
+| Control-Command-N           | New window with same command                 |
+| Control-Command-T           | New tab with same command                    |
+| Shift-Command-T             | Show or hide tab bar                         |
+| Shift-Command-Backslash (\) | Show all tabs or exit tab overview           |
+| Shift-Command-N             | New command                                  |
+| Shift-Command-K             | New remote connection                        |
+| Command-I                   | Show or hide Inspector                       |
+| Shift-Command-I             | Edit title                                   |
+| Option-Command-I            | Edit background color                        |
+| Command-Plus (+)            | Make fonts bigger                            |
+| Command-Minus (–)           | Make fonts smaller                           |
+| Command-Grave Accent (`)    | Next window                                  |
+| Command-Shift-Tilde (~)     | Previous window                              |
+| Control-Tab                 | Next Tab                                     |
+| Control-Shift-Tab           | Previous Tab                                 |
+| Command-D                   | Split window into two panes                  |
+| Shift-Command-D             | Close split pane                             |
+| Shift-Command-W             | Close window                                 |
+| Option-Command-W            | Close other tabs                             |
+| Option-Shift-Command-W      | Close all                                    |
+| Command-Home                | Scroll to top                                |
+| Command-End                 | Scroll to bottom                             |
+| Command-Page Up             | Page up                                      |
+| Command-Page Down           | Page down                                    |
+| Option-Command-Page Up      | Line up                                      |
+| Option-Command-Page Down    | Line down                                    |
 
 === Select, find, and edit text ===
 
