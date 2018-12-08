@@ -1,0 +1,16 @@
+
+
+
+    * `>` redirects `stdout` into a file
+    * `>` will overwrite the content of the destination file
+    * `>>` will append the content to the destination file
+    * `cat` outputs the contents of a file to the  
+ 
+    * `<` takes `stdin` from right and gives it to the left
+    * `|` is a pipe. it takes `stdout` from left and pipes it as `stdin` to the right
+    * `sort` takes `stdin` and sorts it alphabetically to `stdout`
+    * `uniq` filters out adjacent duplicates. Therefore its good to call `sort` before calling `uniq` to filter all duplicates
+    * `grep` searches files for lines which match an expression
+    * `grep -i` is case insensitive
+    * 
+

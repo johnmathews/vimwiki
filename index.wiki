@@ -21,6 +21,7 @@
 * [[FZF]]
 * [[Git tutorial]]
 * [[Git]]
+* [[shell]]
 * [[Shell vs Terminal]]
 * [[VirtualEnv]]
 * [[Docker]]
