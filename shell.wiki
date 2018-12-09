@@ -1,16 +1,46 @@
 
 
 
+    * `clear` clears the window
     * `>` redirects `stdout` into a file
     * `>` will overwrite the content of the destination file
     * `>>` will append the content to the destination file
-    * `cat` outputs the contents of a file to the  
- 
     * `<` takes `stdin` from right and gives it to the left
     * `|` is a pipe. it takes `stdout` from left and pipes it as `stdin` to the right
+    * 
+    * `cat` outputs the contents of a file to the  
+    * `less` outputs 1 page of a file at a time
+ 
     * `sort` takes `stdin` and sorts it alphabetically to `stdout`
     * `uniq` filters out adjacent duplicates. Therefore its good to call `sort` before calling `uniq` to filter all duplicates
+ 
     * `grep` searches files for lines which match an expression
     * `grep -i` is case insensitive
-    * 
+    * `grep -R <string> <directory>` search recursively in directory. outputs file names and the lines which match
+    * `grep -Rl ...` search recursively, only output filenames not lines
+  
+    * `sed` is 'stream editor'. It modifies `stdin` based on an expression
+    * `sed 's/.../.../g'` the `g` means global - it will replace more than just the first match on each line
 
+== Scripting ==
+
+`a_variable=$((a_variable + 1))`
+
+{{{
+while [ $greeting_occasion -lt 3 ]
+do
+  if [ $greeting_occasion -lt 1 ]
+  then
+    echo $first_greeting
+  else
+    echo $later_greeting
+  fi
+  greeting_occasion=$((greeting_occasion + 1))
+done
+}}}
+
+=== Nano ===
+    * `ctrl-O` save
+    * `ctrl-X` exit
+    * `ctrl-G` help
+    * 

@@ -96,12 +96,6 @@
 <code>&gt;&gt;</code> will append the content to the destination file
 
 <li>
-<code>cat</code> outputs the contents of a file to the  
-
-</ul>
- 
-<ul>
-<li>
 <code>&lt;</code> takes <code>stdin</code> from right and gives it to the left
 
 <li>
@@ -109,6 +103,42 @@
 
 <li>
 
+
+<li>
+<code>cat</code> outputs the contents of a file to the  
+
+</ul>
+ 
+<ul>
+<li>
+<code>sort</code> takes <code>stdin</code> and sorts it alphabetically to <code>stdout</code>
+
+<li>
+<code>uniq</code> filters out adjacent duplicates. Therefore its good to call <code>sort</code> before calling <code>uniq</code> to filter all duplicates
+
+</ul>
+ 
+<ul>
+<li>
+<code>grep</code> searches files for lines which match an expression
+
+<li>
+<code>grep -i</code> is case insensitive
+
+<li>
+<code>grep -R &lt;string&gt; &lt;directory&gt;</code> search recursively in directory. outputs file names and the lines which match
+
+<li>
+<code>grep -Rl ...</code> search recursively, only output filenames not lines
+
+</ul>
+  
+<ul>
+<li>
+<code>sed</code> is 'stream editor'. It modifies <code>stdin</code> based on an expression
+
+<li>
+<code>sed 's/.../.../g'</code> the <code>g</code> means global - it will replace more than just the first match on each line
 
 </ul>
 
