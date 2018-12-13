@@ -65,6 +65,7 @@
 === Unix-likes ===
 </div>
 * [[Grep]]
+* [[regex]]
 * [[crontab]]
 * [[sed]]
 * [[jSON]]
