@@ -1,0 +1,23 @@
+= Regex =
+
+| Command      | Descrpition                                                                     |
+|--------------|---------------------------------------------------------------------------------|
+| `\d` `\D`    | any (not) digit                                                                 |
+| `\s` `\S`    | any (not) whitespace                                                            |
+| `\w` `\W`    | (dont) match alphanumeric `[A-Za-z0-9_]`                                        |
+| `.`          | wildcard                                                                        |
+| `\.`         | dot                                                                             |
+| `[abc]`      | match a single a, b or c                                                        |
+| `[^abc]`     | match `not` a, b or c                                                           |
+| `a{2}`       | match 2 `a` chars                                                               |
+| `a{1,3}`     | match the `a` char no more than 3 times but at least 1 time                     |
+| `[wxy]{2,4}` | match sequences of 2 to 4 instances of w or x or y                              |
+| `*` or `+`   | zero or more, or 1 or more of whatever preceeds it                              |
+| `pipe`       | `or`                                                                            |
+| `?`          | optionality                                                                     |
+| `ab?c`       | matches `abc` or `ac`                                                           |
+| `\s`         | any white space - `\r` (carriage return) `\n` (new line) `\t` (tab) or `space`) |
+
+
+
+ 
