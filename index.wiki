@@ -1,6 +1,7 @@
 %template index
 
 == Blogging ==
+- Assume nobody is going to help you but that nobody is going to stop you either
 - Money is the fuel
 - Philosophical poverty
 - Lets talk about the end. my current self, existing now, is to be seen in the context of my end, and my beginning.
