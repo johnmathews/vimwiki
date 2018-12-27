@@ -5,13 +5,22 @@
 | command              | description                                                                                                           |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------|
 | `<leader>w<leader>w` | open diary                                                                                                            |
-| `<leader>wi`         | goto diary index                                                                                                      |
+| `<leader>wi`         | open diary index                                                                                                      |
 | `<leader>w<leader>i` | update diary index                                                                                                    |
 | `<leader>w<leader>w` | create todays diary index                                                                                             |
-| `<C-Up>`             | open previous days diary                                                                                              |
-| `<C-Down>`           | open tomorrow's diary                                                                                                 |
 | `<leader>ws`         | list and select available wikis                                                                                       |
 | `<leader>c`          | toggle calendar                                                                                                       |
+| `<leader>tj`         | insert template                                                                                                       |
+| `<leader>vj`         | insert journal template                                                                                               |
+|                      |                                                                                                                       |
+| `<leader>w<leader>t` | open diary wiki-file for today in a new tab                                                                           |
+| `<leader>w<leader>y` | open diary wiki-file for yesterday                                                                                    |
+| `<C-Up>`             | open previous days diary                                                                                              |
+| `<C-Down>`           | open tomorrow's diary                                                                                                 |
+| `<leader>whh`        | convert to html and open it in the browser                                                                            |
+| `<leader>wd`         | delete the wiki page you are in                                                                                       |
+| `<leader>wr`         | rename the wiki page you are in                                                                                       |
+| `+`                  | create and/or decorate links                                                                                          |
 |                      |                                                                                                                       |
 | `<leader>wd`         | delete wiki page                                                                                                      |
 | `<leader>wr`         | rename wiki page                                                                                                      |
@@ -21,16 +30,6 @@
 | `VimwikiTOC`         | Create or update the Table of Contents for the current wiki file.                                                     |
 | `<leader>vw`         | open index file                                                                                                       |
 | `<leader>wt`         | open index file in new tab                                                                                            |
-| `<leader>wi`         | open diary index                                                                                                      |
-| `<leader>w,i`        | update diary index                                                                                                    |
-| `<leader>w,w`        | open diary entry for today                                                                                            |
-| `<leader>tj`         | insert template                                                                                                       |
-| `<leader>w,t`        | open diary wiki-file for today in a new tab                                                                           |
-| `<leader>w,y`        | open diary wiki-file for yesterday                                                                                    |
-| `,whh`               | convert to html and open it in the browser                                                                            |
-| `,wd`                | delete the wiki page you are in                                                                                       |
-| `,wr`                | rename the wiki page you are in                                                                                       |
-| `+`                  | create and/or decorate links                                                                                          |
 | `=`                  | add header level                                                                                                      |
 | `-`                  | remove header level                                                                                                   |
 | `gll`                | Increase the level of a list item.                                                                                    |

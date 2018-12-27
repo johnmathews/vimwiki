@@ -14,6 +14,7 @@
 <script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+<script type="text/javascript" src="assets/js/my-js.js"></script>
 
 <title>VimWiki</title>
 
@@ -44,12 +45,12 @@
                     <li class="">
                         <a href="index.html">Index</a>
                     </li>
+                    <li class="">
+                        <a href="diary/journal.html">Journal</a>
+                    </li>
 <!-- ### Remove unnecessary nav bar links  - "workspace", "diary", "calendar" - i dont use or need them ###
                     <li class="">
                         <a href="workspace/index.html">Workspace</a>
-                    </li>
-                    <li class="">
-                        <a href="diary/diary.html">Diary</a>
                     </li>
                     <li class="">
                         <a href="#">Calendar</a>
@@ -109,7 +110,7 @@ open diary
 <code>&lt;leader&gt;wi</code>
 </td>
 <td>
-goto diary index
+open diary index
 </td>
 </tr>
 <tr>
@@ -130,6 +131,62 @@ create todays diary index
 </tr>
 <tr>
 <td>
+<code>&lt;leader&gt;ws</code>
+</td>
+<td>
+list and select available wikis
+</td>
+</tr>
+<tr>
+<td>
+<code>&lt;leader&gt;c</code>
+</td>
+<td>
+toggle calendar
+</td>
+</tr>
+<tr>
+<td>
+<code>&lt;leader&gt;tj</code>
+</td>
+<td>
+insert template
+</td>
+</tr>
+<tr>
+<td>
+<code>&lt;leader&gt;vj</code>
+</td>
+<td>
+insert journal template
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>&lt;leader&gt;w&lt;leader&gt;t</code>
+</td>
+<td>
+open diary wiki-file for today in a new tab
+</td>
+</tr>
+<tr>
+<td>
+<code>&lt;leader&gt;w&lt;leader&gt;y</code>
+</td>
+<td>
+open diary wiki-file for yesterday
+</td>
+</tr>
+<tr>
+<td>
 <code>&lt;C-Up&gt;</code>
 </td>
 <td>
@@ -146,10 +203,34 @@ open tomorrow's diary
 </tr>
 <tr>
 <td>
-<code>&lt;leader&gt;ws</code>
+<code>&lt;leader&gt;whh</code>
 </td>
 <td>
-list and select available wikis
+convert to html and open it in the browser
+</td>
+</tr>
+<tr>
+<td>
+<code>&lt;leader&gt;wd</code>
+</td>
+<td>
+delete the wiki page you are in
+</td>
+</tr>
+<tr>
+<td>
+<code>&lt;leader&gt;wr</code>
+</td>
+<td>
+rename the wiki page you are in
+</td>
+</tr>
+<tr>
+<td>
+<code>+</code>
+</td>
+<td>
+create and/or decorate links
 </td>
 </tr>
 <tr>
@@ -222,86 +303,6 @@ open index file
 </td>
 <td>
 open index file in new tab
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;leader&gt;wi</code>
-</td>
-<td>
-open diary index
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;leader&gt;w,i</code>
-</td>
-<td>
-update diary index
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;leader&gt;w,w</code>
-</td>
-<td>
-open diary entry for today
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;leader&gt;tj</code>
-</td>
-<td>
-insert template
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;leader&gt;w,t</code>
-</td>
-<td>
-open diary wiki-file for today in a new tab
-</td>
-</tr>
-<tr>
-<td>
-<code>&lt;leader&gt;w,y</code>
-</td>
-<td>
-open diary wiki-file for yesterday
-</td>
-</tr>
-<tr>
-<td>
-<code>,whh</code>
-</td>
-<td>
-convert to html and open it in the browser
-</td>
-</tr>
-<tr>
-<td>
-<code>,wd</code>
-</td>
-<td>
-delete the wiki page you are in
-</td>
-</tr>
-<tr>
-<td>
-<code>,wr</code>
-</td>
-<td>
-rename the wiki page you are in
-</td>
-</tr>
-<tr>
-<td>
-<code>+</code>
-</td>
-<td>
-create and/or decorate links
 </td>
 </tr>
 <tr>

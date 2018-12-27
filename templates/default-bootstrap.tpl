@@ -14,6 +14,7 @@
 <script type="text/javascript" src="%root_path%assets/js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="%root_path%assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="%root_path%assets/js/highlight.pack.js"></script>
+<script type="text/javascript" src="%root_path%assets/js/my-js.js"></script>
 
 <title>%title%</title>
 
@@ -44,12 +45,12 @@
                     <li class="">
                         <a href="%root_path%index.html">Index</a>
                     </li>
+                    <li class="">
+                        <a href="%root_path%diary/journal.html">Journal</a>
+                    </li>
 <!-- ### Remove unnecessary nav bar links  - "workspace", "diary", "calendar" - i dont use or need them ###
                     <li class="">
                         <a href="%root_path%workspace/index.html">Workspace</a>
-                    </li>
-                    <li class="">
-                        <a href="%root_path%diary/diary.html">Diary</a>
                     </li>
                     <li class="">
                         <a href="#">Calendar</a>

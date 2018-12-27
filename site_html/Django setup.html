@@ -14,6 +14,7 @@
 <script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+<script type="text/javascript" src="assets/js/my-js.js"></script>
 
 <title>Django setup</title>
 
@@ -44,12 +45,12 @@
                     <li class="">
                         <a href="index.html">Index</a>
                     </li>
+                    <li class="">
+                        <a href="diary/journal.html">Journal</a>
+                    </li>
 <!-- ### Remove unnecessary nav bar links  - "workspace", "diary", "calendar" - i dont use or need them ###
                     <li class="">
                         <a href="workspace/index.html">Workspace</a>
-                    </li>
-                    <li class="">
-                        <a href="diary/diary.html">Diary</a>
                     </li>
                     <li class="">
                         <a href="#">Calendar</a>
@@ -144,7 +145,7 @@ Setup MailHog for emails in terminal
 
 <ol>
 <li>
-<a href="https:&#47;&#47;github.com&#47;mailhog&#47;MailHog&#47;releases">Dowload it</a>
+<a href="https://github.com/mailhog/MailHog/releases">Dowload it</a>
 
 <li>
 Rename it to <code>MailHog</code>
@@ -159,7 +160,7 @@ Make it executable <code>chmod +x MailHog</code>
 Open another terminal window and start it <code>./MailHog</code>
 
 <li>
-Check out <a href="http:&#47;&#47;127.0.0.1:8025&#47;">http://127.0.0.1:8025/</a> to see how it goes.
+Check out <a href="http://127.0.0.1:8025/">http://127.0.0.1:8025/</a> to see how it goes.
 
 <li>
 If you have generated your project with use_mailhog set to n this will be a default setup. 
@@ -169,7 +170,7 @@ If you have generated your project with use_mailhog set to n this will be a defa
 Alternatively, deliver emails over console via <code>EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'</code>
 
 <li>
-In production, we have <a href="https:&#47;&#47;www.mailgun.com&#47;">Mailgun</a> configured to have your back!
+In production, we have <a href="https://www.mailgun.com/">Mailgun</a> configured to have your back!
 
 </ul>
 <li>
