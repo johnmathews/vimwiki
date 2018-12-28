@@ -1,3 +1,28 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x:auto;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* tr:nth-child(even){background-color: #f2f2f2;} */
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    /* background-color: #b9f7bc; */
+    color: black;
+    font-size: 130% !important;
+    border-bottom: 3px solid black;
+}
+
 body {
     height: 100%
 }
@@ -6,12 +31,6 @@ code {
     font-size: 90%;
     color:black;
 }
-
-/* ol { */
-/*     -webkit-column-count: 3; */
-/*     -moz-column-count: 3; */
-/*     column-count: 3; */
-/* } */
 
 ol {
     -webkit-column-count: 1;
@@ -56,7 +75,7 @@ ol {
 }
 
 li {
-  margin: 5px 18px;
+  margin: 5px 0px;
 }
 
 /* incomplete todo item */
