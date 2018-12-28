@@ -1,32 +1,10 @@
-=ToDo=
+=Pipes and Glue=
 
 == Ventures ==
-1. Crypto mining 
-2. Performance Finder
+1. Pipes and Glue
 3. Book about Mental Models
-4. Blockport
-5. Gnosis
 
-== Blog posts: ==
-1. Tokens and Jill Carlsons blogs about bonds 
-3. Why blogging is a good idea - http://andrewchen.co/professional-blogging/
-9. https://pastebin.com/jCDFcESz - blog post about blog post about private keys
 
 == Making ==
 7. Plot coins by cmc position - Plot coins by %change in market cap since 1 march - The coins that are rising fastest through the ranks are worth investing in - Do coins further down the list move around more? Is the lower half (50 - 100) more volatile than the top half (1-50)?
-1. Make a trading bot -
-   [[https://www.youtube.com/watch?v=HzibFcWNd-s|YouTube]],
-   [[https://medium.com/@BlockchainEng/advanced-cryptocurrency-trading-bot-python-open-source-chapters-5-6-7-72b36b378750|Medium]],
-   [[http://www.twitter.com/BlockchainEng|Twitter]],
-   [[http://www.medium.com/@BlockchainEng|Medium]]. Also Cointrol - [[Bitcoin]] trading bot with a real-time dashboard for Bitstamp. https://github.com/jakubroztocil/cointrol use with ccxt package. 
-2. Crypto-tracker - rebuild. inputs as .csv, 1 file per coin. output is a good dashboard.
 4. How to make a raspberry pi bitcoin node.
-4. Universal basic income models
-
-== Learning ==
-1. Django
-2. Pen testing course
-3. Encryption course
-
-== Community ==
-1. Offering programming training - refugees 

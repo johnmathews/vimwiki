@@ -44,10 +44,7 @@
                         <a href="%root_path%diary/journal.html">Journal</a>
                     </li>
                     <li class="">
-                        <a href="%root_path%tasks.html">Short</a>
-                    </li>
-                    <li class="">
-                        <a href="%root_path%todo.html">Medium</a>
+                        <a href="%root_path%todo.html">PaG</a>
                     </li>
                 </ul>
             </div>

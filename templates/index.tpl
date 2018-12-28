@@ -8,7 +8,7 @@
 <link type="text/css" rel="stylesheet" href="%root_path%assets/css/bootstrap-responsive.css" />
 <link type="text/css" rel="stylesheet" href="%root_path%assets/css/docs.css" />
 <link type="text/css" rel="stylesheet" href="%root_path%assets/css/monokai.css" />
-<link type="text/css" rel="stylesheet" href="%root_path%assets/css/vimwiki-index.css" />
+<link type="text/css" rel="stylesheet" href="%root_path%assets/css/vimwiki.css" />
 <link type="text/css" rel="stylesheet" href="%root_path%assets/css/font-awesome.css">
 
 <script type="text/javascript" src="%root_path%assets/js/jquery-1.9.1.js"></script>
@@ -44,10 +44,7 @@
                         <a href="%root_path%diary/journal.html">Journal</a>
                     </li>
                     <li class="">
-                         <a href="%root_path%tasks.html">Short</a>
-                    </li>
-                    <li class="">
-                        <a href="%root_path%todo.html">Medium</a>
+                        <a href="%root_path%todo.html">PaG</a>
                     </li>
                 </ul>
             </div>

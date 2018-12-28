@@ -4,7 +4,7 @@ _The purpose of a decision journal is to prevent hindsight bias and to collect a
 Build a web app that provides analysis of crypto and finance. This will provide an interesting and useful service to people I may want to work with and allow me to learn how to crete  and deploy a web app with automated components.
 I will do this iteratively.
 
-*1. What do I expect to happen?*
+*1. What do I expect to happen?*<br>
 I expect that I will use my spare time more efficiently if I have a structured plan about what I want to build. The project needs to meet several goals at the same time, so that time and effort is spent as efficiently as possible. There are several goals to achieve at once, ranging from short term, pragmatic and risk averse to long term dreams with catapult/unlocking potential.
 
 The short term and pragmatic goals are:
@@ -17,63 +17,63 @@ The long term and dream goals are:
 - Create a side project that becomes a business or revenue generating
 - Make me more desirable to employers, and therefore unlock a higher salary or a job with better benefits (more flexibility, work from home, autonomy/self-direction, more holiday, etc.)
  
-*2. Why do I expect it to happen?*
+*2. Why do I expect it to happen?*<br>
 Based on previous experience writing blog posts and tackling technical challenges incrementally, I am confident that a large and impenetrable problem can be solved in many small steps. Writing about the steps is a fundamental part of gaining understanding as it allows me to reflect and structure my thoughts, crystalising what I know and providing opportunity to see complimentary or second-order benefits. 
 
-*3. How am I feeling about the situation emotionally and physically? (Tired, anxious, excited, curious, confident, gritty, 'least bad option', hungry, thirstry)*
+*3. How am I feeling about the situation emotionally and physically? (Tired, anxious, excited, curious, confident, gritty, 'least bad option', hungry, thirstry)*<br>
 Glad to have a plan, confident that the benefits will be worth the effort and that the reasoning based on experience is valid. Apprehensive about finding the neccesary time to focus on a problem.
 I'm hungry and probaly dehydrated. Feeling a bit sick from having eaten too much chocolate.
 
-*4. Time of day*
+*4. Time of day*<br>
 Mid afternoon
 
-*5. The situation or context:*
+*5. The situation or context:*<br>
 I need to focus on my long term goals and professional development in the midst of lots of immediate demands on my time and attention, both at work and at home. I expect a lot of challenges with time and energy management when my son arrives in January and therefore I need a good plan. Also, it is possible that Blockport will not survice through 2019 and I need to aim to ensure a smooth transition into what ever happens after.
 
-*6. Problem statement of problem frame:*
+*6. Problem statement of problem frame:*<br>
 How do I learn the skills I want or need to whilst balancing immediate demands on my time and energy
 
-*7. Variables governing the situation:*
+*7. Variables governing the situation:*<br>
 Numerous. Access to information. Access to my plan. How busy I am at work and at home. How much positive momentum the project has. My ability to solve technical problems.
 
-*8. Complications or compexity as I see it:*
+*8. Complications or compexity as I see it:*<br>
 Finding good online resources will be key to making good decisions and make progress quickly.
 Working for small amounts of time but undistractedly and energetically will also be crucial.
 
-*9. Alternatives that were seriously considered and why they were rejected:*
+*9. Alternatives that were seriously considered and why they were rejected:*<br>
 Alternatives were rejected because they didnt combine enough different goals, and the compounding benefits werent as great. I need to tie together different existing skills, gain new complimentary skills and create something that looks useful to others.
 
 *10. Explain the range of outcomes:* <br>
-Range with 0 being the worst and 10 the best:
+Range with 0 being the worst and 10 the best:<br>
 `0.` Fizzle and flop, no outcome, some wasted  time <br>
 `10.` Great success - I have a webapp that provides valuable information and is ranked highly by google. I have a series of blog posts detailing how I built the app. My expertise is unequestionable and my reputation is outstanding. I choose who I work with.
 
-*11. Explain your expectations, with reasoning and weighted probabilities of each outcome. Degree of confidence is important.*
+*11. Explain your expectations, with reasoning and weighted probabilities of each outcome. Degree of confidence is important.*<br>
 My expectation is success, and success is ultimately down to me (notwithstanding some unexpected, unpredictable event).  The most likely outcome is partical success, a few blog posts, some meaningful progress at the start, but not a finished web app that is useful. This can be protected against by designing each phase to be small, and getting positive feedback frequently. Writing blog posts about my work will allow me to 'see' my work, even if the app is not yet above water. 
 
-*12. If you havent eaten or drunk something recently, do so now.*
+*12. If you havent eaten or drunk something recently, do so now.*<br>
 I just ate two bowls of rice and salad.
 
-*13. Expected second and third order outcomes:*
+*13. Expected second and third order outcomes:*<br>
 Difficult to predict, but I believe that following my interests, and doing work solely because it is interesting is a good strategy. In the past it has unlocked many great doors. Being able to create a web app, being able to construct a data pipeline, and glue/pipe different technologies together is extremely versatile and valuable. Also I need to keep my finance/accounting skills sharp and publicise them, else the chartered accountancy qualification might not be leveraged. I expect to learn a lot of valuable skills.
 
-*14. What is the opportunity cost:*
+*14. What is the opportunity cost:*<br>
 Time with my children and wife.
 
-*15. Worst case scenario, why is this ok:*
+*15. Worst case scenario, why is this ok:*<br>
 I get stuck and dont achieve anything - this will be immediately discouraging and therefore I wont waste too much time on it.
 I don't write blog posts about each stage, and therefore noone knows my skills. This is not ok because I wont reap the benefits of the work.
 
-*16. What unique advantage or insight do I have?*
+*16. What unique advantage or insight do I have?*<br>
 My background and portfolio of skills and experiences. This project is specifically designed to leverage what I already know, build on my time-tested interests, and build new competencies in complimentary areas.
 
-*17. Who can I speak to about this?*
+*17. Who can I speak to about this?*<br>
 Different parts of the project will require speaking to different people. For the unix glue, the devops, I will be able to speal to Devs at work. 
 
-*18. Am I the best person to make this decision?*
+*18. Am I the best person to make this decision?*<br>
 Yep.
 
-*19. What does this look like in 5 weeks, 5 months, 5 years?*
+*19. What does this look like in 5 weeks, 5 months, 5 years?*<br>
 5 weeks: A BTC node is running. UTXOs are being queries. I have a multiphase plan for the project. 
 5 months: I have a web app, probably flash, serving streaming analytics to users which is valuable. I have a series of blogposts published about the process.
 5 years: I am a senior data scientist/analyst/engineer, or a founder. I am a crypto financial data specialist. I choose where I work.
