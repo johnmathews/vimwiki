@@ -30,11 +30,6 @@
                 <span class="icon-bar"></span>
             </a>
 
-<!--
-             Be sure to leave the brand out there if you want it shown 
-            <a class="brand" href="http://code.google.com/p/vimwiki/">Vimwiki</a>
--->
-
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
                 <!-- .nav, .navbar-search, .navbar-form, etc -->
@@ -48,19 +43,8 @@
                     <li class="">
                         <a href="%root_path%diary/journal.html">Journal</a>
                     </li>
-<!-- ### Remove unnecessary nav bar links  - "workspace", "diary", "calendar" - i dont use or need them ###
                     <li class="">
-                        <a href="%root_path%workspace/index.html">Workspace</a>
-                    </li>
-                    <li class="">
-                        <a href="#">Calendar</a>
-                    </li>
--->
-                    <li class="">
-                        <a href="%root_path%tasks.html">Short</a>
-                    </li>
-                    <li class="">
-                        <a href="%root_path%todo.html">Medium</a>
+                        <a href="%root_path%todo.html">PaG</a>
                     </li>
                 </ul>
             </div>
