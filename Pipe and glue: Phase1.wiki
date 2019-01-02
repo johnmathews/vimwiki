@@ -9,11 +9,12 @@ The decision journal entry is [[diary/2018-12-28|here]].
 
 ==== Preparation ====
 * [X] Create decision journal entry ([[diary/2018-12-28|here]])
-* [X] Create this plan for Phase 1
+* [X] Create this plan for Phase 1 (Wed 2 Jan 17:29:09 2019) 
+* [ ] Find RaspberryPi and external drive
 * [ ] Download complete BTC blockchain
 
 ==== RaspberryPi and external drive: ====
-* [ ] Create BTC node
+* [ ] Create BTC node 
   * [ ] Set up raspberry pi including user permissions
   * [ ] Install Bitcoin Core client
   * [ ] Test
