@@ -1,4 +1,4 @@
-=Pipes and Glue=
+=Ideas=
 
 == Ventures ==
 1. Pipes and Glue
@@ -8,3 +8,4 @@
 == Making ==
 7. Plot coins by cmc position - Plot coins by %change in market cap since 1 march - The coins that are rising fastest through the ranks are worth investing in - Do coins further down the list move around more? Is the lower half (50 - 100) more volatile than the top half (1-50)?
 4. How to make a raspberry pi bitcoin node.
+5. https://pastebin.com/jCDFcESz - blog post about blog post about private keys

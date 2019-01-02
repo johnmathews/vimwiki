@@ -1,6 +1,7 @@
 = Grep =
 
 E.g.: 
+- `grep -n 'daily_euro_totals.csv' ./**/*.py`
 - `grep -rnw '/path/to/somewhere/' -e 'pattern'`
 - `grep -rwi . -e 'draft'`
 
