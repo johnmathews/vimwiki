@@ -1,0 +1,35 @@
+= Pipes and Glue =
+The decision journal entry is [[diary/2018-12-28|here]].
+
+# Each phase should be a self contained "mini project" that can be presented and explained by itself.
+# Each phase needs to list all the tasks required for completion as a checkbox.
+# The tasks should include blog posts, research, answering open questions, building and testing.
+
+=== Phase 1 ===
+
+==== Preparation ====
+* [X] Create decision journal entry ([[diary/2018-12-28|here]])
+* [X] Create this plan for Phase 1 (Wed 2 Jan 17:29:09 2019) 
+* [ ] Find RaspberryPi and external drive
+* [ ] Download complete BTC blockchain
+
+==== RaspberryPi and external drive: ====
+* [ ] Create BTC node 
+  * [ ] Set up raspberry pi including user permissions
+  * [ ] Install Bitcoin Core client
+  * [ ] Test
+  * [ ] Remount external drive and test again
+* [ ] Create Lightning node 
+  * [ ] Remount external drive and test again
+* [ ] Put a small amount of BTC into payment channel
+* [ ] Buy lightning stickers
+
+==== Debrief ====
+* [ ] Create blog post about process of setting up a Bitcoin lightning node on a raspberry pi
+* [ ] Explore what metrics I can measure using the node:
+    * [ ] UTXO age
+    * [ ] Transactions per block
+* [ ] Learn how to login to the node from an external network
+
+
+

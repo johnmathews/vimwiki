@@ -44,7 +44,7 @@
                         <a href="%root_path%diary/journal.html">Journal</a>
                     </li>
                     <li class="">
-                        <a href="%root_path%todo.html">PaG</a>
+                        <a href="%root_path%todo.html">Ideas</a>
                     </li>
                 </ul>
             </div>
