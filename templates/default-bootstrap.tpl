@@ -16,6 +16,7 @@
 <script type="text/javascript" src="%root_path%assets/js/highlight.pack.js"></script>
 <script type="text/javascript" src="%root_path%assets/js/my-js.js"></script>
 
+
 <title>%title%</title>
 
 </head>
