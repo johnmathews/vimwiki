@@ -1,0 +1,79 @@
+= How to get startup ideas =
+
+Notes on http://paulgraham.com/startupideas.html
+*Work on hard problems mostly because they are interesting.*
+
+    1. Live in the future, and notice the gaps.
+    2. Work on interesting things.
+    3. Ask people what's missing. What would they buy if only someone would make it?
+    4. Beware the *Schlep filter*, and to a lesser extent the *unsexy filter*!
+    5. Don't look for ideas, look for problems.
+    6. Look for a solution to a problem that you have.
+    7. Look for a solution that you can build.
+    8. Look for a solution that not many other people realise is going to be valuable.
+
+=== Well/Crater/Ditch ===
+You need to sell something that is desperately needed, so that even when its not very good people will still buy it.
+You can build something that helps a lot of people a little bit, or a few people a great amount. Aim for the second.
+You need to optimize for depth and speed, this will probably mean that you focus on a very particular niche. The market (width of the well) can be widened as your company grows.
+
+=== Be an interested expert and then build what's missing ===
+
+To have good ideas, try to 'notice' things.
+Most successful ideas are organic. Organic is being interested and an expert in something, and then noticing that a solution to a problem or increasing importance is missing.
+
+A succesful startup will likely consume 3 - 5 years of your life. Investing 1 year to find a good organic idea is worth it.
+
+The best situation is when you're also a user of your solution/idea/product. You can iterate faster.
+
+=== Noticing. Only. ===
+Just notice, with an open confident mind. (How to trick yourself into doing this through writing?). Turn off other filters, like 'Could this be a company?'. Most things that are missing will take some time to see, you need to trick yourself into seeing them and not just accepting the world as it is. (Of course, none of us could get from our bed to the front door in the morning if we questioned everything, but...)
+
+You know there are good ideas to find, because you know that good startups are still going to be created. You know there are opportunities because it is vanishingly improbably that now is the moment when technological progress ceases.
+
+Learning to hack is not necessary to having a good idea and creating a statup, but it is sufficient. Also being able to hack will allow you to implement your idea when you have it.
+
+A good idea is going to look obvious in retrospect. Don't be concerned about that.
+
+e.g.:
+- Your inbox is too full. Why?
+- Why do people send email so much?
+- Why do you find it hard to empty your inbox?
+- Are you storing information here? Is there a better way to store it?
+- Why are people sending you email so often? Why not another method?
+
+See the problem from your ~perception~ (why do I get so much email) and also from someone else ~perspective~ (why are they sending you so much email). Invert.
+
+=== What rubs? ===
+If you went back in time 10 years you'd aspects of life frustrating. Same goes for someone from 10 years in the future that was living in the present. When you find the right idea, you will probably want to descrive it as obvious, at least to you.
+
+=== Loosen your mind ===
+Don't come at this with a front attack - sitting down and writing out ideas. You'll probably just have bad ideas. Instead, keep a background process running where you keep notes on what is 'missing'.
+
+*Work on hard problems mostly because they are interesting.*
+
+Working on things that could be described as toys often produces great ideas. Thgis works better than you think it should. ` ~'Live in the future and build what seems interesting.'~ 
+
+*domain clashing* is often a good idea. Go into a domain that you are not an expert in because:
+1. The domain inhabitants are not as likely as a software engineer to solve their problems with software.
+2. Since you are new and ignorant you are unlikely to take the status quo for granted.
+
+Don't build things that seem like they could be companies, this is premature optimisation.
+
+*Work on hard problems and build what is interesting, preferably with other people who are interesting and find the (toy) idea interseting too. Then you will have organic ideas and an organic team.*
+
+=== Competition ===
+A good idea should seem obvious, so when you have it you'll probably feel like you're late. Don't let that deter you. Worrying that you're late is a sign of a good idea.
+
+It is exceptionally rare for startups to be killed by competitors. The question of weather you are too late is subsumed by the question of if anyone desperately needs your idea. Will more people be needing your solution in the future?
+
+Weather you succeed depends more on you than your competitors. Better to have a good idea with competition than a bad idea without.
+
+A crowded market is a good sign - it shows that none of the solutions are adequate and that there is a lot of demand. But, make sure that you can articulate what your competitors are overlooking.
+
+=== Filters ===
+*Schlep* - avoid this filter. Just because the startup will be messy and hardwork doesnt mean its a bad idea. Most of the elegant clean software-only ideas have been taken. Look a bit further for the messy ones and see some opportunities. Payments is messy and Stripe made a big success of it.
+
+Also, the 'Schleppyness' of it could scare away competitors and this could give you net less pain overall.
+
+*Unsexy* - avoid this filter. If you don't actually care about the problem you're solving, because its unsexy, but the solution is interesting to build then it is ok. Starting a startup is going to be laborious, whatever the idea is. It's going to have unsexy parts, like hiring, firing, investor relations, etc.

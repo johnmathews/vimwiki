@@ -17,7 +17,7 @@
 <script type="text/javascript" src="assets/js/my-js.js"></script>
 
 
-<title>Writing</title>
+<title>Pipes and Glue - Phase1</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -68,77 +68,108 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="How to write a book"><h1 id="How to write a book">How to write a book</h1></div>
+<div id="Pipes and Glue"><h1 id="Pipes and Glue">Pipes and Glue</h1></div>
+<p>
+The decision journal entry is <a href="diary/2018-12-28.html">here</a>.
+</p>
 
-<div id="How to write a book-Overview:"><h3 id="Overview:">Overview:</h3></div>
+<ol>
+<li>
+Each phase should be a self contained "mini project" that can be presented and explained by itself.
+
+<li>
+Each phase needs to list all the tasks required for completion as a checkbox.
+
+<li>
+The tasks should include blog posts, research, answering open questions, building and testing.
+
+</ol>
+
+<div id="Pipes and Glue-Phase 1"><h3 id="Phase 1">Phase 1</h3></div>
+
+<div id="Pipes and Glue-Phase 1-Preparation"><h4 id="Preparation">Preparation</h4></div>
 <ul>
-<li>
-The purpose is to share information or to entertain.
+<li class="done4">
+Create (<a href="diary/2018-12-28.html">decision journal entry</a>)
 
-<li>
-If it does that then it is a success.
+<li class="done4">
+Create this plan for Phase 1 (2019-01-02 15:32:23) 
 
-<li>
-Take your ego out of it - it doesn't have to be fancy or perfect.
+<li class="done4">
+Find RaspberryPi and external drive (2019-01-03 11:12:04)
+
+<li class="done4">
+Download complete BTC blockchain (2019-01-03 11:12:46)
+
+<li class="done4">
+Read about setting up a raspberry pi, specifically:
+
+<ul>
+<li class="done4">
+<del>what is 'WPA Supplicant'</del> not necessary as using wired connection. (2019-01-04 11:49:10)
+
+<li class="done4">
+<del>permissions</del> I couldn't move the swap file to the HFS+ disk, so I reformatted the external drive as <code>EXT4</code> (and began downloading blockchain again, looks like I don't need to use <code>txindex=1</code> anymore. (2019-01-04 11:49:15)
+
+<li class="done4">
+swap files (2019-01-04 11:50:49)
+
+</ul>
+</ul>
+
+<div id="Pipes and Glue-Phase 1-RaspberryPi and external drive:"><h4 id="RaspberryPi and external drive:">RaspberryPi and external drive:</h4></div>
+<ul>
+<li class="done1">
+Create BTC node 
+
+<ul>
+<li class="done4">
+Set up raspberry pi including user permissions (2019-01-04 11:50:30)
+
+<li class="done0">
+Install Bitcoin Core client
+
+<li class="done0">
+Test
+
+<li class="done0">
+Remount external drive and test again
+
+</ul>
+<li class="done0">
+Create Lightning node 
+
+<ul>
+<li class="done0">
+Remount external drive and test again
+
+</ul>
+<li class="done0">
+Put a small amount of BTC into payment channel
+
+<li class="done0">
+Buy lightning stickers
 
 </ul>
 
-<div id="How to write a book-Step 1:"><h3 id="Step 1:">Step 1:</h3></div>
+<div id="Pipes and Glue-Phase 1-Debrief"><h4 id="Debrief">Debrief</h4></div>
 <ul>
-<li>
-Write an out of order outline. 
+<li class="done0">
+Create blog post about process of setting up a Bitcoin lightning node on a raspberry pi
 
-<li>
-Write down everything that you might want to be in the book.
+<li class="done0">
+Explore what metrics I can measure using the node:
 
-<li>
-This should take about half an hour or an hour.
+<ul>
+<li class="done0">
+UTXO age
 
-<li>
-Don't evaluate ideas or negotiate with yourself.
-
-<li>
-If you happen to come up with another idea for another book, just put it in brackets.
+<li class="done0">
+Transactions per block
 
 </ul>
-
-<div id="How to write a book-Step 2:"><h3 id="Step 2:">Step 2:</h3></div>
-<ul>
-<li>
-Just go through the list and write about each thing you've written down.
-
-<li>
-Don't go through the list in order, start with the topics that are most exciting or interesting to write about.
-
-<li>
-This will allow you to do your best writing and by the time you get to the hardest parts, the book will be almost done and you will have enough momentum to push through.
-
-<li>
-Set a certain amount of time to finish the book (14 days usually) and divide the 30,000 words by that time, rounding up.
-
-</ul>
-
-<div id="How to write a book-Step 3:"><h3 id="Step 3:">Step 3:</h3></div>
-<ul>
-<li>
-As you're writing, don't worry about anything other than getting useful information onto the page. You can edit and clarify later. If you try to do both at the same time you will be very slow.
-
-</ul>
-
-<div id="How to write a book-Step 4:"><h3 id="Step 4:">Step 4:</h3></div>
-<ul>
-<li>
-Once the information is on the page and all the points have been dealt with, do several passes where you re-read, fix typos and improve the writing. You'll probably need to write some chapters or section which serve to transition from one topic to the next.
-
-<li>
-The trick is to realise that once you've got 30-40k words down covering all your points, everything else seems easy and there's just a few steps left to get it published.
-
-</ul>
-
-<div id="How to write a book-Step 5:"><h3 id="Step 5:">Step 5:</h3></div>
-<ul>
-<li>
-Layout: Doing it yourself can be slow. Get someone on fiverr to do it for about $100 for both ebook and paperback.
+<li class="done0">
+Learn how to login to the node from an external network
 
 </ul>
 

@@ -25,6 +25,5 @@
     * Once the information is on the page and all the points have been dealt with, do several passes where you re-read, fix typos and improve the writing. You'll probably need to write some chapters or section which serve to transition from one topic to the next.
     * The trick is to realise that once you've got 30-40k words down covering all your points, everything else seems easy and there's just a few steps left to get it published.
 
-
 === Step 5: === 
     * Layout: Doing it yourself can be slow. Get someone on fiverr to do it for about $100 for both ebook and paperback.
