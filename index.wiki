@@ -1,7 +1,7 @@
 %template index
 
 == Pipes and Glue ==
-[[Pipe and glue: Phase1|Phase 1]]
+[[Pipes and Glue - Phase1|Phase 1]]
 
 == Thoughts ==
 - Do the people you care about love you back?
@@ -36,8 +36,9 @@
 <div class="item__heading">
 === Media ===
 </div>
+* [[Startup Ideas]]
 * [[GSP interview]]
-* [[How to write a book]]
+* [[Writing|How to write a book]]
 * [[Mental Models]]
 * [[Negotiation]]
 </div>

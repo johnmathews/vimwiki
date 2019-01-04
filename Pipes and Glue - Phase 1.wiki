@@ -8,19 +8,18 @@ The decision journal entry is [[diary/2018-12-28|here]].
 === Phase 1 ===
 
 ==== Preparation ====
-* [X] Create decision journal entry ([[diary/2018-12-28|here]])
+* [X] Create ([[diary/2018-12-28|decision journal entry]])
 * [X] Create this plan for Phase 1 (2019-01-02 15:32:23) 
 * [X] Find RaspberryPi and external drive (2019-01-03 11:12:04)
 * [X] Download complete BTC blockchain (2019-01-03 11:12:46)
-* [.] Read about setting up a raspberry pi, specifically:
-    * [ ] what is `WPA Supplicant`
-    * [X] permissions
-    * [ ] swap files
-    * [ ] using an HFS+ external drive
+* [X] Read about setting up a raspberry pi, specifically:
+    * [X] ~~what is 'WPA Supplicant'~~ not necessary as using wired connection. (2019-01-04 11:49:10)
+    * [X] ~~permissions~~ I couldn't move the swap file to the HFS+ disk, so I reformatted the external drive as `EXT4` (and began downloading blockchain again, looks like I don't need to use `txindex=1` anymore. (2019-01-04 11:49:15)
+    * [X] swap files (2019-01-04 11:50:49)
 
 ==== RaspberryPi and external drive: ====
-* [ ] Create BTC node 
-  * [ ] Set up raspberry pi including user permissions
+* [.] Create BTC node 
+  * [X] Set up raspberry pi including user permissions (2019-01-04 11:50:30)
   * [ ] Install Bitcoin Core client
   * [ ] Test
   * [ ] Remount external drive and test again
