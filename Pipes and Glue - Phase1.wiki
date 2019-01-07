@@ -8,7 +8,7 @@ The decision journal entry is [[diary/2018-12-28|here]].
 === Phase 1 ===
 
 ==== Preparation ====
-* [X] Create ([[diary/2018-12-28|decision journal entry]])
+* [X] Create ([[diary/2018-12-28|decision journal entry]]) (2018-12-28 14:39:00)
 * [X] Create this plan for Phase 1 (2019-01-02 15:32:23) 
 * [X] Find RaspberryPi and external drive (2019-01-03 11:12:04)
 * [X] Download complete BTC blockchain (2019-01-03 11:12:46)
@@ -18,11 +18,11 @@ The decision journal entry is [[diary/2018-12-28|here]].
     * [X] swap files (2019-01-04 11:50:49)
 
 ==== RaspberryPi and external drive: ====
-* [.] Create BTC node 
+* [X] Create BTC node 
   * [X] Set up raspberry pi including user permissions (2019-01-04 11:50:30)
-  * [ ] Install Bitcoin Core client
-  * [ ] Test
-  * [ ] Remount external drive and test again
+  * [X] Install Bitcoin Core client (2019-01-07 15:23:25)
+  * [X] Test (2019-01-07 15:23:29)
+  * [X] Remount external drive and test again (2019-01-07 15:23:30)
 * [ ] Create Lightning node 
   * [ ] Remount external drive and test again
 * [ ] Put a small amount of BTC into payment channel
