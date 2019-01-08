@@ -23,8 +23,10 @@ The decision journal entry is [[diary/2018-12-28|here]].
   * [X] Install Bitcoin Core client (2019-01-07 15:23:25)
   * [X] Test (2019-01-07 15:23:29)
   * [X] Remount external drive and test again (2019-01-07 15:23:30)
-* [ ] Create Lightning node 
-  * [ ] Remount external drive and test again
+* [X] Create Lightning node  (2019-01-08 14:11:20)
+  * [X] Remount external drive and test again (2019-01-08 14:14:16)
+  * [X] Get some testnet bitcoin and buy something on Starblocks (2019-01-08 14:14:13)
+* [X] Copy mainnet chain data from regular computer onto drive connected to node (2019-01-08 14:14:12)
 * [ ] Put a small amount of BTC into payment channel
 * [ ] Buy lightning stickers
 

@@ -1,0 +1,18 @@
+https://news.ycombinator.com/item?id=4509934
+
+	
+Eliezer on Sept 12, 2012 [-]
+Can you say where the scariest and most ambitious convincing pitch was on the following scale?
+1) We're going to build the next Facebook!
+2) We're going to found the next Apple!
+3) Our product will create sweeping political change! This will produce a major economic revolution in at least one country! (Seasteading would be change on this level if it worked; creating a new country successfully is around the same level of change as this.)
+4) Our product is the next nuclear weapon. You wouldn't want that in the wrong hands, would you?
+5) This is going to be the equivalent of the invention of electricity if it works out.
+6) We're going to make an IQ-enhancing drug and produce basic change in the human condition.
+7) We're going to build serious Drexler-class molecular nanotechnology.
+8) We're going to upload a human brain into a computer.
+9) We're going to build a recursively self-improving Artificial Intelligence.
+10) We think we've figured out how to hack into the computer our universe is running on.
+
+ph0rque on Sept 12, 2012 [-]
+Eliezer, I believe you just created the Yudkowsky Ambition scale.

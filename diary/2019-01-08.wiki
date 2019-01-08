@@ -1,0 +1,29 @@
+====Tuesday 8 January 2019 14:17====
+==Decision Journal==
+_The purpose of a decision journal is to prevent hindsight bias and to collect accurate and honest feedback. It will illuminate the edges of your circle of competence._
+=== Should I do some machine learning tutorials and projects, instead of 'Pipes & Glue'? ===
+
+*1. Problem statement or frame:*<br>
+It will be easier to get a (new) job as a data scientist if I can demonstrate proficiency with various flavours of machine learning and other data science techniques. 'Pipes and Glue' would see me doing infrastructure and crypto related tasks first, possibly delaying a successful application in some (non crypto) company.
+
+*2. What do I expect to happen?*<br>
+My expectation is the Blockports security token sale will not raise enough and therefore in Q3 I will no longer be able to work at Blockport.
+
+*3. Why do I expect it to happen?*<br>
+*4. How am I feeling about the situation emotionally and physically? (Tired, anxious, excited, curious, confident, gritty, 'least bad option', hungry, thirstry)*<br>
+*5. Time of day*<br>
+*6. The situation or context:*<br>
+*7. Variables governing the situation:*<br>
+*8. Complications or compexity as I see it:*<br>
+*9. Alternatives that were seriously considered and why they were rejected:*<br>
+*10. Explain the range of outcomes:*<br>
+*11. Explain your expectations, with reasoning and weighted probabilities of each outcome. Degree of confidence is important.*<br>
+*12. If you havent eaten or drunk something recently, do so now.*<br>
+*13. Expected second and third order outcomes:*<br>
+*14. What is the opportunity cost:*<br>
+*15. Worst case scenario, why is this ok:*<br>
+*16. What unique advantage or insight do I have?*<br>
+*17. Who can I speak to about this?*<br>
+*18. Am I the best person to make this decision?*<br>
+*19. What does this look like in 5 weeks, 5 months, 5 years?*<br>
+
