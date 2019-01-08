@@ -11,7 +11,7 @@
 - Lets talk about the end. my current self, existing now, is to be seen in the context of my end, and my beginning.
 - “You follow the rules of war for you–not your enemy. You fight by rules to keep your humanity.” - https://www.globalo.com/history-wwii-charlie-brown-franz-stigler-incident/
 - Why blogging is a good idea - http://andrewchen.co/professional-blogging/
-
+- "Mr Chakravarty says a combination of experience in investment banking and digital execution helped him to raise $5m within five weeks of leaving his job at HSBC. Bankers he saw on the fundraising circuit without execution experience were raising less, he says." - https://www.ft.com/content/a41924e0-0327-11e9-99df-6183d3002ee1
 == Notes ==
 <div class="items">
 <div class="item">
@@ -37,10 +37,11 @@
 === Media ===
 </div>
 * [[Startup Ideas]]
-* [[GSP interview]]
 * [[Writing|How to write a book]]
 * [[Mental Models]]
 * [[Negotiation]]
+* [[Yudkowsky Ambition scale]]
+* [[https://news.ycombinator.com/item?id=18853966| Best HackerNews threads]] 
 </div>
 
 <div class="item">
