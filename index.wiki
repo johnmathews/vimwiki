@@ -12,6 +12,8 @@
 - “You follow the rules of war for you–not your enemy. You fight by rules to keep your humanity.” - https://www.globalo.com/history-wwii-charlie-brown-franz-stigler-incident/
 - Why blogging is a good idea - http://andrewchen.co/professional-blogging/
 - "Mr Chakravarty says a combination of experience in investment banking and digital execution helped him to raise $5m within five weeks of leaving his job at HSBC. Bankers he saw on the fundraising circuit without execution experience were raising less, he says." - https://www.ft.com/content/a41924e0-0327-11e9-99df-6183d3002ee1
+- While some large companies have data scientists who only devise an algorithm or a proof of concept, and then leave the implementation strictly to the engineers, other companies expect data scientists to code their own algorithms and deploy them into production. Still others give their data scientists access to a data warehouse and expect them to produce analytics for executives to review. https://blog.insightdatascience.com/data-scientists-and-engineers-advice-i-would-give-my-younger-self-16d1df492904?mc_cid=e9c5c919f7&mc_eid=52c2845b40
+ 
 == Notes ==
 <div class="items">
 <div class="item">
@@ -94,4 +96,3 @@
 </div>
 
 </div>
-
