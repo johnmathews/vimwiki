@@ -8,17 +8,18 @@ The decision journal entry is [[diary/2018-12-28|here]].
 === Phase 1 ===
 
 ==== Preparation ====
-* [X] Create ([[diary/2018-12-28|decision journal entry]]) (2018-12-28 14:39:00)
-* [X] Create this plan for Phase 1 (2019-01-02 15:32:23) 
-* [X] Find RaspberryPi and external drive (2019-01-03 11:12:04)
-* [X] Download complete BTC blockchain (2019-01-03 11:12:46)
+* [X] Create ([[diary/2018-12-28|decision journal entry]]) (2018-12-28)
+* [X] Create this plan for Phase 1 (2019-01-02) 
+* [X] Find RaspberryPi and external drive (2019-01-03)
+* [X] Download complete BTC blockchain (2019-01-03)
 * [X] Read about setting up a raspberry pi, specifically:
-    * [X] ~~what is 'WPA Supplicant'~~ not necessary as using wired connection. (2019-01-04 11:49:10)
-    * [X] ~~permissions~~ I couldn't move the swap file to the HFS+ disk, so I reformatted the external drive as `EXT4` (and began downloading blockchain again, looks like I don't need to use `txindex=1` anymore. (2019-01-04 11:49:15)
-    * [X] swap files (2019-01-04 11:50:49)
+    * [X] ~~what is 'WPA Supplicant'~~ not necessary as using wired connection. (2019-01-04)
+    * [X] ~~permissions~~ I couldn't move the swap file to the HFS+ disk, so I reformatted the external drive as `EXT4` (and began downloading blockchain again, looks like I don't need to use `txindex=1` anymore. (2019-01-04)
+    * [X] swap files (2019-01-04)
 
 ==== RaspberryPi and external drive: ====
 * [X] Create BTC node 
+<<<<<<< HEAD
   * [X] Set up raspberry pi including user permissions (2019-01-04 11:50:30)
   * [X] Install Bitcoin Core client (2019-01-07 15:23:25)
   * [X] Test (2019-01-07 15:23:29)
@@ -28,10 +29,24 @@ The decision journal entry is [[diary/2018-12-28|here]].
   * [X] Get some testnet bitcoin and buy something on Starblocks (2019-01-08 14:14:13)
 * [X] Copy mainnet chain data from regular computer onto drive connected to node (2019-01-08 14:14:12)
 * [X] Put a small amount of BTC into payment channel
+=======
+  * [X] Set up raspberry pi including user permissions (2019-01-04)
+  * [X] Install Bitcoin Core client (2019-01-07)
+  * [X] Test (2019-01-07)
+  * [X] Remount external drive and test again (2019-01-07)
+* [X] Create Lightning node  (2019-01-08)
+  * [X] Remount external drive and test again (2019-01-08)
+  * [X] Get some testnet bitcoin and buy something on Starblocks (2019-01-08)
+* [X] Copy mainnet chain data from regular computer onto drive connected to node (2019-01-08)
+* [X] Put a small amount of BTC into payment channel (2019-01-13)
+* [X] Make mainnet transactions (2019-01-13)
+>>>>>>> 0be47381a0b609101ac5d68dc8c2f45c75210955
 * [ ] Buy lightning stickers
 
 ==== Debrief ====
 * [ ] Create blog post about process of setting up a Bitcoin lightning node on a raspberry pi
+    * [ ] Content and blog plan:
+    * [ ] ...
 * [ ] Explore what metrics I can measure using the node:
     * [ ] UTXO age
     * [ ] Transactions per block
