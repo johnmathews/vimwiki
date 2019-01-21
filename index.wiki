@@ -40,6 +40,7 @@
 === Media ===
 </div>
 * [[Startup Ideas]]
+* [[https://www.1843magazine.com/features/a-rockers-guide-to-management|Management styles]]
 * [[Writing|How to write a book]]
 * [[Mental Models]]
 * [[Negotiation]]
