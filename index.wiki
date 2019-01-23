@@ -1,7 +1,7 @@
-%template index
+= %template index =
 
 == Pipes and Glue ==
-[[Pipes and Glue - Phase1|Phase 1]]
+[[Pipes and Glue - Phase1 | Phase 1]]
 
 == Thoughts ==
 - Do the people you care about love you back?
@@ -25,6 +25,8 @@
 * [[https://towardsdatascience.com/data-science-interview-guide-4ee9f5dc778|Data Science Interview Guide]]
 * [[https://towardsdatascience.com/devops-for-data-scientists-taming-the-unicorn-6410843990de|DevOps for Data Scientists: Taming the Unicorn]]
 * [[https://www.analyticsvidhya.com/blog/2018/06/comprehensive-data-science-machine-learning-interview-guide/|Comprehensive Data Science & Machine Learning Interview Guide]]
+* [[https://towardsdatascience.com/learn-enough-docker-to-be-useful-b7ba70caeb4b | Learn enough Docker to be useful ]]
+* [[ https://towardsdatascience.com/@ben_lau93 | Machine learning in python]]
 
 </div>
 
