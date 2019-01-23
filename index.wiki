@@ -19,6 +19,17 @@
 <div class="items">
 <div class="item">
 <div class="item__heading">
+=== Data Science ===
+</div>
+* [[https://towardsdatascience.com/mastering-the-data-science-interview-15f9c0a558a7|Mastering the Data Science Interview Loop]]
+* [[https://towardsdatascience.com/data-science-interview-guide-4ee9f5dc778|Data Science Interview Guide]]
+* [[https://towardsdatascience.com/devops-for-data-scientists-taming-the-unicorn-6410843990de|DevOps for Data Scientists: Taming the Unicorn]]
+* [[https://www.analyticsvidhya.com/blog/2018/06/comprehensive-data-science-machine-learning-interview-guide/|Comprehensive Data Science & Machine Learning Interview Guide]]
+
+</div>
+
+<div class="item">
+<div class="item__heading">
 === Dev Tools ===
 </div>
 * [[Terminal.app]]
