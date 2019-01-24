@@ -1,7 +1,18 @@
 %template index 
 
 == Pipes and Glue ==
-[[Pipes and Glue - Phase1| Phase 1]]
+    # [[Pipes and Glue - Phase1| Phase 1]]
+    # machine learning examples - 1 post each
+        # [[machine learning: week 1]]
+    # docker - enough to be useful
+    # kubernetes - after docker
+    # buckets - aws or GCP - send data there and get it back
+    # buckets 2 - get it using an API
+    # flask web app - get data using an api and display it
+    # jenkins 
+    # d3
+    # great shell scripts like the raspberry pi uses 
+    # amazon data science or data engineering training resources
 
 == Thoughts ==
 - Do the people you care about love you back?
@@ -34,6 +45,7 @@
 <div class="item__heading">
 === Dev Tools ===
 </div>
+* [[https://blog.jez.io/noteworthy-dotfile-hacks/|dotfile hacks]]
 * [[Terminal.app]]
 * [[strftime]]
 * [[FZF]]

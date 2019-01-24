@@ -1,0 +1,19 @@
+= Week 1 =
+
+Two definitions:
+    # The field of study that gives computers the ability to learn without being explicitely programmed (Arthur Samuel)
+    # A computer program is said to learn from experience `E` with respect to some set of tasks `T` and performance measure `P`, if its performance at tasks in `T` as measured by `P` improves with `E` (Tom Mitchell)
+
+*Supervised* learning are categorized into regression and classification problems:
+    # `Regression` is continuous
+    # `Classification` is discreet
+
+*Unsupervised learning* allows us to approach problems with little or no idea about what the results should look like. We can derive structure from data where we dont necessarily know the effect of the variables.
+
+With unsupervised learning there is no feedback based on the prediction results. Two types:
+    # `Clustering` - customer segments
+    # `Non-clustering` - separating voices at a party
+
+*Cost function* `J` shows how measure, and therefore minimize, the error of the hypothesis. 
+
+
