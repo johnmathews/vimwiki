@@ -32,8 +32,10 @@ The decision journal entry is [[diary/2018-12-28|here]].
 * [ ] Buy lightning stickers
 
 ==== Debrief ====
-* [ ] Create blog post about process of setting up a Bitcoin lightning node on a raspberry pi
+* [o] Create blog post about process of setting up a Bitcoin lightning node on a raspberry pi
     * [ ] Content and blog plan:
+    * [X] write post
+    * [X] publish post
     * [ ] ...
 * [ ] Explore what metrics I can measure using the node:
     * [ ] UTXO age
