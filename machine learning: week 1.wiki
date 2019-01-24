@@ -14,6 +14,6 @@ With unsupervised learning there is no feedback based on the prediction results.
     # `Clustering` - customer segments
     # `Non-clustering` - separating voices at a party
 
-*Cost function* `J` shows how measure, and therefore minimize, the error of the hypothesis. 
+*Cost function* `J` shows how to measure, and therefore minimize, the error of the hypothesis. 
 
-
+*Batch Gradient Descent* use all the training examples for each gradient descent iteration.
