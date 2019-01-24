@@ -19,6 +19,17 @@ The decision journal entry is [[diary/2018-12-28|here]].
 
 ==== RaspberryPi and external drive: ====
 * [X] Create BTC node 
+<<<<<<< HEAD
+  * [X] Set up raspberry pi including user permissions (2019-01-04 11:50:30)
+  * [X] Install Bitcoin Core client (2019-01-07 15:23:25)
+  * [X] Test (2019-01-07 15:23:29)
+  * [X] Remount external drive and test again (2019-01-07 15:23:30)
+* [X] Create Lightning node  (2019-01-08 14:11:20)
+  * [X] Remount external drive and test again (2019-01-08 14:14:16)
+  * [X] Get some testnet bitcoin and buy something on Starblocks (2019-01-08 14:14:13)
+* [X] Copy mainnet chain data from regular computer onto drive connected to node (2019-01-08 14:14:12)
+* [X] Put a small amount of BTC into payment channel
+=======
   * [X] Set up raspberry pi including user permissions (2019-01-04)
   * [X] Install Bitcoin Core client (2019-01-07)
   * [X] Test (2019-01-07)
@@ -29,6 +40,7 @@ The decision journal entry is [[diary/2018-12-28|here]].
 * [X] Copy mainnet chain data from regular computer onto drive connected to node (2019-01-08)
 * [X] Put a small amount of BTC into payment channel (2019-01-13)
 * [X] Make mainnet transactions (2019-01-13)
+>>>>>>> 0be47381a0b609101ac5d68dc8c2f45c75210955
 * [ ] Buy lightning stickers
 
 ==== Debrief ====
