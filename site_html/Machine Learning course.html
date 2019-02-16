@@ -17,7 +17,7 @@
 <script type="text/javascript" src="assets/js/my-js.js"></script>
 
 
-<title>Vim</title>
+<title>Machine Learning course</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -68,84 +68,84 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="Vim"><h1 id="Vim">Vim</h1></div>
+<div id="Machine Learning Course"><h1 id="Machine Learning Course">Machine Learning Course</h1></div>
+
+<div id="Machine Learning Course-Week 2, Logistic Regression"><h2 id="Week 2, Logistic Regression">Week 2, Logistic Regression</h2></div>
+
+<div id="Machine Learning Course-Week 2, Logistic Regression-python syntax"><h3 id="python syntax">python syntax</h3></div>
 
 <p>
-<code>:%s/\s\+$//e</code> - remove trailing whitespace from everyline. if not trailing white space, it doesnt do anything. the <code>e</code> suppresses any errors
-<code>:map</code> - see your keybindings
+to get a boolean at every position in an array showing if a condition is met:
 </p>
-
-<div id="Vim-Plugins"><h2 id="Plugins">Plugins</h2></div>
-<ol>
-<li>
-UnconditionalPaste - Force character-/line-/block-wise paste, regardless of how it was yanked. 
-
-<li>
-Writing prose
-
-<li>
-NerdTree
-
-</ol>
-
-<div id="Vim-Macros"><h2 id="Macros">Macros</h2></div>
-<p>
-<code>q&lt;letter&gt; &lt;some commands&gt; q</code> - create a macro
-</p>
-
-<p>
-<code>&lt;number&gt;@&lt;letter&gt;</code>           - run macro 
-</p>
-
-<div id="Vim-Navigation"><h2 id="Navigation">Navigation</h2></div>
-<p>
-) 			sentence
-}			paragraph
-</p>
-
-<div id="Vim-Buffers"><h2 id="Buffers">Buffers</h2></div>
-<p>
-:b#			previously viewed buffer
-:ls			list all buffers
-:bd			delete a buffer from the buffer list
-:bn 		next buffer
-:bp			previous buffer
-:new 		new buffer (empty file)
-</p>
-
-<div id="Vim-Help"><h2 id="Help">Help</h2></div>
-<ul>
-<li>
-Type :h patt then press Ctrl-D to list all topics that contain "patt". 
-
-<li>
-Type :h patt then press Tab to scroll through the topics that start with "patt". 
-
-<li>
-If you have set the 'wildmenu' option (e.g. by using :set wildmenu), then :h pattfollowed by &lt;Tab&gt; opens a menu on the statusline, with all help topics containing "patt". You can select any item in the menu with the arrow keys or more presses of the &lt;Tab&gt; key to fill in the rest of your command line. 
-
-</ul>
-
-<div id="Vim-Links"><h2 id="Links">Links</h2></div>
-<ul>
-<li>
-Enter :h to open the main help page. 
-
-<li>
-Type /quick to search for "quick" (should find the quickref link). 
-
-<li>
-Press Ctrl-] to follow the link (jump to the quickref topic). 
-
-<li>
-After browsing the quickref topic, press Ctrl-T to go back to the previous topic. 
 
 <ul>
 <li>
-You can also press Ctrl-O to jump to older locations, or Ctrl-I to jump to newer locations.
+<code>positive_indices = y &gt; 0</code>
+
+<li>
+<code>negative_indices = y &lt;= 0</code>
 
 </ul>
+
+<p>
+to load 2 variables at the same time:
+</p>
+
+<p>
+<code>a, b = c, d</code>
+</p>
+
+
+<div id="Machine Learning Course-Week 2, Logistic Regression-numpy notes"><h3 id="numpy notes">numpy notes</h3></div>
+
+<p>
+['rows', 'columns']
+</p>
+
+<p>
+ <code>a = np.arange(15).reshape(3, 5)</code> produce a 3x5 matrix
+</p>
+
+<p>
+<code>a.size</code> how many values in array. i.e rows x columns
+</p>
+
+<p>
+<code>X, y = data[:, 0:2], data[:, 2]</code>
+X is all rows and columns 0 and 1 or the data array. Y is all rows and column 2
+</p>
+
+<p>
+make an array
+</p>
+
+<ul>
+<li>
+<code>np.array([(1.5,2,3), (4,5,6)])</code> 
+
+<li>
+<code>np.zeros((3,4))</code>
+
+<li>
+<code>np.ones((3,4))</code>
+
+<li>
+<code>np.empyty((3,4))</code>
+
 </ul>
+
+<div id="Machine Learning Course-Week 2, Logistic Regression-logistic regression notes"><h3 id="logistic regression notes">logistic regression notes</h3></div>
+<p>
+<code>g = 1/(1 + np.exp(-z))</code> sigmoid function
+</p>
+
+<p>
+<span id="Machine Learning Course-Week 2, Logistic Regression-logistic regression notes-import data"></span><strong id="import data">import data</strong>
+</p>
+<pre  python>
+data = np.loadtxt(os.path.join('Data', 'ex2data1.txt'), delimiter=',')
+X, y = data[:, 0:2], data[:, 2]
+</pre>
 
 
         </div>

@@ -9,6 +9,7 @@
 <div class="item__heading">
 === Data Science ===
 </div>
+* [[Machine Learning course]]
 * [[https://towardsdatascience.com/mastering-the-data-science-interview-15f9c0a558a7|Mastering the Data Science Interview Loop]]
 * [[https://towardsdatascience.com/data-science-interview-guide-4ee9f5dc778|Data Science Interview Guide]]
 * [[https://towardsdatascience.com/devops-for-data-scientists-taming-the-unicorn-6410843990de|DevOps for Data Scientists: Taming the Unicorn]]
@@ -149,6 +150,7 @@
 </div>
 == Thoughts ==
 - Do the people you care about love you back?
+- It does not matter how slowly you go as long as you do not stop.
 - [[https://blog.samaltman.com/the-days-are-long-but-the-decades-are-short|Long days, short decades]]
 - Assume nobody is going to help you but that nobody is going to stop you either
 - Money is the fuel
