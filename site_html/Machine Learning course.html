@@ -72,12 +72,10 @@
 
 <div id="Machine Learning Course-Week 2, Logistic Regression"><h2 id="Week 2, Logistic Regression">Week 2, Logistic Regression</h2></div>
 
-<div id="Machine Learning Course-Week 2, Logistic Regression-python syntax"><h3 id="python syntax">python syntax</h3></div>
-
+<div id="Machine Learning Course-Week 2, Logistic Regression-python"><h3 id="python">python</h3></div>
 <p>
 to get a boolean at every position in an array showing if a condition is met:
 </p>
-
 <ul>
 <li>
 <code>positive_indices = y &gt; 0</code>
@@ -90,35 +88,31 @@ to get a boolean at every position in an array showing if a condition is met:
 <p>
 to load 2 variables at the same time:
 </p>
-
-<p>
+<ul>
+<li>
 <code>a, b = c, d</code>
-</p>
 
+</ul>
 
-<div id="Machine Learning Course-Week 2, Logistic Regression-numpy notes"><h3 id="numpy notes">numpy notes</h3></div>
+<div id="Machine Learning Course-Week 2, Logistic Regression-numpy"><h3 id="numpy">numpy</h3></div>
+<ul>
+<li>
+<code>['rows', 'columns']</code>
 
-<p>
-['rows', 'columns']
-</p>
+<li>
+<code>a = np.arange(15).reshape(3, 5)</code> produce a 3x5 matrix
 
-<p>
- <code>a = np.arange(15).reshape(3, 5)</code> produce a 3x5 matrix
-</p>
-
-<p>
+<li>
 <code>a.size</code> how many values in array. i.e rows x columns
-</p>
+
+<li>
+<code>X, y = data[:, 0:2], data[:, 2]</code> X is all rows and columns 0 and 1 or the data array. Y is all rows and column 2
+
+</ul>
 
 <p>
-<code>X, y = data[:, 0:2], data[:, 2]</code>
-X is all rows and columns 0 and 1 or the data array. Y is all rows and column 2
+make an array:
 </p>
-
-<p>
-make an array
-</p>
-
 <ul>
 <li>
 <code>np.array([(1.5,2,3), (4,5,6)])</code> 
@@ -134,18 +128,29 @@ make an array
 
 </ul>
 
-<div id="Machine Learning Course-Week 2, Logistic Regression-logistic regression notes"><h3 id="logistic regression notes">logistic regression notes</h3></div>
+<div id="Machine Learning Course-Week 2, Logistic Regression-logistic regression"><h3 id="logistic regression">logistic regression</h3></div>
 <p>
 <code>g = 1/(1 + np.exp(-z))</code> sigmoid function
 </p>
 
 <p>
-<span id="Machine Learning Course-Week 2, Logistic Regression-logistic regression notes-import data"></span><strong id="import data">import data</strong>
+import data
 </p>
 <pre  python>
 data = np.loadtxt(os.path.join('Data', 'ex2data1.txt'), delimiter=',')
 X, y = data[:, 0:2], data[:, 2]
 </pre>
+
+<div id="Machine Learning Course-Week 2, Logistic Regression-Linear Algebra"><h3 id="Linear Algebra">Linear Algebra</h3></div>
+<p>
+dot product is normal matrix multiplication
+1 2  11 12 = 1.11+2.13 1.12+2.14
+3 4  13 14   3.11+4.13 3.12+4.14
+</p>
+
+<p>
+<code>dot(a.transpose(), b) == dot(b.transpose(), a)</code>
+</p>
 
 
         </div>

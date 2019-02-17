@@ -2,37 +2,27 @@
 
 == Week 2, Logistic Regression ==
 
-=== python syntax ===
-
+=== python ===
 to get a boolean at every position in an array showing if a condition is met:
-
 * `positive_indices = y > 0`
 * `negative_indices = y <= 0`
 
 to load 2 variables at the same time:
+* `a, b = c, d`
 
-`a, b = c, d`
+=== numpy ===
+* `['rows', 'columns']`
+* `a = np.arange(15).reshape(3, 5)` produce a 3x5 matrix
+* `a.size` how many values in array. i.e rows x columns
+* `X, y = data[:, 0:2], data[:, 2]` X is all rows and columns 0 and 1 or the data array. Y is all rows and column 2
 
-
-=== numpy notes ===
-
-['rows', 'columns']
-
- `a = np.arange(15).reshape(3, 5)` produce a 3x5 matrix
-
-`a.size` how many values in array. i.e rows x columns
-
-`X, y = data[:, 0:2], data[:, 2]`
-X is all rows and columns 0 and 1 or the data array. Y is all rows and column 2
-
-make an array
-
+make an array:
 * `np.array([(1.5,2,3), (4,5,6)])` 
 * `np.zeros((3,4))`
 * `np.ones((3,4))`
 * `np.empyty((3,4))`
 
-=== logistic regression notes ===
+=== logistic regression ===
 `g = 1/(1 + np.exp(-z))` sigmoid function
 
 import data
@@ -41,6 +31,10 @@ data = np.loadtxt(os.path.join('Data', 'ex2data1.txt'), delimiter=',')
 X, y = data[:, 0:2], data[:, 2]
 }}}
 
+=== Linear Algebra ===
 dot product is normal matrix multiplication
 1 2  11 12 = 1.11+2.13 1.12+2.14
 3 4  13 14   3.11+4.13 3.12+4.14
+
+`dot(a.transpose(), b) == dot(b.transpose(), a)`
+A'B == B'A
