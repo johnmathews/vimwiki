@@ -100,6 +100,7 @@
 <div class="item__heading">
 === Python ===
 </div>
+* [[print vars]]
 * [[Bokeh]]
 * [[Django setup]] 
 * [[Django: urls-views-templates]]
@@ -150,6 +151,10 @@
 == Thoughts ==
 - Do the people you care about love you back?
 - [[https://blog.samaltman.com/the-days-are-long-but-the-decades-are-short|Long days, short decades]]
+- All great careers, to some degree, become sales jobs. You have to evangelize your plans to customers, prospective employees, the press, investors, etc. This requires an inspiring vision, strong communication skills, some degree of charisma, and evidence of execution ability.
+- My other big sales tip is to show up in person whenever it’s important. When I was first starting out, I was always willing to get on a plane. It was frequently unnecessary, but three times it led to career-making turning points for me that otherwise would have gone the other way.
+- [[https://drive.google.com/open?id=1wkJ6Ruh2IiR-caT-PS3n5Yt5VKcmIsVhuQwjgqK7030|How to start a startup]]
+- [[How to be successful]]
 - Assume nobody is going to help you but that nobody is going to stop you either
 - Money is the fuel
 - Philosophical poverty
@@ -160,6 +165,3 @@
 - "Mr Chakravarty says a combination of experience in investment banking and digital execution helped him to raise $5m within five weeks of leaving his job at HSBC. Bankers he saw on the fundraising circuit without execution experience were raising less, he says." - https://www.ft.com/content/a41924e0-0327-11e9-99df-6183d3002ee1
 - While some large companies have data scientists who only devise an algorithm or a proof of concept, and then leave the implementation strictly to the engineers, other companies expect data scientists to code their own algorithms and deploy them into production. Still others give their data scientists access to a data warehouse and expect them to produce analytics for executives to review. https://blog.insightdatascience.com/data-scientists-and-engineers-advice-i-would-give-my-younger-self-16d1df492904?mc_cid=e9c5c919f7&mc_eid=52c2845b40
 - [[https://gowers.wordpress.com/2018/12/22/how-craig-barton-wishes-hed-taught-maths/#more-6435|How to teach math]]
-- 
-- 
- 

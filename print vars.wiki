@@ -1,0 +1,6 @@
+=== print variable name and variable ===
+_variable must be a string_
+{{{python
+def print_(variable):
+    print(f'{variable}: {repr(eval(variable))}')
+}}}
