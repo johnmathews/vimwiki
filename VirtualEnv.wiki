@@ -1,6 +1,10 @@
 =VirtualEnv=
 
 <br>
+    * To use pyenv and virtualenvwrapper, see https://alysivji.github.io/setting-up-pyenv-virtualenvwrapper.html
+    * Anytime you install a new version of python, you need to install virtualenvwrapper using `pyenv virtualenvwrapper_lazy`
+    * `pyenv-virtualenvwrapper` uses the same commands as virtualenvwrapper
+<br>
 
 |----------------------------------------------|----------------------------------------------------------|
 | *Description*                                | *Command*                                                |
