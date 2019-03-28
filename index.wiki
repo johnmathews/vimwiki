@@ -149,6 +149,10 @@
 
 </div>
 == Thoughts ==
+- Quotes from Geoffrey Hinton interview: 
+    - Trust your intuitions, because if you don't trust them then there's no point
+    - Read enough so that you can trust your intuitions
+    - 'This person is either drunk or stupid' - feedback on one of his papers that went on to become significant
 - Do the people you care about love you back?
 - [[https://bronnieware.com/blog/regrets-of-the-dying/|Regrets of the dying]]
 - [[https://blog.samaltman.com/the-days-are-long-but-the-decades-are-short|Long days, short decades]]
