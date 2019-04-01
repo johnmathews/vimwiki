@@ -70,7 +70,7 @@
 * [[Git]]
 * [[shell]]
 * [[Shell vs Terminal]]
-* [[VirtualEnv]]
+* [[VirtualEnv|PyEnv and VirtualEnv]]
 * [[Docker]]
 * [[tmux]]
 * [[PostrgreSQL]]

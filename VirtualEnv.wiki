@@ -1,4 +1,4 @@
-=VirtualEnv=
+=PyEnv and VirtualEnv=
 
 <br>
     * To use pyenv and virtualenvwrapper, see https://alysivji.github.io/setting-up-pyenv-virtualenvwrapper.html
@@ -6,22 +6,25 @@
     * `pyenv-virtualenvwrapper` uses the same commands as virtualenvwrapper
 <br>
 
-|----------------------------------------------|----------------------------------------------------------|
-| *Description*                                | *Command*                                                |
-|----------------------------------------------|----------------------------------------------------------|
-| Run commands when activating the env         | `/Users/john/.virtualenvs/[name]/bin/activate`             |
-| *Create* a virtualenv                        | `mkvirtualenv env1`                                      |
-| *Create* a virtualenv with python3           | `mkvirtualenv demo --python=python3`                     |
-| *Close* the virtualenv                       | `deactivate`                                             |
-| *Activate* the virtualenv                    | `workon env1`                                            |
-| *List* environments                          | `lsvirtualenv`                                           |
-| *Delete* an environment                      | `rmvirtualenv ENVNAME` or `rm -rf ~/Envs/env1`           |
-| *Copy* an environment                        | `cpvirtualenv ENVNAME [TARGETENVNAME]`                   |
-| *List* all virtual envs                      | `lsvirtualenv`                                           |
-| *Show* the details for a single virtualenv.  | `showvirtualenv` [env]                                   |
-| *Remove* an environment, in the WORKON_HOME. | `rmvirtualenv ENVNAME`                                   |
-| *Rename* a virtualenv                        | `cpvirtualenv oldenv newenv` then  `rmvirtualenv oldenv` |
-| *List* all of the environments.              | `lsvirtualenv [-b] [-l] [-h]`                            |
+|----------------------------------------------------------|----------------------------------------------|
+| *Command*                                                | *Description*                                |
+|----------------------------------------------------------|----------------------------------------------|
+| `pyenv versions`                                         | *list* all installed python versions         |
+| `pyenv uninstall <version>`                              | *uninstall* a python version from pyenv      |
+| `pyenv shell <version name>`                             | set python *version* for this virtualenv     |
+| `/Users/john/.virtualenvs/[name]/bin/activate`           | Run commands when activating the env         |
+| `mkvirtualenv env1`                                      | *Create* a virtualenv                        |
+| `mkvirtualenv demo --python=python3`                     | *Create* a virtualenv with python3           |
+| `deactivate`                                             | *Close* the virtualenv                       |
+| `workon env1`                                            | *Activate* the virtualenv                    |
+| `lsvirtualenv`                                           | *List* environments                          |
+| `rmvirtualenv ENVNAME` or `rm -rf ~/Envs/env1`           | *Delete* an environment                      |
+| `cpvirtualenv ENVNAME [TARGETENVNAME]`                   | *Copy* an environment                        |
+| `showvirtualenv` [env]                                   | *Show* the details for a single virtualenv.  |
+| `rmvirtualenv ENVNAME`                                   | *Remove* an environment, in the WORKON_HOME. |
+| `cpvirtualenv oldenv newenv` then  `rmvirtualenv oldenv` | *Rename* a virtualenv                        |
+| `lsvirtualenv [-b] [-l] [-h]`                            | *List* all of the environments.              |
+
 
 
 

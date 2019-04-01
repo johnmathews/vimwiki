@@ -68,7 +68,7 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="VirtualEnv"><h1 id="VirtualEnv">VirtualEnv</h1></div>
+<div id="PyEnv and VirtualEnv"><h1 id="PyEnv and VirtualEnv">PyEnv and VirtualEnv</h1></div>
 
 <p>
 <br>
@@ -91,121 +91,146 @@ Anytime you install a new version of python, you need to install virtualenvwrapp
 <table>
 <tr>
 <th>
-<span id="VirtualEnv-Description"></span><strong id="Description">Description</strong>
+<span id="PyEnv and VirtualEnv-Command"></span><strong id="Command">Command</strong>
 </th>
 <th>
-<span id="VirtualEnv-Command"></span><strong id="Command">Command</strong>
+<span id="PyEnv and VirtualEnv-Description"></span><strong id="Description">Description</strong>
 </th>
 </tr>
 <tr>
 <td>
-Run commands when activating the env
+<code>pyenv versions</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-list"></span><strong id="list">list</strong> all installed python versions
+</td>
+</tr>
+<tr>
+<td>
+<code>pyenv uninstall &lt;version&gt;</code>
+</td>
+<td>
+<span id="PyEnv and VirtualEnv-uninstall"></span><strong id="uninstall">uninstall</strong> a python version from pyenv
+</td>
+</tr>
+<tr>
+<td>
+<code>pyenv shell &lt;version name&gt;</code>
+</td>
+<td>
+set python <span id="PyEnv and VirtualEnv-version"></span><strong id="version">version</strong> for this virtualenv
+</td>
+</tr>
+<tr>
 <td>
 <code>/Users/john/.virtualenvs/[name]/bin/activate</code>
 </td>
+<td>
+Run commands when activating the env
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv
-</td>
 <td>
 <code>mkvirtualenv env1</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv with python3
-</td>
 <td>
 <code>mkvirtualenv demo --python=python3</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-Create"></span><strong id="Create">Create</strong> a virtualenv with python3
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-Close"></span><strong id="Close">Close</strong> the virtualenv
-</td>
 <td>
 <code>deactivate</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-Close"></span><strong id="Close">Close</strong> the virtualenv
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-Activate"></span><strong id="Activate">Activate</strong> the virtualenv
-</td>
 <td>
 <code>workon env1</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-Activate"></span><strong id="Activate">Activate</strong> the virtualenv
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> environments
-</td>
 <td>
 <code>lsvirtualenv</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-List"></span><strong id="List">List</strong> environments
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-Delete"></span><strong id="Delete">Delete</strong> an environment
-</td>
 <td>
 <code>rmvirtualenv ENVNAME</code> or <code>rm -rf ~/Envs/env1</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-Delete"></span><strong id="Delete">Delete</strong> an environment
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-Copy"></span><strong id="Copy">Copy</strong> an environment
-</td>
 <td>
 <code>cpvirtualenv ENVNAME [TARGETENVNAME]</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-Copy"></span><strong id="Copy">Copy</strong> an environment
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> all virtual envs
-</td>
 <td>
 <code>lsvirtualenv</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-List"></span><strong id="List">List</strong> all virtual envs
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-Show"></span><strong id="Show">Show</strong> the details for a single virtualenv.
-</td>
 <td>
 <code>showvirtualenv</code> [env]
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-Show"></span><strong id="Show">Show</strong> the details for a single virtualenv.
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-Remove"></span><strong id="Remove">Remove</strong> an environment, in the WORKON_HOME.
-</td>
 <td>
 <code>rmvirtualenv ENVNAME</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-Remove"></span><strong id="Remove">Remove</strong> an environment, in the WORKON_HOME.
+</td>
 </tr>
 <tr>
-<td>
-<span id="VirtualEnv-Rename"></span><strong id="Rename">Rename</strong> a virtualenv
-</td>
 <td>
 <code>cpvirtualenv oldenv newenv</code> then  <code>rmvirtualenv oldenv</code>
 </td>
+<td>
+<span id="PyEnv and VirtualEnv-Rename"></span><strong id="Rename">Rename</strong> a virtualenv
+</td>
 </tr>
 <tr>
 <td>
-<span id="VirtualEnv-List"></span><strong id="List">List</strong> all of the environments.
+<code>lsvirtualenv [-b] [-l] [-h]</code>
 </td>
 <td>
-<code>lsvirtualenv [-b] [-l] [-h]</code>
+<span id="PyEnv and VirtualEnv-List"></span><strong id="List">List</strong> all of the environments.
 </td>
 </tr>
 </table>
 
 
 
-<div id="VirtualEnv-Notes"><h3 id="Notes">Notes</h3></div>
+
+<div id="PyEnv and VirtualEnv-Notes"><h3 id="Notes">Notes</h3></div>
 <p>
 To set up, run this script (automatically) when shell opens 
 <code>source /usr/local/bin/virtualenvwrapper.sh</code>
