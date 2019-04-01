@@ -4,20 +4,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<link type="text/css" rel="stylesheet" href="../assets/css/bootstrap.css" />
-<link type="text/css" rel="stylesheet" href="../assets/css/bootstrap-responsive.css" />
-<link type="text/css" rel="stylesheet" href="../assets/css/docs.css" />
-<link type="text/css" rel="stylesheet" href="../assets/css/monokai.css" />
-<link type="text/css" rel="stylesheet" href="../assets/css/vimwiki.css" />
-<link type="text/css" rel="stylesheet" href="../assets/css/font-awesome.css">
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/docs.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/monokai.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/vimwiki.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
 
-<script type="text/javascript" src="../assets/js/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
-<script type="text/javascript" src="../assets/js/highlight.pack.js"></script>
-<script type="text/javascript" src="../assets/js/my-js.js"></script>
+<script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+<script type="text/javascript" src="assets/js/my-js.js"></script>
 
 
-<title>diary</title>
+<title>Machine Learning course</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -39,13 +39,13 @@
                          <a href="#" onClick="history.go(-1);return true;">Back</a>
                     </li>
                     <li class="">
-                        <a href="../index.html">Index</a>
+                        <a href="index.html">Index</a>
                     </li>
                     <li class="">
-                        <a href="../diary/journal.html">Journal</a>
+                        <a href="diary/journal.html">Journal</a>
                     </li>
                     <li class="">
-                        <a href="../todo.html">Ideas</a>
+                        <a href="todo.html">Ideas</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +68,90 @@
         <div class="span12">
             <!--Body content-->
             
-<div id="Diary"><h1 id="Diary">Diary</h1></div>
+<div id="Machine Learning Course"><h1 id="Machine Learning Course">Machine Learning Course</h1></div>
+
+<div id="Machine Learning Course-Week 2, Logistic Regression"><h2 id="Week 2, Logistic Regression">Week 2, Logistic Regression</h2></div>
+
+<div id="Machine Learning Course-Week 2, Logistic Regression-python"><h3 id="python">python</h3></div>
+<p>
+to get a boolean at every position in an array showing if a condition is met:
+</p>
+<ul>
+<li>
+<code>positive_indices = y &gt; 0</code>
+
+<li>
+<code>negative_indices = y &lt;= 0</code>
+
+</ul>
+
+<p>
+to load 2 variables at the same time:
+</p>
+<ul>
+<li>
+<code>a, b = c, d</code>
+
+</ul>
+
+<div id="Machine Learning Course-Week 2, Logistic Regression-numpy"><h3 id="numpy">numpy</h3></div>
+<ul>
+<li>
+<code>['rows', 'columns']</code>
+
+<li>
+<code>a = np.arange(15).reshape(3, 5)</code> produce a 3x5 matrix
+
+<li>
+<code>a.size</code> how many values in array. i.e rows x columns
+
+<li>
+<code>X, y = data[:, 0:2], data[:, 2]</code> X is all rows and columns 0 and 1 or the data array. Y is all rows and column 2
+
+</ul>
+
+<p>
+make an array:
+</p>
+<ul>
+<li>
+<code>np.array([(1.5,2,3), (4,5,6)])</code> 
+
+<li>
+<code>np.zeros((3,4))</code>
+
+<li>
+<code>np.ones((3,4))</code>
+
+<li>
+<code>np.empyty((3,4))</code>
+
+</ul>
+
+<div id="Machine Learning Course-Week 2, Logistic Regression-logistic regression"><h3 id="logistic regression">logistic regression</h3></div>
+<p>
+<code>g = 1/(1 + np.exp(-z))</code> sigmoid function
+</p>
+
+<p>
+import data
+</p>
+<pre  python>
+data = np.loadtxt(os.path.join('Data', 'ex2data1.txt'), delimiter=',')
+X, y = data[:, 0:2], data[:, 2]
+</pre>
+
+<div id="Machine Learning Course-Week 2, Logistic Regression-Linear Algebra"><h3 id="Linear Algebra">Linear Algebra</h3></div>
+<p>
+dot product is normal matrix multiplication
+1 2  11 12 = 1.11+2.13 1.12+2.14
+3 4  13 14   3.11+4.13 3.12+4.14
+</p>
+
+<p>
+<code>dot(a.transpose(), b) == dot(b.transpose(), a)</code>
+A'B == B'A
+</p>
 
 
         </div>

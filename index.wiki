@@ -9,6 +9,7 @@
 <div class="item__heading">
 === Data Science ===
 </div>
+* [[Machine Learning course]]
 * [[https://towardsdatascience.com/mastering-the-data-science-interview-15f9c0a558a7|Mastering the Data Science Interview Loop]]
 * [[https://towardsdatascience.com/data-science-interview-guide-4ee9f5dc778|Data Science Interview Guide]]
 * [[https://towardsdatascience.com/devops-for-data-scientists-taming-the-unicorn-6410843990de|DevOps for Data Scientists: Taming the Unicorn]]
@@ -165,6 +166,7 @@
     - Read enough so that you can trust your intuitions
     - 'This person is either drunk or stupid' - feedback on one of his papers that went on to become significant
 - Do the people you care about love you back?
+- It does not matter how slowly you go as long as you do not stop.
 - [[https://bronnieware.com/blog/regrets-of-the-dying/|Regrets of the dying]]
 - [[https://blog.samaltman.com/the-days-are-long-but-the-decades-are-short|Long days, short decades]]
 - All great careers, to some degree, become sales jobs. You have to evangelize your plans to customers, prospective employees, the press, investors, etc. This requires an inspiring vision, strong communication skills, some degree of charisma, and evidence of execution ability.
