@@ -100,7 +100,24 @@ Anytime you install a new version of python, you need to install virtualenvwrapp
 
 </ul>
 
-<div id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook"><h4 id="install the right kernel for jupyter notebook" class="justcenter">install the right kernel for jupyter notebook</h4></div>
+<div id="PyEnv and VirtualEnv-update pyenv and get a new python version"><h3 id="update pyenv and get a new python version" class="justcenter">update pyenv and get a new python version</h3></div>
+<ul>
+<li>
+<code>brew upgrade pyenv</code> 
+
+<li>
+<code>pyenv install -l</code> - list versions
+
+<li>
+<code>pyenv install &lt;version&gt;</code> - install a new version
+
+<li>
+<code>pyenv uninstall &lt;version&gt;</code>
+<br />   (<a href="https://www.tecmint.com/pyenv-install-and-manage-multiple-python-versions-in-linux/)">https://www.tecmint.com/pyenv-install-and-manage-multiple-python-versions-in-linux/)</a>
+
+</ul>
+
+<div id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook"><h4 id="install the right kernel for jupyter notebook" class="justcenter">install the right kernel for jupyter notebook</h4></div>
 <ul>
 <li>
 <a href="https://stackoverflow.com/questions/46270435/changing-python-executable">https://stackoverflow.com/questions/46270435/changing-python-executable</a>
@@ -122,10 +139,10 @@ Anytime you install a new version of python, you need to install virtualenvwrapp
 <table>
 <tr>
 <th>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Command"></span><strong id="Command">Command</strong>
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Command"></span><strong id="Command">Command</strong>
 </th>
 <th>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Description"></span><strong id="Description">Description</strong>
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Description"></span><strong id="Description">Description</strong>
 </th>
 </tr>
 <tr>
@@ -133,7 +150,7 @@ Anytime you install a new version of python, you need to install virtualenvwrapp
 <code>pyenv versions</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-list"></span><strong id="list">list</strong> all installed python versions
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-list"></span><strong id="list">list</strong> all installed python versions
 </td>
 </tr>
 <tr>
@@ -141,7 +158,7 @@ Anytime you install a new version of python, you need to install virtualenvwrapp
 <code>pyenv uninstall &lt;version&gt;</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-uninstall"></span><strong id="uninstall">uninstall</strong> a python version from pyenv
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-uninstall"></span><strong id="uninstall">uninstall</strong> a python version from pyenv
 </td>
 </tr>
 <tr>
@@ -149,7 +166,7 @@ Anytime you install a new version of python, you need to install virtualenvwrapp
 <code>pyenv shell &lt;version name&gt;</code>
 </td>
 <td>
-set python <span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-version"></span><strong id="version">version</strong> for this virtualenv
+set python <span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-version"></span><strong id="version">version</strong> for this virtualenv
 </td>
 </tr>
 <tr>
@@ -165,7 +182,7 @@ Run commands when activating the env
 <code>mkvirtualenv env1</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Create"></span><strong id="Create">Create</strong> a virtualenv
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Create"></span><strong id="Create">Create</strong> a virtualenv
 </td>
 </tr>
 <tr>
@@ -173,7 +190,7 @@ Run commands when activating the env
 <code>mkvirtualenv demo --python=python3</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Create"></span><strong id="Create">Create</strong> a virtualenv with python3
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Create"></span><strong id="Create">Create</strong> a virtualenv with python3
 </td>
 </tr>
 <tr>
@@ -181,7 +198,7 @@ Run commands when activating the env
 <code>deactivate</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Close"></span><strong id="Close">Close</strong> the virtualenv
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Close"></span><strong id="Close">Close</strong> the virtualenv
 </td>
 </tr>
 <tr>
@@ -189,7 +206,7 @@ Run commands when activating the env
 <code>workon env1</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Activate"></span><strong id="Activate">Activate</strong> the virtualenv
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Activate"></span><strong id="Activate">Activate</strong> the virtualenv
 </td>
 </tr>
 <tr>
@@ -197,7 +214,7 @@ Run commands when activating the env
 <code>lsvirtualenv</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-List"></span><strong id="List">List</strong> environments
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-List"></span><strong id="List">List</strong> environments
 </td>
 </tr>
 <tr>
@@ -205,7 +222,7 @@ Run commands when activating the env
 <code>rmvirtualenv ENVNAME</code> or <code>rm -rf ~/Envs/env1</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Delete"></span><strong id="Delete">Delete</strong> an environment
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Delete"></span><strong id="Delete">Delete</strong> an environment
 </td>
 </tr>
 <tr>
@@ -213,7 +230,7 @@ Run commands when activating the env
 <code>cpvirtualenv ENVNAME [TARGETENVNAME]</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Copy"></span><strong id="Copy">Copy</strong> an environment
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Copy"></span><strong id="Copy">Copy</strong> an environment
 </td>
 </tr>
 <tr>
@@ -221,7 +238,7 @@ Run commands when activating the env
 <code>showvirtualenv</code> [env]
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Show"></span><strong id="Show">Show</strong> the details for a single virtualenv.
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Show"></span><strong id="Show">Show</strong> the details for a single virtualenv.
 </td>
 </tr>
 <tr>
@@ -229,7 +246,7 @@ Run commands when activating the env
 <code>rmvirtualenv ENVNAME</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Remove"></span><strong id="Remove">Remove</strong> an environment, in the WORKON_HOME.
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Remove"></span><strong id="Remove">Remove</strong> an environment, in the WORKON_HOME.
 </td>
 </tr>
 <tr>
@@ -237,7 +254,7 @@ Run commands when activating the env
 <code>cpvirtualenv oldenv newenv</code> then  <code>rmvirtualenv oldenv</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-Rename"></span><strong id="Rename">Rename</strong> a virtualenv
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-Rename"></span><strong id="Rename">Rename</strong> a virtualenv
 </td>
 </tr>
 <tr>
@@ -245,7 +262,7 @@ Run commands when activating the env
 <code>lsvirtualenv [-b] [-l] [-h]</code>
 </td>
 <td>
-<span id="PyEnv and VirtualEnv-install the right kernel for jupyter notebook-List"></span><strong id="List">List</strong> all of the environments.
+<span id="PyEnv and VirtualEnv-update pyenv and get a new python version-install the right kernel for jupyter notebook-List"></span><strong id="List">List</strong> all of the environments.
 </td>
 </tr>
 </table>

@@ -10,6 +10,13 @@
     * Anytime you install a new version of python, you need to install virtualenvwrapper using `pyenv virtualenvwrapper_lazy`
     * `pyenv-virtualenvwrapper` uses the same commands as virtualenvwrapper
 
+    === update pyenv and get a new python version ===
+   * `brew upgrade pyenv` 
+   * `pyenv install -l` - list versions
+   * `pyenv install <version>` - install a new version
+   * `pyenv uninstall <version>`
+   (https://www.tecmint.com/pyenv-install-and-manage-multiple-python-versions-in-linux/)
+
     ==== install the right kernel for jupyter notebook ====
     * https://stackoverflow.com/questions/46270435/changing-python-executable
     * `pip install ipython`
