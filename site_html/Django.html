@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/docs.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/monokai.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/vimwiki.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+
+<script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+<script type="text/javascript" src="assets/js/my-js.js"></script>
+
+
+<title>Django</title>
+
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <!-- .nav, .navbar-search, .navbar-form, etc -->
+                <ul class="nav">
+                    <li class="">
+                         <a href="#" onClick="history.go(-1);return true;">Back</a>
+                    </li>
+                    <li class="">
+                        <a href="index.html">Index</a>
+                    </li>
+                    <li class="">
+                        <a href="diary/journal.html">Journal</a>
+                    </li>
+                    <li class="">
+                        <a href="todo.html">Ideas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+
+<!-- ### Get rid of the navbar class and move the main column to the left ###
+
+        <div class="span3 bs-docs-sidebar">
+            <ul id="sidebar_list" class="nav nav-list bs-docs-sidenav affix">
+            </ul>
+        </div>
+
+-->
+<br>
+        <div class="span12">
+            <!--Body content-->
+            
+<div id="Django"><h1 id="Django">Django</h1></div>
+<p>
+<img src="/Users/john/projects/vimwiki/images/basic-django-flow.png" />
+</p>
+
+<p>
+Model diagrams showing multiplicities <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models#Designing_the_LocalLibrary_models">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models#Designing_the_LocalLibrary_models</a>
+<img src="/Users/john/projects/vimwiki/images/django-model-example.png" />
+</p>
+
+
+<p>
+ORM = Object Relational Mapper
+</p>
+
+<p>
+Django uses the ORM to map model definitions in code to the data structure used by the database. As models change or are updates, django can create migration scripts to change the schemas in the database to match the models defined in the code. Models are the single source of truth for an applications data structures.
+</p>
+
+
+<div id="Django-Notes"><h2 id="Notes">Notes</h2></div>
+
+<div id="Django-Notes-django-admin and manage.py"><h3 id="django-admin and manage.py">django-admin and manage.py</h3></div>
+<p>
+<code>django-admin</code> is Django’s command-line utility for administrative tasks.
+</p>
+
+<p>
+<a href="https://docs.djangoproject.com/en/2.2/ref/django-admin/">https://docs.djangoproject.com/en/2.2/ref/django-admin/</a>
+</p>
+
+<div id="Django-Notes-Creating a project"><h3 id="Creating a project">Creating a project</h3></div>
+<p>
+<code>mysite/urls.py</code> - The URL declarations for the project. A table of contents of your website
+</p>
+
+<p>
+<code>mysite/wsgi.py</code> - An entry point for WSGI compatible web servers to serve your site
+</p>
+
+<p>
+<a href="https://docs.djangoproject.com/en/2.2/intro/tutorial01/">https://docs.djangoproject.com/en/2.2/intro/tutorial01/</a>
+</p>
+
+<div id="Django-Notes-Dev server"><h3 id="Dev server">Dev server</h3></div>
+<p>
+<code>python manage.py runserver</code> - add a port to the end if the default is not ok. In <code>settings.py</code> you can edit <code>debug=True</code>.
+</p>
+
+
+<div id="Django-Notes-Creating views in an app"><h3 id="Creating views in an app">Creating views in an app</h3></div>
+<p>
+Function based views (FBVs) were the original. Class based views (CBVs) were introduced so that view templates could be implemented to avoid readedly writing boilerplate. Generic Class Based Views (GCBVs) take CBVs one step further and and handle common use cases like displaying content in list form or detail form. GCBVs are very concise, but harder to customize. check out <a href="https://ccbv.co.uk">https://ccbv.co.uk</a>
+</p>
+
+<ol>
+<li>
+Create a view
+
+<li>
+Map the view to a url
+
+<li>
+Add the apps URLconf to the root URLconf using <code>include()</code> - the include() function allows referencing other URLconfs. Whenever Django encounters include(), it chops off whatever part of the URL matched up to that point and sends the remaining string to the included URLconf for further processing.
+
+</ol>
+
+<div id="Django-Notes-Models"><h3 id="Models">Models</h3></div>
+<p>
+Good overview of options and types of field <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models#Model_primer">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models#Model_primer</a>
+Define the tables in the database, and also additional metadata
+<span id="Django-Notes-Models-The single definitive source of truth for your data"></span><strong id="The single definitive source of truth for your data">The single definitive source of truth for your data</strong>
+</p>
+
+<p>
+<img src="/Users/john/projects/vimwiki/images/django-model-example.png" />
+</p>
+
+
+<p>
+define your data model in one place and then derive things from it, including migrations.
+Migrations are entirely derived from the models file and are just a history that Django can roll through to update database schemas so that the schemas match the current models
+</p>
+
+<p>
+Relationships between models/tables are defined using <code>ForeignKey</code>, which tells Django that each item in a model is related to an item in another model.
+</p>
+
+<p>
+Human readable field names can be added, and also default values, and also required arguments depending on the type of field.
+</p>
+
+<p>
+Each table is represented as a python class, within which each field is represented by subclassing <code>django.db.models.Model</code>. This gives django enough information to create database schemas (e.g. <code>CREATE TABLE ...</code> statements) and also to create a python database-access API for accessing the objects (rows) in the tables.
+</p>
+
+<p>
+Register your models in your apps <code>app.py</code>
+</p>
+
+<div id="Django-Notes-Migrations"><h3 id="Migrations">Migrations</h3></div>
+<p>
+<code>python manage.py makemigrations &lt;app-name&gt;</code>
+</p>
+
+<p>
+By running <code>makemigrations</code> you tell django that you've made changes to <code>models</code> (or created new ones) and that you'd like the changes to be stored as a migration.
+</p>
+
+<p>
+Migrations are just files. They contain the changes to models (so like git?).
+You can see which file it is stored in when you run the <code>manage.py makemigrations</code> command.
+</p>
+
+<p>
+There is a (separate) command that will run the migrations for you (by reading the migrations file) and manage the database schema.
+</p>
+
+<p>
+Print to terminal what sql commands will be run when you run a migration using <code>python manage.py sqlmigrate &lt;app-name&gt; &lt;migration-number&gt;</code>
+This will show you what changes will be made or what tables will be created.
+</p>
+
+<p>
+<code>python manage.py check</code> will check for problems without making migrations or touching the database.
+</p>
+
+<p>
+<code>python manage.py migrate</code> - makes the changes to the databse, using the migration file you generated with the <code>makemigration</code> command.
+</p>
+
+<div id="Django-Notes-Views and templates"><h3 id="Views and templates">Views and templates</h3></div>
+<p>
+A view must return either an <code>HttpResponse</code> or <code>Http404</code> object. The content of the object can be anything.
+</p>
+
+<p>
+To get something from the database to put into the view, import from models.
+</p>
+
+<p>
+Separation of concerns -&gt; separate page design from page content using templates.
+</p>
+
+<div id="Django-Notes-Common template idioms"><h3 id="Common template idioms">Common template idioms</h3></div>
+<div id="Django-Notes-Common template idioms-objects, template, context"><h4 id="objects, template, context">objects, template, context</h4></div>
+<ol>
+<li>
+define some python objects
+
+<li>
+define a context, mapping the objects to variables in the template
+
+<li>
+return <code>HttpResponse(template.render(context, request))</code>
+
+</ol>
+
+<p>
+This can be abbreviated using <code>from django.shortcuts import render</code>
+<code>render()</code> takes 3 arguments, the request object, then the template, and thirdly an optional dictionary.
+It returns an <code>HttpResponse</code> object of the given template rendered with the given context.
+but do it the long way for now.
+</p>
+
+<div id="Django-Notes-Common template idioms-get objcet or raise 404"><h4 id="get objcet or raise 404">get objcet or raise 404</h4></div>
+<ol>
+<li>
+try to get something from the database
+
+<li>
+if it doesnt exist, raise a 404 error using <code>Http404()</code>
+
+</ol>
+
+<p>
+This can be shortened using
+</p>
+
+<p>
+```python
+from django.shortcuts import get_object_or_404, render
+#...
+my_object = get_object_or_404(&lt;model&gt;, &lt;api params&gt;)
+return render(request, template, context)
+```
+</p>
+
+<div id="Django-Forms"><h2 id="Forms">Forms</h2></div>
+<p>
+An html form element is something the user can input or click on. Its like a callback in dash.
+</p>
+
+<p>
+<img src="/Users/john/projects/vimwiki/images/django-form-handling-standard.png" />
+<a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms</a>
+</p>
+
+
+<div id="Classes"><h1 id="Classes">Classes</h1></div>
+<p>
+classes are essentially templates to create objects from. Objects get their variables and functions from classes.
+</p>
+
+
+        </div>
+  </div>
+</div>
+<a href="#" class="backtotop"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
+<!-- Footer
+    ================================================== -->
+
+<!-- ### Remove footer links - clutter ###
+<footer class="footer">
+  <div class="container">
+    <p><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+    <p><a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> licensed under <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>.</p>
+    <p><a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a> licensed under <a href="http://opensource.org/licenses/BSD-3-Clause">Modified BSD License</a>.</p>
+    <ul class="footer-links">
+    </ul>
+  </div>
+</footer>
+-->
+
+<!--
+<script>
+    $('h1').each(function() {
+        $(this).wrap('<section id="' + this.id + '"/>');
+    });
+    $('h1').wrap('<div class="page-header" />');
+    $('h1').wrap('<div class="well well-small" />');
+    $(document).ready(function() {
+        var items = [];
+        $('h1').each(function() {
+            items.push('<li><a href="#' + this.id + '"><i class="fa fa-chevron-right pull-right"></i> ' + $(this).text() + '</a></li>');
+        });  // close each()
+    $('#sidebar_list').append( items.join('') );
+    $('table').each(function() {
+        $(this).addClass('table table-striped table-condensed table-hover');
+    });
+    $('.done0').each(function() {
+        $(this).html('<div class="alert alert-info"><i class="fa fa-check-square-o"></i>'+$(this).html()+'</div></li>');
+    });
+    $('.done4').each(function() {
+        $(this).html('<div class="alert alert-success"><i class="fa fa-square-o"></i>'+$(this).html()+'</div></li>');
+    });
+    // Fade Out Back-To-Top-Link on new page
+    $('.backtotop').fadeOut();
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.backtotop').fadeIn();
+            } else {
+                $('.backtotop').fadeOut();
+            }
+        });
+        $('.backtotop').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+    });
+    $('pre').each(function() {
+        $(this).html('<code>'+$(this).html()+'</code>');
+    });
+    hljs.initHighlightingOnLoad();
+});
+</script>
+-->
+</body>
+</html>

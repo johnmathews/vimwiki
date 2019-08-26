@@ -1,0 +1,107 @@
+= Classes =
+https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
+
+Classes are the templates for objects. They define the features (methods and constants) that an object has.
+`self` is the instance of the class that the method is being called on. Even if the method is `__init__`. 
+This allows the method to know which instance of the class (which object) to alter or create.
+
+# everything in python is an object.
+# a class is a logical grouping of functions and data. a function which is defined inside a class is called a method.
+# classes are a _modelling technique._
+# an object is an instance of a class. a class defines the object. when you work with classes you are doing oop.
+# When you create (define) a class, you are not creating an object, you are creating the template/blueprint for it.
+
+# initialize everthing inside the `__init__` method. make sure the object is always _fully initialized_.
+# *Instance Methods* Methods have access to all the data contained in the instance of the object. They can access and modify anything previously set on `__self__`. They act on an instance of the class, and therefore the instance must be defined.
+# *Static attibutes* _class attributes_ are attributes that are set at the class level as opposed to the instance level. Normal attributes are introduced in the `__init__` method, but some attributes of a class hold for *all* instances of that class, in all cases. Instance methods can access static attributes the same way they access instance attributes, by using `self.wheels`. e.g.
+# *Static Methods* are a type of method that does not require `self`, and don't have access to `self`. Use a decorator.
+# *Class Methods and Inheritance*
+    # *Inheritance* lets a _child class_ inherit all the attributes of its _parent_. e.g. `class bar(foo):` the class called `bar` is a child of  the `foo` class and inherits all its attributes.
+    # *Abstract Base Classes (ABCs)* are types of classes that child classes can inherit from, but that cannot be instantiated themselves.
+
+{{{python
+class Car(object):
+
+    wheels = 4
+
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    @staticmethod
+    def make_car_sound():
+        print 'VRooooommmm!'
+
+mustang = Car('Ford', 'Mustang')
+print mustang.wheels
+# 4
+print Car.wheels
+# 4
+}}}
+
+e.g.
+{{{python
+class Customer(object):
+    """A customer of ABC Bank with a checking account. Customers have the
+    following properties:
+
+    Attributes:
+        name: A string representing the customer's name.
+        balance: A float tracking the current balance of the customer's account.
+    """
+
+    def __init__(self, name, balance=0.0):
+        """Return a Customer object whose name is *name* and starting
+        balance is *balance*."""
+        self.name = name
+        self.balance = balance
+
+    def withdraw(self, amount):
+        """Return the balance remaining after withdrawing *amount*
+        dollars."""
+        if amount > self.balance:
+            raise RuntimeError('Amount greater than available balance.')
+        self.balance -= amount
+        return self.balance
+
+    def deposit(self, amount):
+        """Return the balance remaining after depositing *amount*
+        dollars."""
+        self.balance += amount
+        return self.balance
+}}}
+This defines a `Customer` object. It doesnt create anything.
+
+To create (instantiate?) a `Customer` object, call the class's `__init__` method. e.g.
+    * `john = Customer('john', 1000)`
+
+This `john` object is an instance of `Customer`.
+
+`self` is the instance of the class that the method is being called on. Even if the method is `__init__`. `self` allows the method to know thich instance of the class to alter or create. e.g.
+    * `john.withdraw(100) == Customer.withdraw(john, 100)`
+ 
+The LHS is usually how code is written, but the RHS is perfectly valid code.
+
+You can access an objects attribute using `.` lookups. e.g.
+{{{ python
+class MyClass:
+    variable = "blah"
+
+    def function(self):
+        print("This is a message inside the class.")
+
+myobjectx = MyClass()
+myobjecty = MyClass()
+
+myobjecty.variable = "yackity"
+
+# Then print out both values
+print(myobjectx.variable)
+print(myobjecty.variable)
+print(myobjectx.function())
+}}}
+
+>>> blah
+>>> yackity
+>>> This is a message inside the class
+

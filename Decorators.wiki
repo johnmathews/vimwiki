@@ -1,0 +1,97 @@
+= Decorators =
+https://www.pythonforthelab.com/blog/how-to-use-decorators-to-validate-input/
+
+- Decorators are functions that take as input other functions.
+- when a decorator is added, it is the decorator func that is called, and when it is executed it calls the original function, and does stuff around it.
+- the decorator function is a wrapper. it could
+  - change the format of the output
+  - add the output to something
+  - monitor state before and after the wrapped function is called
+  - monitor the functions beheviour or resources
+  - check that the inputs to the wrapped function meet certain conditions
+
+== Docstrings, and decorators ==
+https://www.pythonforthelab.com/blog/how-to-use-decorators-part-2/
+  * docstrings are comments you put on the first line of the function definition, beginning and ending with triple quotes
+  * you can automtically build documentation using this convention
+  * and call `help(function_name)` will automatically return the doc string.
+
+To make sure this doesnt break when using decorators, pass the doc string and function name of the wrapped function to the decorator functin. e.g.
+{{{ python
+def check_positive(func):
+    def func_wrapper(x, y):
+        if x < 0 or y < 0:
+            raise Exception("Both x and y have to be positive for function {} to work".format(func.__name__))
+        res = func(x, y)
+        return res
+    func_wrapper.__name__ = func.__name__
+    func_wrapper.__doc__ = func.__doc__
+    return func_wrapper
+}}}
+
+or use `from functools import wraps`
+{{{ python
+from functools import wraps
+
+def check_positive(func):
+    @wraps(func)
+    def func_wrapper(x, y):
+        if x < 0 or y < 0:
+            raise Exception("Both x and y have to be positive for function {} to work".format(func.__name__))
+        res = func(x, y)
+        return res
+    return func_wrapper
+}}}
+
+== Classes as decorators ==
+You can wrap a function with a class. i.e.
+
+{{{ python
+class Decorator:
+    def __init__(self, func):
+        print('Decorating {}'.format(func.__name__))
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        return self.func(*args)
+
+@Decorator
+def average(x, y):
+    return (x + y)/2
+}}}
+
+This turns the function `average` into a `decorator class`. i.e. `average = Decorator(average)`
+
+== Decorators for classes (decorating a class) ==
+
+{{{ python
+def Decorate(cls):
+    print('Decorating {}'.format(cls.__name__))
+    def class_wrapper(*args):
+        return cls(*args)
+    return class_wrapper
+
+@Decorate
+class MyClass:
+    def __init__(self):
+        print('My Class')
+}}}
+
+Decorating a class could be useful if you want to add a method to every decorated class.
+What you have to do is to alter the cls variable within the class_wrapper:
+
+{{{ python
+def Decorate(cls):
+  def class_wrapper(*args):
+      def average(cls, x, y):
+          return (x + y) / 2
+      setattr(cls, 'average', average)
+      return cls(*args)
+  return class_wrapper
+}}}
+
+Define the function average that takes three arguments: a class and two numbers.
+Then use `setattr` to add the method to `cls` and we call it 'average'.
+Then `MyClass` will be able to calculate the average of numbers even if the method was not defined in it
+
+

@@ -1,0 +1,25 @@
+= Recipe/Journal =
+
+== Setup and skeleton ==
+# Create a new directory and virtualenv
+# `django-admin startproject moneydashboard`
+# append container dir with `-container`
+# create app `python manage.py startapp user_accounts`
+# register the app in `moneydashboard/settings.INSTALLED_APPS`
+# specify the database
+    # create the batabase
+    # specify the database in `settings.py`
+    # install `psycopg2` python package
+# set up urls
+    # redirect root to app root
+    # serve static files (for dev only)
+    # add url mapper from app
+
+== Create an account page ==
+When a user lands on the site they are asked to sign up or log in
+Once logged in, they see:
+    # their username,
+    # when they signed up,
+    # when they last logged in
+    # a list of files they've uploaded
+    # a button to upload a file

@@ -1,0 +1,113 @@
+= Django =
+{{file:~/projects/vimwiki/images/basic-django-flow.png}}
+
+Model diagrams showing multiplicities https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models#Designing_the_LocalLibrary_models
+{{file:~/projects/vimwiki/images/django-model-example.png}}
+
+
+ORM = Object Relational Mapper
+
+Django uses the ORM to map model definitions in code to the data structure used by the database. As models change or are updates, django can create migration scripts to change the schemas in the database to match the models defined in the code. Models are the single source of truth for an applications data structures.
+
+
+== Notes ==
+
+=== django-admin and manage.py ===
+`django-admin` is Django’s command-line utility for administrative tasks.
+
+https://docs.djangoproject.com/en/2.2/ref/django-admin/
+
+=== Creating a project ===
+`mysite/urls.py` - The URL declarations for the project. A table of contents of your website
+
+`mysite/wsgi.py` - An entry point for WSGI compatible web servers to serve your site
+
+https://docs.djangoproject.com/en/2.2/intro/tutorial01/
+
+=== Dev server ===
+`python manage.py runserver` - add a port to the end if the default is not ok. In `settings.py` you can edit `debug=True`.
+
+
+=== Creating views in an app ===
+Function based views (FBVs) were the original. Class based views (CBVs) were introduced so that view templates could be implemented to avoid readedly writing boilerplate. Generic Class Based Views (GCBVs) take CBVs one step further and and handle common use cases like displaying content in list form or detail form. GCBVs are very concise, but harder to customize. check out https://ccbv.co.uk
+
+1. Create a view
+2. Map the view to a url
+3. Add the apps URLconf to the root URLconf using `include()` - the include() function allows referencing other URLconfs. Whenever Django encounters include(), it chops off whatever part of the URL matched up to that point and sends the remaining string to the included URLconf for further processing.
+
+=== Models ===
+Good overview of options and types of field https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models#Model_primer
+Define the tables in the database, and also additional metadata
+*The single definitive source of truth for your data*
+
+{{file:~/projects/vimwiki/images/django-model-example.png}}
+
+
+define your data model in one place and then derive things from it, including migrations.
+Migrations are entirely derived from the models file and are just a history that Django can roll through to update database schemas so that the schemas match the current models
+
+Relationships between models/tables are defined using `ForeignKey`, which tells Django that each item in a model is related to an item in another model.
+
+Human readable field names can be added, and also default values, and also required arguments depending on the type of field.
+
+Each table is represented as a python class, within which each field is represented by subclassing `django.db.models.Model`. This gives django enough information to create database schemas (e.g. `CREATE TABLE ...` statements) and also to create a python database-access API for accessing the objects (rows) in the tables.
+
+Register your models in your apps `app.py`
+
+=== Migrations ===
+`python manage.py makemigrations <app-name>`
+
+By running `makemigrations` you tell django that you've made changes to `models` (or created new ones) and that you'd like the changes to be stored as a migration.
+
+Migrations are just files. They contain the changes to models (so like git?).
+You can see which file it is stored in when you run the `manage.py makemigrations` command.
+
+There is a (separate) command that will run the migrations for you (by reading the migrations file) and manage the database schema.
+
+Print to terminal what sql commands will be run when you run a migration using `python manage.py sqlmigrate <app-name> <migration-number>`
+This will show you what changes will be made or what tables will be created.
+
+`python manage.py check` will check for problems without making migrations or touching the database.
+
+`python manage.py migrate` - makes the changes to the databse, using the migration file you generated with the `makemigration` command.
+
+=== Views and templates ===
+A view must return either an `HttpResponse` or `Http404` object. The content of the object can be anything.
+
+To get something from the database to put into the view, import from models.
+
+Separation of concerns -> separate page design from page content using templates.
+
+=== Common template idioms ===
+==== objects, template, context ====
+1. define some python objects
+2. define a context, mapping the objects to variables in the template
+3. return `HttpResponse(template.render(context, request))`
+
+This can be abbreviated using `from django.shortcuts import render`
+`render()` takes 3 arguments, the request object, then the template, and thirdly an optional dictionary.
+It returns an `HttpResponse` object of the given template rendered with the given context.
+but do it the long way for now.
+
+==== get objcet or raise 404 ====
+1. try to get something from the database
+2. if it doesnt exist, raise a 404 error using `Http404()`
+
+This can be shortened using
+
+```python
+from django.shortcuts import get_object_or_404, render
+#...
+my_object = get_object_or_404(<model>, <api params>)
+return render(request, template, context)
+```
+
+== Forms ==
+An html form element is something the user can input or click on. Its like a callback in dash.
+
+{{file:~/projects/vimwiki/images/django-form-handling-standard.png}}
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms
+
+
+= Classes =
+classes are essentially templates to create objects from. Objects get their variables and functions from classes.
