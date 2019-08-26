@@ -1,7 +1,37 @@
 = Django =
 == Setup ==
-1. Create a virtualenv with virtualenvwrapper
-    * `mkvirtualenv env1`
+1. `mkvirtualenv`
+2. install django - this puts some scripts into the virtualenvs bin folder and adds them to path. 
+   `django-admin` has the following commands:
+        2. `check` 
+        3. `compilemessages`
+        4. `createcachetable`
+        5. `dbshell` 
+        6. `diffsettings` 
+        7. `dumpdata` 
+        8. `flush` 
+        9. `inspectdb`
+        10. `loaddata` 
+        11. `makemessages` 
+        12. `makemigrations` 
+        13. `migrate` 
+        14. `runserver` 
+        15. `sendtestemail` 
+        16. `shell` 
+        17. `showmigrations` 
+        18. `sqlflush` 
+        19. `sqlmigrate` 
+        20. `sqlsequencereset` 
+        21. `squashmigrations`
+        22. `startapp` 
+        23. `startproject` 
+        24. `test` 
+        25. `testserver`
+
+
+
+== Old Setup ==
+1. Create a virtualenv 
 2. Install packages
     * `pip install cookiecutter django`
 3. Check versions of things

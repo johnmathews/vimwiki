@@ -1,4 +1,5 @@
-%template index 
+== Money Dashboard ==
+# [[money-dashboard-django|website]]
 
 == Pipes and Glue ==
     # [[Pipes and Glue - Phase1| Phase 1]]
@@ -103,9 +104,12 @@
 </div>
 * [[print vars]]
 * [[Bokeh]]
+* [[Django]]
 * [[Django setup]] 
 * [[Django: urls-views-templates]]
 * [[Accept incoming network connections]]
+* [[Decorators]]
+* [[Classes]]
 </div>
 
 <div class="item">
