@@ -23,3 +23,5 @@ Once logged in, they see:
     # when they last logged in
     # a list of files they've uploaded
     # a button to upload a file
+
+https://wsvincent.com/django-user-authentication-tutorial-password-reset/

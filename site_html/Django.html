@@ -69,6 +69,78 @@
             <!--Body content-->
             
 <div id="Django"><h1 id="Django">Django</h1></div>
+<ul>
+<li>
+using <code>name</code> arguments in <code>urls.py</code> allows the use of the <code>reverse</code> function that will map the name to the url.
+
+<li>
+in urls.py, adding a path() item you can use a CBV by <code>views.ContactUsView.as_view()</code> - what does this <code>as_view()</code> do exactly?
+
+</ul>
+
+<div id="Django-tests"><h2 id="tests">tests</h2></div>
+
+<p>
+By default, Django finds the tests to run using some customizations over the unittest discovery functionality.
+It will traverse all subfolders from the current folder, looking for files named <code>test*.py</code>.
+Of those files, all the subclasses of <code>unittest.TestCase</code> contained in them will be included.
+</p>
+
+<p>
+e.g.:
+</p>
+<blockquote>
+positional arguments:
+<code>./manage.py test main.tests.test_views.TestPage</code>
+<code>./manage.py test main.tests.test_views.TestPage.test_home_page_works</code>
+</blockquote>
+<blockquote>
+options:
+<code>--failfast</code> - stop as soon as 1 test fails
+<code>--keepdb</code> - preserve db between runs, much faster
+</blockquote>
+
+
+
+<div id="Django-class inheritance"><h2 id="class inheritance">class inheritance</h2></div>
+<p>
+class inheritance obfuscates.
+Figure out how to  see the definitions of the classes you are using, then maybe it will become less magical.
+</p>
+
+<p>
+Base classes to investigate:
+</p>
+<blockquote>
+from django import forms
+class ContactForm(forms.Form):
+</blockquote>
+
+
+
+<div id="Django-approach"><h2 id="approach">approach</h2></div>
+<p>
+<code>models -&gt; urls -&gt; views -&gt; template</code>
+</p>
+
+<p>
+The confusing thing about Django is that you often need 4 different but interconnected files for one webpage: 
+</p>
+<ol>
+<li>
+<code>models.py</code>
+
+<li>
+<code>urls.py</code>
+
+<li>
+<code>views.py</code>
+
+<li>
+<code>template.html</code> file.
+
+</ol>
+
 <p>
 <img src="/Users/john/projects/vimwiki/images/basic-django-flow.png" />
 </p>
@@ -266,6 +338,15 @@ An html form element is something the user can input or click on. Its like a cal
 <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms">https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms</a>
 </p>
 
+<p>
+Forms in django are managed by the forms library, which is a set of functions to manage the rendering and processing of html forms.
+To use it, the first step is to:
+</p>
+<ol>
+<li>
+declare the fields of the form in a class that inherits from the base form class
+
+</ol>
 
 <div id="Classes"><h1 id="Classes">Classes</h1></div>
 <p>

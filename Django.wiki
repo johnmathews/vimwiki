@@ -1,4 +1,44 @@
 = Django =
+    * using `name` arguments in `urls.py` allows the use of the `reverse` function that will map the name to the url.
+    * in urls.py, adding a path() item you can use a CBV by `views.ContactUsView.as_view()` - what does this `as_view()` do exactly?
+
+== tests ==
+
+By default, Django finds the tests to run using some customizations over the unittest discovery functionality.
+It will traverse all subfolders from the current folder, looking for files named `test*.py`.
+Of those files, all the subclasses of `unittest.TestCase` contained in them will be included.
+
+e.g.:
+    positional arguments:
+    `./manage.py test main.tests.test_views.TestPage`
+    `./manage.py test main.tests.test_views.TestPage.test_home_page_works`
+
+    options:
+    `--failfast` - stop as soon as 1 test fails
+    `--keepdb` - preserve db between runs, much faster
+
+
+
+== class inheritance ==
+class inheritance obfuscates.
+Figure out how to  see the definitions of the classes you are using, then maybe it will become less magical.
+
+Base classes to investigate:
+
+    from django import forms
+    class ContactForm(forms.Form):
+
+
+
+== approach ==
+`models -> urls -> views -> template`
+
+The confusing thing about Django is that you often need 4 different but interconnected files for one webpage: 
+    # `models.py`
+    # `urls.py`
+    # `views.py`
+    # `template.html` file.
+
 {{file:~/projects/vimwiki/images/basic-django-flow.png}}
 
 Model diagrams showing multiplicities https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models#Designing_the_LocalLibrary_models
@@ -108,6 +148,9 @@ An html form element is something the user can input or click on. Its like a cal
 {{file:~/projects/vimwiki/images/django-form-handling-standard.png}}
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms
 
+Forms in django are managed by the forms library, which is a set of functions to manage the rendering and processing of html forms.
+To use it, the first step is to:
+1. declare the fields of the form in a class that inherits from the base form class
 
 = Classes =
 classes are essentially templates to create objects from. Objects get their variables and functions from classes.

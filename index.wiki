@@ -154,6 +154,7 @@
 
 </div>
 == Thoughts ==
+- [[It's later than you think]]
 - Quotes from Geoffrey Hinton interview: 
     - Read the literature but don't read too much of it.
     - For createive researchers; read a bit of the literature and notice something that you think everybody is doing wrong.
