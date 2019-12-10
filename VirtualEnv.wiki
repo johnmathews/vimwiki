@@ -28,24 +28,25 @@
     * `python -m ipykernel install --user --name Python3.7 --display-name "Python 3.7"`
 <br>
 
-|----------------------------------------------------------|----------------------------------------------|
-| *Command*                                                | *Description*                                |
-|----------------------------------------------------------|----------------------------------------------|
-| `pyenv versions`                                         | *list* all installed python versions         |
-| `pyenv uninstall <version>`                              | *uninstall* a python version from pyenv      |
-| `pyenv shell <version name>`                             | set python *version* for this virtualenv     |
-| `/Users/john/.virtualenvs/[name]/bin/activate`           | Run commands when activating the env         |
-| `mkvirtualenv env1`                                      | *Create* a virtualenv                        |
-| `mkvirtualenv demo --python=python3`                     | *Create* a virtualenv with python3           |
-| `deactivate`                                             | *Close* the virtualenv                       |
-| `workon env1`                                            | *Activate* the virtualenv                    |
-| `lsvirtualenv`                                           | *List* environments                          |
-| `rmvirtualenv ENVNAME` or `rm -rf ~/Envs/env1`           | *Delete* an environment                      |
-| `cpvirtualenv ENVNAME [TARGETENVNAME]`                   | *Copy* an environment                        |
-| `showvirtualenv` [env]                                   | *Show* the details for a single virtualenv.  |
-| `rmvirtualenv ENVNAME`                                   | *Remove* an environment, in the WORKON_HOME. |
-| `cpvirtualenv oldenv newenv` then  `rmvirtualenv oldenv` | *Rename* a virtualenv                        |
-| `lsvirtualenv [-b] [-l] [-h]`                            | *List* all of the environments.              |
+|-------------------------------------------------------------------|----------------------------------------------|
+| *Command*                                                         | *Description*                                |
+|-------------------------------------------------------------------|----------------------------------------------|
+| `pyenv versions`                                                  | *list* all installed python versions         |
+| `pyenv uninstall <version>`                                       | *uninstall* a python version from pyenv      |
+| `pyenv shell <version name>`                                      | set python *version* for this virtualenv     |
+| `/Users/john/.virtualenvs/[name]/bin/activate`                    | Run commands when activating the env         |
+| `mkvirtualenv env1`                                               | *Create* a virtualenv                        |
+| `mkvirtualenv -a <project-dir> -r <requirements-path> <env-name>` | *create a virtualenv and link it to a dir    |
+| `mkvirtualenv demo --python=python3`                              | *Create* a virtualenv with python3           |
+| `deactivate`                                                      | *Close* the virtualenv                       |
+| `workon env1`                                                     | *Activate* the virtualenv                    |
+| `lsvirtualenv`                                                    | *List* environments                          |
+| `rmvirtualenv ENVNAME` or `rm -rf ~/Envs/env1`                    | *Delete* an environment                      |
+| `cpvirtualenv ENVNAME [TARGETENVNAME]`                            | *Copy* an environment                        |
+| `showvirtualenv` [env]                                            | *Show* the details for a single virtualenv.  |
+| `rmvirtualenv ENVNAME`                                            | *Remove* an environment, in the WORKON_HOME. |
+| `cpvirtualenv oldenv newenv` then  `rmvirtualenv oldenv`          | *Rename* a virtualenv                        |
+| `lsvirtualenv [-b] [-l] [-h]`                                     | *List* all of the environments.              |
 
 
 
