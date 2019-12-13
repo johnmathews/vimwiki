@@ -64,6 +64,7 @@
 <div class="item__heading">
 === Dev Tools ===
 </div>
+* [[gpg]]
 * [[https://blog.jez.io/noteworthy-dotfile-hacks/|dotfile hacks]]
 * [[Terminal.app]]
 * [[strftime]]
