@@ -3,6 +3,7 @@
 
 == Pipes and Glue ==
     # [[Pipes and Glue - Phase1| Phase 1]]
+    # [[Productionize by building an API with flask]]
 
 == Notes ==
 <div class="items">
@@ -20,7 +21,6 @@
 * [[https://www.quantopian.com/lectures?utm_source=All+Active+Members&utm_campaign=0a1f9a01cc-2017_march_monthly&utm_medium=email&utm_term=0_7cca55778a-0a1f9a01cc-108952113|quantopian course]]
 * [[https://lectures.quantecon.org/py/|quantcon lectures]]
 * [[https://www.cs.usfca.edu/~galles/visualization/Algorithms.html|algo visualisation]]
-
 </div>
 
 
@@ -87,6 +87,7 @@ See `unix likes` too
 <div class="item__heading">
 === Media ===
 </div>
+* [[Dollars and data]]
 * [[Startup Ideas]]
 * [[http://www.paulgraham.com/13sentences.html|13 Sentences]]
 * [[https://www.1843magazine.com/features/a-rockers-guide-to-management|Management styles]]
@@ -159,7 +160,9 @@ See `unix likes` too
 
 </div>
 == Thoughts ==
+- [[hungry and poor]]
 - [[It's later than you think]]
+- [[Interesting questions to ask people]]
 - Quotes from Geoffrey Hinton interview: 
     - Read the literature but don't read too much of it.
     - For createive researchers; read a bit of the literature and notice something that you think everybody is doing wrong.

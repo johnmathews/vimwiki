@@ -17,7 +17,7 @@
 <script type="text/javascript" src="assets/js/my-js.js"></script>
 
 
-<title>shell</title>
+<title>Interesting questions to ask people</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -68,110 +68,39 @@
         <div class="span12">
             <!--Body content-->
             
-
-<div id="zsh"><h2 id="zsh" class="header"><a href="#zsh">zsh</a></h2></div>
-<p>
-print a list of numbers each on a new row
-<code>for n ({1..50}); do print $n; done</code>
-</p>
-
-
-<div id="general"><h2 id="general" class="header"><a href="#general">general</a></h2></div>
-
-<ul>
+<div id="Interesting Questions"><h1 id="Interesting Questions" class="header"><a href="#Interesting Questions">Interesting Questions</a></h1></div>
+<ol>
 <li>
-<code>clear</code> clears the window
+what have you been thinking about lately? what’s on your mind?
 
 <li>
-<code>&gt;</code> redirects <code>stdout</code> into a file
+tell me about a time when you changed your mind.
 
 <li>
-<code>&gt;</code> will overwrite the content of the destination file
+what’s the best piece of advice you ever received?
 
 <li>
-<code>&gt;&gt;</code> will append the content to the destination file
+what would you say to your 18-year-old self if you had a chat with them today?
 
 <li>
-<code>&lt;</code> takes <code>stdin</code> from right and gives it to the left
+have you ever lost a friend? have you ever rejected a friend?
 
 <li>
-<code>|</code> is a pipe. it takes <code>stdout</code> from left and pipes it as <code>stdin</code> to the right
+do you work in a language that is not your mother tongue? what is it like to live in translation?
 
 <li>
-
-
-<li>
-<code>cat</code> outputs the contents of a file to the  
+If there is a choice between remembering and forgetting, do you lean towards the side of forgetting, or the side of the one who remembers it all?
 
 <li>
-<code>less</code> outputs 1 page of a file at a time
-
-</ul>
- 
-<ul>
-<li>
-<code>sort</code> takes <code>stdin</code> and sorts it alphabetically to <code>stdout</code>
+Were you raised for autonomy, or were you raised for loyalty?
 
 <li>
-<code>uniq</code> filters out adjacent duplicates. Therefore its good to call <code>sort</code> before calling <code>uniq</code> to filter all duplicates
-
-</ul>
- 
-<ul>
-<li>
-<code>grep</code> searches files for lines which match an expression
+Was there a moment where you thought, ‘I’m giving up’ — and tell us whether you did or you didn’t?
 
 <li>
-<code>grep -i</code> is case insensitive
+What part of your identity was given to you, or what part of your identity was chosen?
 
-<li>
-<code>grep -R &lt;string&gt; &lt;directory&gt;</code> search recursively in directory. outputs file names and the lines which match
-
-<li>
-<code>grep -Rl ...</code> search recursively, only output filenames not lines
-
-</ul>
-  
-<ul>
-<li>
-<code>sed</code> is 'stream editor'. It modifies <code>stdin</code> based on an expression
-
-<li>
-<code>sed 's/.../.../g'</code> the <code>g</code> means global - it will replace more than just the first match on each line
-
-</ul>
-
-<div id="Scripting"><h2 id="Scripting" class="header"><a href="#Scripting">Scripting</a></h2></div>
-
-<p>
-<code>a_variable=$((a_variable + 1))</code>
-</p>
-
-<pre>
-while [ $greeting_occasion -lt 3 ]
-do
-  if [ $greeting_occasion -lt 1 ]
-  then
-    echo $first_greeting
-  else
-    echo $later_greeting
-  fi
-  greeting_occasion=$((greeting_occasion + 1))
-done
-</pre>
-
-<div id="Scripting-Nano"><h3 id="Nano" class="header"><a href="#Scripting-Nano">Nano</a></h3></div>
-<ul>
-<li>
-<code>ctrl-O</code> save
-
-<li>
-<code>ctrl-X</code> exit
-
-<li>
-<code>ctrl-G</code> help
-
-</ul>
+</ol>
 
 
         </div>

@@ -7,9 +7,16 @@ then record caps_lock-B and map it to hex code 0x02 which corresponds to ctrl-B.
 
 
 == Commands ==
+https://linuxize.com/post/getting-started-with-tmux/
 
 | Command                                   | Description                                                             |
 |-------------------------------------------|-------------------------------------------------------------------------|
+| `Ctrl+b c`                                | Create a new window                                                     |
+| `Ctrl+b w`                                | Choose window from list                                                 |
+| `Ctrl+b 0`                                | Switch to window 0 (by number)                                          |
+| `Ctrl+b %`                                | Split pane horizontally                                                 |
+| `Ctrl+b ;`                                | Toggle between the current and previous pane                            |
+| `Ctrl+b x`                                | Close pane                                                              |
 | *Session Management*                      |                                                                         |
 | `tmux new`                                | start a new session                                                     |
 | `tmux ls`                                 | list active sessions                                                    |
