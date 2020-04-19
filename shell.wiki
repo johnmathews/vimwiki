@@ -1,5 +1,10 @@
 
+== zsh ==
+print a list of numbers each on a new row
+`for n ({1..50}); do print $n; done`
 
+
+== general ==
 
     * `clear` clears the window
     * `>` redirects `stdout` into a file
@@ -43,4 +48,3 @@ done
     * `ctrl-O` save
     * `ctrl-X` exit
     * `ctrl-G` help
-    * 

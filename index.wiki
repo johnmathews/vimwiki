@@ -64,7 +64,10 @@
 <div class="item__heading">
 === Dev Tools ===
 </div>
-* [[gpg]]
+See `unix likes` too
+* [[coreutils]]
+* [[ctags]]
+* [[gpg/pgp]]
 * [[https://blog.jez.io/noteworthy-dotfile-hacks/|dotfile hacks]]
 * [[Terminal.app]]
 * [[strftime]]
@@ -127,6 +130,7 @@
 <div class="item__heading">
 === Unix-likes ===
 </div>
+* [[examples and practical use cases]]
 * [[Grep]]
 * [[regex]]
 * [[crontab]]

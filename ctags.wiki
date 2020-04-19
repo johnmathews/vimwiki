@@ -1,0 +1,6 @@
+https://blog.mindlessness.life/2019/12/01/tags-simplified.html
+
+1. `brew install ctags`
+2. add alias to .aliases 
+    - alias ctags="`brew --prefix`/bin/ctags"
+3. `git ls-files | ctags -R --links=no -L-`

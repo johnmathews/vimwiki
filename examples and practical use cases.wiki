@@ -1,0 +1,2 @@
+e.g. to install a list of brew formula, make the list with `brew leaves > a_file.txt`, then
+you can use `xargs` or `cat` but you cant just `brew install a_file.txt` like you can with pip
