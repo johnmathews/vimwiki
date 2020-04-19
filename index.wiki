@@ -64,7 +64,6 @@
 <div class="item__heading">
 === Dev Tools ===
 </div>
-See `unix likes` too
 * [[coreutils]]
 * [[ctags]]
 * [[gpg/pgp]]
@@ -81,6 +80,7 @@ See `unix likes` too
 * [[tmux]]
 * [[PostrgreSQL]]
 * [[APIs]]
+also `unix likes`
 </div>
 
 <div class="item">
@@ -100,7 +100,6 @@ See `unix likes` too
 * https://postmake.io/  
 * https://playbook.samaltman.com/
 * https://www.statisticsdonewrong.com/data-analysis.html 
-* 
 </div>
 
 <div class="item">
