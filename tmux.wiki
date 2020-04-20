@@ -4,6 +4,11 @@ chsh -s $(which zsh)
 to make ctrl-B map to caps_lock-B in iterm only, go to preferences > profiles > keys > add new
 then record caps_lock-B and map it to hex code 0x02 which corresponds to ctrl-B.  
 
+renumber windows starting from beginning
+:movew -r
+
+`prefix+b` - previous window
+`prefix+;` - previous pane
 
 
 == Commands ==

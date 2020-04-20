@@ -1,5 +1,14 @@
 = Grep =
 
+`grep -r "texthere" .`
+The first parameter represents the regular expression to search for, while the second one represents the directory that should be searched.
+
+-r recursive
+-i case insensitive
+-n line numbers
+-H file name
+
+
 E.g.: 
 - `grep -n 'daily_euro_totals.csv' ./**/*.py`
 - `grep -rnw '/path/to/somewhere/' -e 'pattern'`
@@ -8,9 +17,8 @@ E.g.:
 
 | Description                                                                             | Command                                   |
 |-----------------------------------------------------------------------------------------|-------------------------------------------|
-| search filename only                                                                    | `grep -rl "filename `                     |
+| search filename only                                                                    | `grep -rl "filename"`                     |
 | List all draft articles                                                                 | `grep -rwlIi . -e 'status: draft'`        |
-| search this dir                                                                         | `.`                                       |
 | recursive                                                                               | `r`                                       |
 | the expression is searched for as if its a word, not a regex                            | `w`                                       |
 | only the names of files that match. Stops searching a file once a match is found (once) | `l`                                       |
