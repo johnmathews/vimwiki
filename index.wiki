@@ -159,6 +159,8 @@ also `unix likes`
 
 </div>
 == Thoughts ==
+- https://kk.org/thetechnium/68-bits-of-unsolicited-advice/
+- [[68 Bits of Unsolicited Advice]]
 - [[hungry and poor]]
 - [[It's later than you think]]
 - [[Interesting questions to ask people]]
