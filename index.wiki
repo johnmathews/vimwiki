@@ -2,8 +2,8 @@
 # [[money-dashboard-django|website]]
 
 == Pipes and Glue ==
-    # [[Pipes and Glue - Phase1| Phase 1]]
-    # [[Productionize by building an API with flask]]
+# [[Pipes and Glue - Phase1| Phase 1]]
+# [[Productionize by building an API with flask]]
 
 == Notes ==
 <div class="items">
@@ -159,6 +159,7 @@ also `unix likes`
 
 </div>
 == Thoughts ==
+- [[Organize Tomorrow Today]]
 - https://kk.org/thetechnium/68-bits-of-unsolicited-advice/
 - [[68 Bits of Unsolicited Advice]]
 - [[hungry and poor]]
