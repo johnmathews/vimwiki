@@ -1,0 +1,23 @@
+https://vi.stackexchange.com/questions/17962/python-debugging
+https://stackoverflow.com/questions/1901528/vim-and-python-scripts-debugging
+
+`pdb` can be integrated into vim with
+
+    `vimpdb`
+    `vebugger`
+    
+`pudb` can be integrated with
+
+    `pudb.vim`
+    `vim-pudb`
+    
+`ipdb` can be integrated with
+
+    `vdebug`
+    `ipdb_breakpoint`
+
+vimspector...
+
+https://stackoverflow.com/questions/3536600/do-you-debug-c-code-in-vim-how/60674780#60674780
+
+

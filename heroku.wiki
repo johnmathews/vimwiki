@@ -1,0 +1,58 @@
+= Deployment to Heroku =
+
+== Steps ==
+# cookiecutter-django deployment notes: https://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html
+# create a pipeline- https://devcenter.heroku.com/articles/multiple-environments
+# link an existing app to an existing git repo: `heroku git:remote -a ft6-production`
+# rename the remote to something more useful: `git remote rename heroku heroku-production`
+# do the same for staging
+# rename remote: `git remote rename heroku-staging staging`
+# set a default heroku remote: `git config heroku.remote staging`
+# specify the buildpack, use either the heroku name, or a url: `heroku buildpacks:set https://github.com/heroku/heroku-buildpack-python`
+# add add-ons to each app:
+	# `heroku addons:create heroku-postgresql:hobby-dev --remote production`
+	# mailgun:starter
+	# heroku-redis:hobby-dev
+	# heroku addons:create sentry:f1
+# configure postgres db:
+	# heroku pg:backups schedule --at '04:00 Europe/Amsterdam' DATABASE_URL
+	America/Los_Angeles# heroku pg:promote DATABASE_URL
+# specify the domain to point the app at: `heroku domains:add`
+# Assign with AWS_ACCESS_KEY_ID: `heroku config:set DJANGO_AWS_ACCESS_KEY_ID=...`
+# Assign with AWS_SECRET_ACCESS_KEY: `heroku config:set DJANGO_AWS_SECRET_ACCESS_KEY=...`
+# Assign with AWS_STORAGE_BUCKET_NAME: `heroku config:set DJANGO_AWS_STORAGE_BUCKET_NAME=...`
+# set CELERY_BROKER_URL: heroku config:set CELERY_BROKER_URL=`heroku config:get REDIS_URL`
+# set MAILGUN_API_KEY:
+# deploy repo to the correct app `git push staging master`
+
+== Add-ons ==
+# managing add-ons `https://devcenter.heroku.com/articles/managing-add-ons`
+# upgrade an add-on: `heroku addons:upgrade newrelic:hawke`
+# downgrade an add-on: `heroku addons:downgrade newrelic:wayne`
+# open an add-on on the dashboard `heroku addons:open newrelic`
+# destroy an add-on: `heroku addons:destroy postgresql-rectangular-1234`
+
+=== Postgres ===
+# can upgrade/downgrade from any to any, but downtime is required
+
+== Config ==
+=== domains ===
+https://devcenter.heroku.com/articles/custom-domains
+
+==== celery url ====
+heroku config:set CELERY_BROKER_URL=`heroku config:get REDIS_URL`
+
+=== admin ===
+prod has a random admin string
+staging has defualt admin url
+
+=== web_concurrency ===
+
+https://devcenter.heroku.com/articles/python-gunicorn
+Gunicorn forks multiple system processes within each dyno to allow a Python app to support multiple concurrent requests without requiring them to be thread-safe. In Gunicorn terminology, these are referred to as worker processes (not to be confused with Heroku worker processes, which run in their own dynos).
+
+Each forked system process consumes additional memory. This limits how many processes you can run in a single dyno. With a typical Django application memory footprint, you can expect to run 2–4 Gunicorn worker processes on a free, hobby or standard-1x dyno. Your application may allow for a variation of this, depending on your application’s specific memory requirements.
+
+We recommend setting a configuration variable for this setting. Gunicorn automatically honors the WEB_CONCURRENCY environment variable, if set.
+
+

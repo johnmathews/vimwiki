@@ -1,0 +1,14 @@
+- Load a file full of environment variables into the shell
+	- `export $(grep -v '^#' .envs/.local/.django | xargs)`
+
+- `jsonify` in flask is the equivalent of `JsonResponse` in django
+
+- to parse a request from javaScript fetch, use:
+	- `data = json.loads(request.body.decode('utf-8')) `
+
+- ngrok 
+- run mailhog in bg - `https://kb.iu.edu/d/afnz`
+- run mailhog quietly
+	- `https://unix.stackexchange.com/questions/459399/execute-command-without-terminal-output`
+	- `yourcommand > /dev/null 2>&1`
+

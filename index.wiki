@@ -1,5 +1,16 @@
 == Money Dashboard ==
 # [[money-dashboard-django|website]]
+# [[heroku]]
+# [[tricks]]
+
+== Shells ==
+* `dscl . -read ~/ UserShell` seems to be the best way to see what your shell is set to in MacOS:
+* There are 5 startup files that `zsh` reads commands from:
+	# `.zshenv`
+	# `.zprofile`
+	# `.zshrc`
+	# `.zlogin`
+	# `.zlogout` 
 
 == Pipes and Glue ==
 # [[Pipes and Glue - Phase1| Phase 1]]
@@ -106,6 +117,7 @@ also `unix likes`
 <div class="item__heading">
 === Python ===
 </div>
+* [[debugging]]
 * [[print vars]]
 * [[Bokeh]]
 * [[Django]]
@@ -147,25 +159,39 @@ also `unix likes`
 </div>
 * [[Profiling]]
 * [[Vim]]
-* [[VimWiki]] 
+* [[VimWiki]]
 * [[Surround]]
 * [[Sessions]]
 * [[Rainbows]]
 * [[https://medium.com/@MauroMorales/profiling-vim-e142280a91ae|Profiling]]
 * [[Marks]]
 * [[fugitive]]
-
 </div>
+
+
+<div class="item">
+<div class="item__heading">
+=== Managing ===
+</div>
+* [[Meeting everyone in a new team]]
+* ai generated available .com domains - https://www.domainsfortherestofus.com/
+* https://web.archive.org/web/20200921094028/http://www.daemonology.net/blog/2020-09-20-On-the-use-of-a-life.html - http://www.daemonology.net/blog/2020-09-20-On-the-use-of-a-life.html
+* https://web.archive.org/web/20200921093933/https://blog.ploeh.dk/2020/09/14/we-need-young-programmers-we-need-old-programmers/ - https://blog.ploeh.dk/2020/09/14/we-need-young-programmers-we-need-old-programmers/
+*
+</div>
+
 
 </div>
 == Thoughts ==
 - [[Organize Tomorrow Today]]
+- "When you want money, ask for advice. When you want advice, ask for money"
 - https://kk.org/thetechnium/68-bits-of-unsolicited-advice/
 - [[68 Bits of Unsolicited Advice]]
 - [[hungry and poor]]
+- [[Benefits of writing to your kids]]
 - [[It's later than you think]]
 - [[Interesting questions to ask people]]
-- Quotes from Geoffrey Hinton interview: 
+- Quotes from Geoffrey Hinton interview:
     - Read the literature but don't read too much of it.
     - For createive researchers; read a bit of the literature and notice something that you think everybody is doing wrong.
     - (he is contrarian in that sense)

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/docs.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/monokai.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/vimwiki.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+
+<script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+<script type="text/javascript" src="assets/js/my-js.js"></script>
+
+
+<title>heroku</title>
+
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <!-- .nav, .navbar-search, .navbar-form, etc -->
+                <ul class="nav">
+                    <li class="">
+                         <a href="#" onClick="history.go(-1);return true;">Back</a>
+                    </li>
+                    <li class="">
+                        <a href="index.html">Index</a>
+                    </li>
+                    <li class="">
+                        <a href="diary/journal.html">Journal</a>
+                    </li>
+                    <li class="">
+                        <a href="todo.html">Ideas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+
+<!-- ### Get rid of the navbar class and move the main column to the left ###
+
+        <div class="span3 bs-docs-sidebar">
+            <ul id="sidebar_list" class="nav nav-list bs-docs-sidenav affix">
+            </ul>
+        </div>
+
+-->
+<br>
+        <div class="span12">
+            <!--Body content-->
+            
+<div id="Deployment to Heroku"><h1 id="Deployment to Heroku" class="header"><a href="#Deployment to Heroku"> Deployment to Heroku</a></h1></div>
+
+<div id="Deployment to Heroku-Steps"><h2 id="Steps" class="header"><a href="#Deployment to Heroku-Steps">1. Steps</a></h2></div>
+<ol>
+<li>
+cookiecutter-django deployment notes: <a href="https://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html">https://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html</a>
+
+<li>
+create a pipeline- <a href="https://devcenter.heroku.com/articles/multiple-environments">https://devcenter.heroku.com/articles/multiple-environments</a>
+
+<li>
+link an existing app to an existing git repo: <code>heroku git:remote -a ft6-production</code>
+
+<li>
+rename the remote to something more useful: <code>git remote rename heroku heroku-production</code>
+
+<li>
+do the same for staging
+
+<li>
+rename remote: <code>git remote rename heroku-staging staging</code>
+
+<li>
+set a default heroku remote: <code>git config heroku.remote staging</code>
+
+<li>
+specify the buildpack, use either the heroku name, or a url: <code>heroku buildpacks:set https://github.com/heroku/heroku-buildpack-python</code>
+
+<li>
+add add-ons to each app:
+
+<ol>
+<li>
+<code>heroku addons:create heroku-postgresql:hobby-dev --remote production</code>
+
+<li>
+mailgun:starter
+
+<li>
+heroku-redis:hobby-dev
+
+</ol>
+<li>
+configure postgres db:
+
+<ol>
+<li>
+heroku pg:backups schedule --at '04:00 Europe/Amsterdam' DATABASE_URL
+
+<li>
+heroku pg:promote DATABASE_URL
+
+</ol>
+<li>
+specify the domain to point the app at: <code>heroku domains:add</code>
+
+<li>
+Assign with AWS_ACCESS_KEY_ID: <code>heroku config:set DJANGO_AWS_ACCESS_KEY_ID=...</code>
+
+<li>
+Assign with AWS_SECRET_ACCESS_KEY: <code>heroku config:set DJANGO_AWS_SECRET_ACCESS_KEY=...</code>
+
+<li>
+Assign with AWS_STORAGE_BUCKET_NAME: <code>heroku config:set DJANGO_AWS_STORAGE_BUCKET_NAME=...</code>
+
+<li>
+set CELERY_BROKER_URL: heroku config:set CELERY_BROKER_URL=<code>heroku config:get REDIS_URL</code>
+
+<li>
+set MAILGUN_API_KEY:
+
+<li>
+deploy repo to the correct app <code>git push staging master</code>
+
+</ol>
+
+<div id="Deployment to Heroku-Add-ons"><h2 id="Add-ons" class="header"><a href="#Deployment to Heroku-Add-ons">2. Add-ons</a></h2></div>
+<ol>
+<li>
+managing add-ons <code>https://devcenter.heroku.com/articles/managing-add-ons</code>
+
+<li>
+upgrade an add-on: <code>heroku addons:upgrade newrelic:hawke</code>
+
+<li>
+downgrade an add-on: <code>heroku addons:downgrade newrelic:wayne</code>
+
+<li>
+open an add-on on the dashboard <code>heroku addons:open newrelic</code>
+
+<li>
+destroy an add-on: <code>heroku addons:destroy postgresql-rectangular-1234</code>
+
+</ol>
+
+<div id="Deployment to Heroku-Add-ons-Postgres"><h3 id="Postgres" class="header"><a href="#Deployment to Heroku-Add-ons-Postgres">2.1. Postgres</a></h3></div>
+<ol>
+<li>
+can upgrade/downgrade from any to any, but downtime is required
+
+</ol>
+
+<div id="Deployment to Heroku-Config"><h2 id="Config" class="header"><a href="#Deployment to Heroku-Config">3. Config</a></h2></div>
+<div id="Deployment to Heroku-Config-domains"><h3 id="domains" class="header"><a href="#Deployment to Heroku-Config-domains">3.1. domains</a></h3></div>
+<p>
+<a href="https://devcenter.heroku.com/articles/custom-domains">https://devcenter.heroku.com/articles/custom-domains</a>
+</p>
+
+<div id="Deployment to Heroku-Config-domains-celery url"><h4 id="celery url" class="header"><a href="#Deployment to Heroku-Config-domains-celery url">3.1.1. celery url</a></h4></div>
+<p>
+heroku config:set CELERY_BROKER_URL=<code>heroku config:get REDIS_URL</code>
+</p>
+
+<div id="Deployment to Heroku-Config-admin"><h3 id="admin" class="header"><a href="#Deployment to Heroku-Config-admin">3.2. admin</a></h3></div>
+<p>
+prod has a random admin string
+staging has defualt admin url
+</p>
+
+<div id="Deployment to Heroku-Config-web_concurrency"><h3 id="web_concurrency" class="header"><a href="#Deployment to Heroku-Config-web_concurrency">3.3. web_concurrency</a></h3></div>
+
+<p>
+<a href="https://devcenter.heroku.com/articles/python-gunicorn">https://devcenter.heroku.com/articles/python-gunicorn</a>
+Gunicorn forks multiple system processes within each dyno to allow a Python app to support multiple concurrent requests without requiring them to be thread-safe. In Gunicorn terminology, these are referred to as worker processes (not to be confused with Heroku worker processes, which run in their own dynos).
+</p>
+
+<p>
+Each forked system process consumes additional memory. This limits how many processes you can run in a single dyno. With a typical Django application memory footprint, you can expect to run 2–4 Gunicorn worker processes on a free, hobby or standard-1x dyno. Your application may allow for a variation of this, depending on your application’s specific memory requirements.
+</p>
+
+<p>
+We recommend setting a configuration variable for this setting. Gunicorn automatically honors the WEB_CONCURRENCY environment variable, if set.
+</p>
+
+
+        </div>
+  </div>
+</div>
+<a href="#" class="backtotop"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
+<!-- Footer
+    ================================================== -->
+
+<!-- ### Remove footer links - clutter ###
+<footer class="footer">
+  <div class="container">
+    <p><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+    <p><a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> licensed under <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>.</p>
+    <p><a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a> licensed under <a href="http://opensource.org/licenses/BSD-3-Clause">Modified BSD License</a>.</p>
+    <ul class="footer-links">
+    </ul>
+  </div>
+</footer>
+-->
+
+<!--
+<script>
+    $('h1').each(function() {
+        $(this).wrap('<section id="' + this.id + '"/>');
+    });
+    $('h1').wrap('<div class="page-header" />');
+    $('h1').wrap('<div class="well well-small" />');
+    $(document).ready(function() {
+        var items = [];
+        $('h1').each(function() {
+            items.push('<li><a href="#' + this.id + '"><i class="fa fa-chevron-right pull-right"></i> ' + $(this).text() + '</a></li>');
+        });  // close each()
+    $('#sidebar_list').append( items.join('') );
+    $('table').each(function() {
+        $(this).addClass('table table-striped table-condensed table-hover');
+    });
+    $('.done0').each(function() {
+        $(this).html('<div class="alert alert-info"><i class="fa fa-check-square-o"></i>'+$(this).html()+'</div></li>');
+    });
+    $('.done4').each(function() {
+        $(this).html('<div class="alert alert-success"><i class="fa fa-square-o"></i>'+$(this).html()+'</div></li>');
+    });
+    // Fade Out Back-To-Top-Link on new page
+    $('.backtotop').fadeOut();
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.backtotop').fadeIn();
+            } else {
+                $('.backtotop').fadeOut();
+            }
+        });
+        $('.backtotop').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+    });
+    $('pre').each(function() {
+        $(this).html('<code>'+$(this).html()+'</code>');
+    });
+    hljs.initHighlightingOnLoad();
+});
+</script>
+-->
+</body>
+</html>
